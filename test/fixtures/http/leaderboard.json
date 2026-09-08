@@ -1,0 +1,73 @@
+{
+  "format": "sdk-http-cassette/v1",
+  "service": "fomo",
+  "provenance": {
+    "kind": "live",
+    "source": "Fomo HTTP via SDK Impit transport",
+    "scenario": "leaderboard"
+  },
+  "capturedAt": "2026-09-08T12:04:36.000Z",
+  "inputs": {},
+  "exchanges": [
+    {
+      "request": {
+        "method": "GET",
+        "origin": "https://fomo.fixture.invalid",
+        "path": "/v2/leaderboard/24h",
+        "query": [["limit", "2"]],
+        "headers": {
+          "authentication": "<present>",
+          "content-type": "application/json"
+        },
+        "body": ""
+      },
+      "response": {
+        "status": 200,
+        "headers": {
+          "content-type": "application/json; charset=utf-8"
+        },
+        "body": "{\"success\":true,\"message\":\"[redacted text]\",\"responseObject\":{\"leaderboard\":[{\"id\":\"00000000-0000-4000-8000-000000000001\",\"address\":\"11111111111111111111111111111113\",\"evmAddress\":\"0x0000000000000000000000000000000000000003\",\"createdAt\":\"2025-10-03T01:49:40.755Z\",\"displayName\":\"[redacted text]\",\"userHandle\":\"[redacted text]\",\"profilePictureLink\":\"https://fixture.invalid/redacted\",\"description\":\"[redacted text]\",\"following\":0,\"followers\":87523,\"activated\":false,\"verified\":false,\"isReferred\":false,\"isRestricted\":false,\"swapCount\":15512,\"numTrades\":2377,\"totalVolume\":10350610.573646,\"private\":false,\"thumbhash\":\"[redacted text]\",\"coverPhotoLink\":\"https://fixture.invalid/redacted\",\"coverPhotoThumbhash\":\"[redacted text]\",\"twitter\":null,\"pnl24h\":866699.8708694922,\"clan\":null,\"totalHoldings\":35,\"topHoldings\":[{\"imageUrl\":\"https://fixture.invalid/redacted\",\"tokenAddress\":\"11111111111111111111111111111115\",\"networkId\":1399811149,\"humanAmount\":35628940.409671664,\"price\":0.143872897545,\"value\":5126038.893197602,\"pnl\":4682561.115277636},{\"imageUrl\":\"https://fixture.invalid/redacted\",\"tokenAddress\":\"11111111111111111111111111111116\",\"networkId\":1399811149,\"humanAmount\":7623902.571802973,\"price\":0.103226492667,\"value\":786988.722922142,\"pnl\":581807.3642811428},{\"imageUrl\":\"https://fixture.invalid/redacted\",\"tokenAddress\":\"11111111111111111111111111111117\",\"networkId\":1399811149,\"humanAmount\":32429718.283191845,\"price\":0.00626012618923,\"value\":203014.1287339602,\"pnl\":192616.9486711393}]},{\"id\":\"00000000-0000-4000-8000-000000000007\",\"address\":\"11111111111111111111111111111119\",\"evmAddress\":\"0x0000000000000000000000000000000000000009\",\"createdAt\":\"2025-11-10T00:15:45.484Z\",\"displayName\":\"[redacted text]\",\"userHandle\":\"[redacted text]\",\"profilePictureLink\":null,\"description\":\"[redacted text]\",\"following\":42,\"followers\":515555,\"activated\":false,\"verified\":false,\"isReferred\":false,\"isRestricted\":false,\"swapCount\":976,\"numTrades\":2848,\"totalVolume\":1059223.241056,\"private\":false,\"thumbhash\":null,\"coverPhotoLink\":null,\"coverPhotoThumbhash\":null,\"twitter\":null,\"pnl24h\":798299.7627007952,\"clan\":null,\"totalHoldings\":82,\"topHoldings\":[{\"imageUrl\":\"https://fixture.invalid/redacted\",\"tokenAddress\":\"0x000000000000000000000000000000000000000a\",\"networkId\":4663,\"humanAmount\":29322551.565300036,\"price\":0.249195295826,\"value\":7307041.911688082,\"pnl\":7285835.578339082},{\"imageUrl\":\"https://fixture.invalid/redacted\",\"tokenAddress\":\"1111111111111111111111111111111C\",\"networkId\":1399811149,\"humanAmount\":10000.198225,\"price\":0.172524041351,\"value\":1725.2746120880968,\"pnl\":842576.4773249179},{\"imageUrl\":\"https://fixture.invalid/redacted\",\"tokenAddress\":\"0x000000000000000000000000000000000000000c\",\"networkId\":56,\"humanAmount\":14769699.134828899,\"price\":0.0111333474337,\"value\":164436.1919592684,\"pnl\":138134.78964426843}]}]},\"statusCode\":200}"
+      }
+    },
+    {
+      "request": {
+        "method": "GET",
+        "origin": "https://fomo.fixture.invalid",
+        "path": "/v2/leaderboard/7d",
+        "query": [["limit", "2"]],
+        "headers": {
+          "authentication": "<present>",
+          "content-type": "application/json"
+        },
+        "body": ""
+      },
+      "response": {
+        "status": 200,
+        "headers": {
+          "content-type": "application/json; charset=utf-8"
+        },
+        "body": "{\"success\":true,\"message\":\"[redacted text]\",\"responseObject\":{\"leaderboard\":[{\"id\":\"00000000-0000-4000-8000-00000000000d\",\"address\":\"1111111111111111111111111111111F\",\"evmAddress\":\"0x000000000000000000000000000000000000000f\",\"createdAt\":\"2026-05-18T12:45:58.832Z\",\"displayName\":\"[redacted text]\",\"userHandle\":\"[redacted text]\",\"profilePictureLink\":\"https://fixture.invalid/redacted\",\"description\":\"[redacted text]\",\"following\":36,\"followers\":601831,\"activated\":false,\"verified\":false,\"isReferred\":true,\"isRestricted\":false,\"swapCount\":525,\"numTrades\":3680,\"totalVolume\":3565769.589095,\"private\":false,\"thumbhash\":\"[redacted text]\",\"coverPhotoLink\":null,\"coverPhotoThumbhash\":null,\"twitter\":null,\"pnl7d\":7555642.603507476,\"clan\":{\"id\":\"00000000-0000-4000-8000-000000000010\",\"name\":\"[redacted text]\",\"iconLink\":\"https://fixture.invalid/redacted\",\"iconThumbhash\":\"[redacted text]\"},\"totalHoldings\":224,\"topHoldings\":[{\"imageUrl\":\"https://fixture.invalid/redacted\",\"tokenAddress\":\"0x0000000000000000000000000000000000000011\",\"networkId\":4663,\"humanAmount\":10957901.416319031,\"price\":0.736163080275,\"value\":8066802.459987204,\"pnl\":7999091.74282962},{\"imageUrl\":\"https://fixture.invalid/redacted\",\"tokenAddress\":\"1111111111111111111111111111111K\",\"networkId\":1399811149,\"humanAmount\":15874777.23758,\"price\":0.25901025986,\"value\":4111730.1775252083,\"pnl\":3281948.488659658},{\"imageUrl\":\"https://fixture.invalid/redacted\",\"tokenAddress\":\"0x0000000000000000000000000000000000000013\",\"networkId\":56,\"humanAmount\":24956946.05182995,\"price\":0.131400915243,\"value\":3279365.5528806304,\"pnl\":2314303.507481472}]},{\"id\":\"00000000-0000-4000-8000-000000000001\",\"address\":\"11111111111111111111111111111113\",\"evmAddress\":\"0x0000000000000000000000000000000000000003\",\"createdAt\":\"2025-10-03T01:49:40.755Z\",\"displayName\":\"[redacted text]\",\"userHandle\":\"[redacted text]\",\"profilePictureLink\":\"https://fixture.invalid/redacted\",\"description\":\"[redacted text]\",\"following\":0,\"followers\":87523,\"activated\":false,\"verified\":false,\"isReferred\":false,\"isRestricted\":false,\"swapCount\":15512,\"numTrades\":2377,\"totalVolume\":10350610.573646,\"private\":false,\"thumbhash\":\"[redacted text]\",\"coverPhotoLink\":\"https://fixture.invalid/redacted\",\"coverPhotoThumbhash\":\"[redacted text]\",\"twitter\":null,\"pnl7d\":5323407.584849304,\"clan\":null,\"totalHoldings\":35,\"topHoldings\":[{\"imageUrl\":\"https://fixture.invalid/redacted\",\"tokenAddress\":\"11111111111111111111111111111115\",\"networkId\":1399811149,\"humanAmount\":35628940.409671664,\"price\":0.143872897545,\"value\":5126038.893197602,\"pnl\":4682561.115277636},{\"imageUrl\":\"https://fixture.invalid/redacted\",\"tokenAddress\":\"11111111111111111111111111111116\",\"networkId\":1399811149,\"humanAmount\":7623902.571802973,\"price\":0.103226492667,\"value\":786988.722922142,\"pnl\":581807.3642811428},{\"imageUrl\":\"https://fixture.invalid/redacted\",\"tokenAddress\":\"11111111111111111111111111111117\",\"networkId\":1399811149,\"humanAmount\":32429718.283191845,\"price\":0.00626012618923,\"value\":203014.1287339602,\"pnl\":192616.9486711393}]}]},\"statusCode\":200}"
+      }
+    },
+    {
+      "request": {
+        "method": "GET",
+        "origin": "https://fomo.fixture.invalid",
+        "path": "/v2/leaderboard/30d",
+        "query": [["limit", "2"]],
+        "headers": {
+          "authentication": "<present>",
+          "content-type": "application/json"
+        },
+        "body": ""
+      },
+      "response": {
+        "status": 200,
+        "headers": {
+          "content-type": "application/json; charset=utf-8"
+        },
+        "body": "{\"success\":true,\"message\":\"[redacted text]\",\"responseObject\":{\"leaderboard\":[{\"id\":\"00000000-0000-4000-8000-00000000000d\",\"address\":\"1111111111111111111111111111111F\",\"evmAddress\":\"0x000000000000000000000000000000000000000f\",\"createdAt\":\"2026-05-18T12:45:58.832Z\",\"displayName\":\"[redacted text]\",\"userHandle\":\"[redacted text]\",\"profilePictureLink\":\"https://fixture.invalid/redacted\",\"description\":\"[redacted text]\",\"following\":36,\"followers\":601831,\"activated\":false,\"verified\":false,\"isReferred\":true,\"isRestricted\":false,\"swapCount\":525,\"numTrades\":3680,\"totalVolume\":3565769.589095,\"private\":false,\"thumbhash\":\"[redacted text]\",\"coverPhotoLink\":null,\"coverPhotoThumbhash\":null,\"twitter\":null,\"pnl30d\":15178755.247392517,\"clan\":{\"id\":\"00000000-0000-4000-8000-000000000010\",\"name\":\"[redacted text]\",\"iconLink\":\"https://fixture.invalid/redacted\",\"iconThumbhash\":\"[redacted text]\"},\"totalHoldings\":224,\"topHoldings\":[{\"imageUrl\":\"https://fixture.invalid/redacted\",\"tokenAddress\":\"0x0000000000000000000000000000000000000011\",\"networkId\":4663,\"humanAmount\":10957901.416319031,\"price\":0.736163080275,\"value\":8066802.459987204,\"pnl\":7999091.74282962},{\"imageUrl\":\"https://fixture.invalid/redacted\",\"tokenAddress\":\"1111111111111111111111111111111K\",\"networkId\":1399811149,\"humanAmount\":15874777.23758,\"price\":0.25901025986,\"value\":4111730.1775252083,\"pnl\":3281948.488659658},{\"imageUrl\":\"https://fixture.invalid/redacted\",\"tokenAddress\":\"0x0000000000000000000000000000000000000013\",\"networkId\":56,\"humanAmount\":24956946.05182995,\"price\":0.131400915243,\"value\":3279365.5528806304,\"pnl\":2314303.507481472}]},{\"id\":\"00000000-0000-4000-8000-000000000007\",\"address\":\"11111111111111111111111111111119\",\"evmAddress\":\"0x0000000000000000000000000000000000000009\",\"createdAt\":\"2025-11-10T00:15:45.484Z\",\"displayName\":\"[redacted text]\",\"userHandle\":\"[redacted text]\",\"profilePictureLink\":null,\"description\":\"[redacted text]\",\"following\":42,\"followers\":515555,\"activated\":false,\"verified\":false,\"isReferred\":false,\"isRestricted\":false,\"swapCount\":976,\"numTrades\":2848,\"totalVolume\":1059223.241056,\"private\":false,\"thumbhash\":null,\"coverPhotoLink\":null,\"coverPhotoThumbhash\":null,\"twitter\":null,\"pnl30d\":7617726.704959389,\"clan\":null,\"totalHoldings\":82,\"topHoldings\":[{\"imageUrl\":\"https://fixture.invalid/redacted\",\"tokenAddress\":\"0x000000000000000000000000000000000000000a\",\"networkId\":4663,\"humanAmount\":29322551.565300036,\"price\":0.249195295826,\"value\":7307041.911688082,\"pnl\":7285835.578339082},{\"imageUrl\":\"https://fixture.invalid/redacted\",\"tokenAddress\":\"1111111111111111111111111111111C\",\"networkId\":1399811149,\"humanAmount\":10000.198225,\"price\":0.172524041351,\"value\":1725.2746120880968,\"pnl\":842576.4773249179},{\"imageUrl\":\"https://fixture.invalid/redacted\",\"tokenAddress\":\"0x000000000000000000000000000000000000000c\",\"networkId\":56,\"humanAmount\":14769699.134828899,\"price\":0.0111333474337,\"value\":164436.1919592684,\"pnl\":138134.78964426843}]}]},\"statusCode\":200}"
+      }
+    }
+  ]
+}

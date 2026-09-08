@@ -1,0 +1,47 @@
+{
+  "format": "sdk-http-cassette/v1",
+  "service": "fomo",
+  "provenance": {
+    "kind": "live",
+    "source": "SDK native read-only qualification",
+    "operation": "leaderboards.list"
+  },
+  "capturedAt": "2026-09-08T13:18:44.062Z",
+  "inputs": {
+    "args": [
+      {
+        "window": "30d",
+        "limit": 1
+      }
+    ]
+  },
+  "exchanges": [
+    {
+      "request": {
+        "method": "GET",
+        "origin": "https://fomo.fixture.invalid",
+        "path": "/v2/leaderboard/30d",
+        "query": [["limit", "1"]],
+        "headers": {
+          "authentication": "<present>",
+          "content-type": "application/json"
+        },
+        "body": ""
+      },
+      "response": {
+        "status": 200,
+        "headers": {
+          "content-type": "application/json; charset=utf-8"
+        },
+        "body": "{\"success\":true,\"message\":\"[redacted text]\",\"responseObject\":{\"leaderboard\":[{\"id\":\"00000000-0000-4000-8000-000000000001\",\"address\":\"11111111111111111111111111111113\",\"evmAddress\":\"0x0000000000000000000000000000000000000003\",\"createdAt\":\"2026-05-18T12:45:58.832Z\",\"displayName\":\"[redacted text]\",\"userHandle\":\"fixture-id-4\",\"profilePictureLink\":\"https://fixture.invalid/redacted\",\"description\":\"[redacted text]\",\"following\":36,\"followers\":602889,\"activated\":false,\"verified\":false,\"isReferred\":true,\"isRestricted\":false,\"swapCount\":525,\"numTrades\":3688,\"totalVolume\":3565769.589095,\"private\":false,\"thumbhash\":\"[redacted text]\",\"coverPhotoLink\":null,\"coverPhotoThumbhash\":null,\"twitter\":null,\"pnl30d\":15363282.372002397,\"clan\":{\"id\":\"00000000-0000-4000-8000-000000000005\",\"name\":\"[redacted text]\",\"iconLink\":\"https://fixture.invalid/redacted\",\"iconThumbhash\":\"[redacted text]\"},\"totalHoldings\":38,\"topHoldings\":[{\"imageUrl\":\"https://fixture.invalid/redacted\",\"tokenAddress\":\"11111111111111111111111111111117\",\"networkId\":1399811149,\"humanAmount\":15874781.09367,\"price\":0.261764790109,\"value\":4155458.741010849,\"pnl\":0},{\"imageUrl\":\"https://fixture.invalid/redacted\",\"tokenAddress\":\"11111111111111111111111111111118\",\"networkId\":1399811149,\"humanAmount\":14094024.262326,\"price\":0.00320110705813,\"value\":45116.480543587226,\"pnl\":0},{\"imageUrl\":\"https://fixture.invalid/redacted\",\"tokenAddress\":\"11111111111111111111111111111119\",\"networkId\":1399811149,\"humanAmount\":1500000,\"price\":0.00208094744913,\"value\":3121.421173695,\"pnl\":0}]}]},\"statusCode\":200}"
+      }
+    }
+  ],
+  "expected": {
+    "ok": true,
+    "summary": {
+      "type": "array",
+      "rows": 1
+    }
+  }
+}

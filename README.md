@@ -218,8 +218,12 @@ Ready means a matching account/topic ACK, not socket-open.
 ## Development and release
 
 `npm run check` runs formatting, strict typecheck, tests, and fresh tarball-consumer
-installation/type validation. Test accounts, tokens and live request captures are
-not fixtures. CI defines Linux Node22/24/26 and macOS Node24. The manual package
+installation/type validation. Raw accounts, credentials and request captures are
+never committed; sanitized HTTP cassettes and WS traces run offline in CI.
+See [record/replay development guide](docs/record-replay.md).
+The [coverage matrix](docs/coverage.md) separates offline cases, live successes,
+known failures and unqualified combinations.
+CI defines Linux Node22/24/26 and macOS Node24. The manual package
 workflow produces a tested tarball and SHA256; it does not publish npm.
 
 The core is implemented; production qualification is incomplete. See

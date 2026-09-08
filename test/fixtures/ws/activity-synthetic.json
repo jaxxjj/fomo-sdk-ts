@@ -1,0 +1,32 @@
+{
+  "format": "sdk-ws-trace/v1",
+  "provenance": {
+    "kind": "synthetic",
+    "source": "Auth, exact numeric decoding and lifecycle regression; not live activity evidence"
+  },
+  "frames": [
+    { "direction": "server", "event": "message", "text": "{\"type\":\"challenge\"}" },
+    {
+      "direction": "client",
+      "event": "message",
+      "text": "{\"type\":\"challengeResponse\",\"jwt\":\"<secret>\"}"
+    },
+    { "direction": "server", "event": "message", "text": "{\"type\":\"challengeAccepted\"}" },
+    {
+      "direction": "client",
+      "event": "message",
+      "text": "{\"type\":\"subscribe\",\"topicType\":\"trading_activity\",\"topicId\":\"self\"}"
+    },
+    {
+      "direction": "server",
+      "event": "message",
+      "text": "{\"type\":\"subscribed\",\"topicType\":\"trading_activity\",\"topicId\":\"self\"}"
+    },
+    {
+      "direction": "server",
+      "event": "message",
+      "text": "{\"type\":\"data\",\"topicType\":\"trading_activity\",\"topicId\":\"self\",\"payload\":{\"id\":\"event-1\",\"amount\":900719925474099312345,\"price\":1.2300,\"optional\":null}}"
+    },
+    { "direction": "client", "event": "close" }
+  ]
+}

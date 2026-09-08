@@ -1,0 +1,41 @@
+{
+  "format": "sdk-http-cassette/v1",
+  "service": "fomo",
+  "provenance": {
+    "kind": "live",
+    "source": "SDK native read-only qualification",
+    "operation": "users.getCurrent"
+  },
+  "capturedAt": "2026-09-08T13:18:34.302Z",
+  "inputs": {
+    "args": []
+  },
+  "exchanges": [
+    {
+      "request": {
+        "method": "GET",
+        "origin": "https://fomo.fixture.invalid",
+        "path": "/v2/users/current",
+        "query": [],
+        "headers": {
+          "authentication": "<present>",
+          "content-type": "application/json"
+        },
+        "body": ""
+      },
+      "response": {
+        "status": 200,
+        "headers": {
+          "content-type": "application/json; charset=utf-8"
+        },
+        "body": "{\"success\":true,\"message\":\"[redacted text]\",\"responseObject\":{\"id\":\"00000000-0000-4000-8000-000000000001\",\"address\":\"11111111111111111111111111111113\",\"evmAddress\":\"0x0000000000000000000000000000000000000003\",\"createdAt\":\"2026-06-30T06:51:07.640Z\",\"displayName\":\"[redacted text]\",\"userHandle\":\"fixture-id-4\",\"profilePictureLink\":null,\"description\":null,\"following\":1,\"followers\":0,\"activated\":false,\"verified\":false,\"isReferred\":true,\"isRestricted\":false,\"swapCount\":0,\"numTrades\":0,\"totalVolume\":0,\"private\":false,\"thumbhash\":null,\"coverPhotoLink\":null,\"coverPhotoThumbhash\":null,\"twitter\":null,\"totalPnL\":0,\"equity\":0,\"pnl24h\":0,\"pnl7d\":0,\"pnl30d\":0,\"referralUser\":{\"id\":\"00000000-0000-4000-8000-000000000005\",\"address\":\"11111111111111111111111111111117\",\"evmAddress\":\"0x0000000000000000000000000000000000000007\",\"createdAt\":\"2026-08-30T10:59:02.419Z\",\"displayName\":\"[redacted text]\",\"userHandle\":\"fixture-id-8\",\"profilePictureLink\":\"https://fixture.invalid/redacted\",\"description\":\"\",\"following\":72,\"followers\":523,\"activated\":false,\"verified\":false,\"isReferred\":true,\"isRestricted\":false,\"swapCount\":229,\"numTrades\":98,\"totalVolume\":24538.747689,\"private\":false,\"thumbhash\":\"[redacted text]\",\"coverPhotoLink\":\"https://fixture.invalid/redacted\",\"coverPhotoThumbhash\":\"[redacted text]\",\"twitter\":null}},\"statusCode\":200}"
+      }
+    }
+  ],
+  "expected": {
+    "ok": true,
+    "summary": {
+      "type": "object"
+    }
+  }
+}

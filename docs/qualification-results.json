@@ -1,0 +1,570 @@
+{
+  "format": "sdk-qualification/v1",
+  "service": "fomo",
+  "capturedAt": "2026-09-08T13:18:34.302Z",
+  "scope": "Bounded native read-only samples, not full chain or refresh qualification.",
+  "cases": [
+    {
+      "id": "current",
+      "operation": "users.getCurrent",
+      "variant": "sample",
+      "status": "passed",
+      "recorded": true,
+      "ok": true,
+      "summary": {
+        "type": "object"
+      }
+    },
+    {
+      "id": "profile-self",
+      "operation": "users.getByHandle",
+      "variant": "sample",
+      "status": "passed",
+      "recorded": true,
+      "ok": true,
+      "summary": {
+        "type": "object"
+      }
+    },
+    {
+      "id": "leaderboard-24h-1",
+      "operation": "leaderboards.list",
+      "variant": "24h/limit-1",
+      "status": "passed",
+      "recorded": true,
+      "ok": true,
+      "summary": {
+        "type": "array",
+        "rows": 1
+      }
+    },
+    {
+      "id": "leaderboard-24h-3",
+      "operation": "leaderboards.list",
+      "variant": "24h/limit-3",
+      "status": "passed",
+      "recorded": true,
+      "ok": true,
+      "summary": {
+        "type": "array",
+        "rows": 3
+      }
+    },
+    {
+      "id": "leaderboard-7d-1",
+      "operation": "leaderboards.list",
+      "variant": "7d/limit-1",
+      "status": "passed",
+      "recorded": true,
+      "ok": true,
+      "summary": {
+        "type": "array",
+        "rows": 1
+      }
+    },
+    {
+      "id": "leaderboard-7d-3",
+      "operation": "leaderboards.list",
+      "variant": "7d/limit-3",
+      "status": "passed",
+      "recorded": true,
+      "ok": true,
+      "summary": {
+        "type": "array",
+        "rows": 3
+      }
+    },
+    {
+      "id": "leaderboard-30d-1",
+      "operation": "leaderboards.list",
+      "variant": "30d/limit-1",
+      "status": "passed",
+      "recorded": true,
+      "ok": true,
+      "summary": {
+        "type": "array",
+        "rows": 1
+      }
+    },
+    {
+      "id": "leaderboard-30d-3",
+      "operation": "leaderboards.list",
+      "variant": "30d/limit-3",
+      "status": "passed",
+      "recorded": true,
+      "ok": true,
+      "summary": {
+        "type": "array",
+        "rows": 3
+      }
+    },
+    {
+      "id": "leaderboard-all-1",
+      "operation": "leaderboards.list",
+      "variant": "all/limit-1",
+      "status": "passed",
+      "recorded": true,
+      "ok": true,
+      "summary": {
+        "type": "array",
+        "rows": 100
+      }
+    },
+    {
+      "id": "leaderboard-all-3",
+      "operation": "leaderboards.list",
+      "variant": "all/limit-3",
+      "status": "passed",
+      "recorded": true,
+      "ok": true,
+      "summary": {
+        "type": "array",
+        "rows": 100
+      }
+    },
+    {
+      "id": "profile-other",
+      "operation": "users.getByHandle",
+      "variant": "sample",
+      "status": "passed",
+      "recorded": true,
+      "ok": true,
+      "summary": {
+        "type": "object"
+      }
+    },
+    {
+      "id": "swaps-self",
+      "operation": "swaps.list",
+      "variant": "sample",
+      "status": "passed",
+      "recorded": true,
+      "ok": true,
+      "summary": {
+        "type": "array",
+        "rows": 0
+      }
+    },
+    {
+      "id": "pages-self",
+      "operation": "swaps.pages",
+      "variant": "maxPages-2/maxItems-30",
+      "status": "passed",
+      "recorded": true,
+      "ok": true,
+      "summary": {
+        "type": "array",
+        "rows": 1
+      }
+    },
+    {
+      "id": "swaps-leader0",
+      "operation": "swaps.list",
+      "variant": "sample",
+      "status": "passed",
+      "recorded": true,
+      "ok": true,
+      "summary": {
+        "type": "array",
+        "rows": 25
+      }
+    },
+    {
+      "id": "swaps-leader0-next",
+      "operation": "swaps.list",
+      "variant": "real-cursor",
+      "status": "passed",
+      "recorded": true,
+      "ok": true,
+      "summary": {
+        "type": "array",
+        "rows": 25
+      }
+    },
+    {
+      "id": "pages-leader0",
+      "operation": "swaps.pages",
+      "variant": "maxPages-2/maxItems-30",
+      "status": "passed",
+      "recorded": true,
+      "ok": true,
+      "summary": {
+        "type": "array",
+        "rows": 2
+      }
+    },
+    {
+      "id": "swaps-leader1",
+      "operation": "swaps.list",
+      "variant": "sample",
+      "status": "passed",
+      "recorded": true,
+      "ok": true,
+      "summary": {
+        "type": "array",
+        "rows": 25
+      }
+    },
+    {
+      "id": "swaps-leader1-next",
+      "operation": "swaps.list",
+      "variant": "real-cursor",
+      "status": "passed",
+      "recorded": true,
+      "ok": true,
+      "summary": {
+        "type": "array",
+        "rows": 25
+      }
+    },
+    {
+      "id": "pages-leader1",
+      "operation": "swaps.pages",
+      "variant": "maxPages-2/maxItems-30",
+      "status": "passed",
+      "recorded": true,
+      "ok": true,
+      "summary": {
+        "type": "array",
+        "rows": 2
+      }
+    },
+    {
+      "id": "activity-1",
+      "operation": "activity.list",
+      "variant": "sample",
+      "status": "passed",
+      "recorded": true,
+      "ok": true,
+      "summary": {
+        "type": "array",
+        "rows": 1
+      }
+    },
+    {
+      "id": "activity-1-next",
+      "operation": "activity.list",
+      "variant": "real-cursor",
+      "status": "passed",
+      "recorded": true,
+      "ok": true,
+      "summary": {
+        "type": "array",
+        "rows": 1
+      }
+    },
+    {
+      "id": "activity-25",
+      "operation": "activity.list",
+      "variant": "sample",
+      "status": "failed",
+      "recorded": true,
+      "ok": false,
+      "error": {
+        "kind": "protocol",
+        "reason": "invalid_user_id"
+      }
+    },
+    {
+      "id": "activity-25-next",
+      "operation": "activity.list",
+      "status": "not-run",
+      "recorded": false,
+      "reason": "no-valid-next-cursor"
+    },
+    {
+      "id": "feed-1-0-false",
+      "operation": "tokens.feed",
+      "variant": "network-1/token-0/exclude-false/threshold-0",
+      "status": "passed",
+      "recorded": true,
+      "ok": true,
+      "summary": {
+        "type": "array",
+        "rows": 24
+      }
+    },
+    {
+      "id": "feed-1-0-true",
+      "operation": "tokens.feed",
+      "variant": "network-1/token-0/exclude-true/threshold-100",
+      "status": "passed",
+      "recorded": true,
+      "ok": true,
+      "summary": {
+        "type": "array",
+        "rows": 20
+      }
+    },
+    {
+      "id": "holders-1-0",
+      "operation": "tokens.holders",
+      "variant": "network-1/token-0",
+      "status": "passed",
+      "recorded": true,
+      "ok": true,
+      "summary": {
+        "type": "array",
+        "rows": 1
+      }
+    },
+    {
+      "id": "feed-56-0-false",
+      "operation": "tokens.feed",
+      "variant": "network-56/token-0/exclude-false/threshold-0",
+      "status": "passed",
+      "recorded": true,
+      "ok": true,
+      "summary": {
+        "type": "array",
+        "rows": 25
+      }
+    },
+    {
+      "id": "feed-56-0-true",
+      "operation": "tokens.feed",
+      "variant": "network-56/token-0/exclude-true/threshold-100",
+      "status": "passed",
+      "recorded": true,
+      "ok": true,
+      "summary": {
+        "type": "array",
+        "rows": 20
+      }
+    },
+    {
+      "id": "holders-56-0",
+      "operation": "tokens.holders",
+      "variant": "network-56/token-0",
+      "status": "passed",
+      "recorded": true,
+      "ok": true,
+      "summary": {
+        "type": "array",
+        "rows": 1
+      }
+    },
+    {
+      "id": "feed-56-1-false",
+      "operation": "tokens.feed",
+      "variant": "network-56/token-1/exclude-false/threshold-0",
+      "status": "passed",
+      "recorded": true,
+      "ok": true,
+      "summary": {
+        "type": "array",
+        "rows": 23
+      }
+    },
+    {
+      "id": "feed-56-1-true",
+      "operation": "tokens.feed",
+      "variant": "network-56/token-1/exclude-true/threshold-100",
+      "status": "passed",
+      "recorded": true,
+      "ok": true,
+      "summary": {
+        "type": "array",
+        "rows": 25
+      }
+    },
+    {
+      "id": "holders-56-1",
+      "operation": "tokens.holders",
+      "variant": "network-56/token-1",
+      "status": "passed",
+      "recorded": true,
+      "ok": true,
+      "summary": {
+        "type": "array",
+        "rows": 1
+      }
+    },
+    {
+      "id": "143-tokens.feed",
+      "operation": "tokens.feed",
+      "status": "not-run",
+      "recorded": false,
+      "reason": "no-token-in-live-snapshot"
+    },
+    {
+      "id": "143-tokens.holders",
+      "operation": "tokens.holders",
+      "status": "not-run",
+      "recorded": false,
+      "reason": "no-token-in-live-snapshot"
+    },
+    {
+      "id": "feed-4663-0-false",
+      "operation": "tokens.feed",
+      "variant": "network-4663/token-0/exclude-false/threshold-0",
+      "status": "passed",
+      "recorded": true,
+      "ok": true,
+      "summary": {
+        "type": "array",
+        "rows": 22
+      }
+    },
+    {
+      "id": "feed-4663-0-true",
+      "operation": "tokens.feed",
+      "variant": "network-4663/token-0/exclude-true/threshold-100",
+      "status": "passed",
+      "recorded": true,
+      "ok": true,
+      "summary": {
+        "type": "array",
+        "rows": 23
+      }
+    },
+    {
+      "id": "holders-4663-0",
+      "operation": "tokens.holders",
+      "variant": "network-4663/token-0",
+      "status": "passed",
+      "recorded": true,
+      "ok": true,
+      "summary": {
+        "type": "array",
+        "rows": 1
+      }
+    },
+    {
+      "id": "feed-4663-1-false",
+      "operation": "tokens.feed",
+      "variant": "network-4663/token-1/exclude-false/threshold-0",
+      "status": "passed",
+      "recorded": true,
+      "ok": true,
+      "summary": {
+        "type": "array",
+        "rows": 22
+      }
+    },
+    {
+      "id": "feed-4663-1-true",
+      "operation": "tokens.feed",
+      "variant": "network-4663/token-1/exclude-true/threshold-100",
+      "status": "passed",
+      "recorded": true,
+      "ok": true,
+      "summary": {
+        "type": "array",
+        "rows": 22
+      }
+    },
+    {
+      "id": "holders-4663-1",
+      "operation": "tokens.holders",
+      "variant": "network-4663/token-1",
+      "status": "passed",
+      "recorded": true,
+      "ok": true,
+      "summary": {
+        "type": "array",
+        "rows": 1
+      }
+    },
+    {
+      "id": "8453-tokens.feed",
+      "operation": "tokens.feed",
+      "status": "not-run",
+      "recorded": false,
+      "reason": "no-token-in-live-snapshot"
+    },
+    {
+      "id": "8453-tokens.holders",
+      "operation": "tokens.holders",
+      "status": "not-run",
+      "recorded": false,
+      "reason": "no-token-in-live-snapshot"
+    },
+    {
+      "id": "feed-1399811149-0-false",
+      "operation": "tokens.feed",
+      "variant": "network-1399811149/token-0/exclude-false/threshold-0",
+      "status": "passed",
+      "recorded": true,
+      "ok": true,
+      "summary": {
+        "type": "array",
+        "rows": 23
+      }
+    },
+    {
+      "id": "feed-1399811149-0-true",
+      "operation": "tokens.feed",
+      "variant": "network-1399811149/token-0/exclude-true/threshold-100",
+      "status": "passed",
+      "recorded": true,
+      "ok": true,
+      "summary": {
+        "type": "array",
+        "rows": 22
+      }
+    },
+    {
+      "id": "holders-1399811149-0",
+      "operation": "tokens.holders",
+      "variant": "network-1399811149/token-0",
+      "status": "passed",
+      "recorded": true,
+      "ok": true,
+      "summary": {
+        "type": "array",
+        "rows": 1
+      }
+    },
+    {
+      "id": "feed-1399811149-1-false",
+      "operation": "tokens.feed",
+      "variant": "network-1399811149/token-1/exclude-false/threshold-0",
+      "status": "passed",
+      "recorded": true,
+      "ok": true,
+      "summary": {
+        "type": "array",
+        "rows": 24
+      }
+    },
+    {
+      "id": "feed-1399811149-1-true",
+      "operation": "tokens.feed",
+      "variant": "network-1399811149/token-1/exclude-true/threshold-100",
+      "status": "passed",
+      "recorded": true,
+      "ok": true,
+      "summary": {
+        "type": "array",
+        "rows": 23
+      }
+    },
+    {
+      "id": "holders-1399811149-1",
+      "operation": "tokens.holders",
+      "variant": "network-1399811149/token-1",
+      "status": "passed",
+      "recorded": true,
+      "ok": true,
+      "summary": {
+        "type": "array",
+        "rows": 1
+      }
+    },
+    {
+      "id": "session.refresh",
+      "operation": "session.refresh",
+      "status": "not-run",
+      "recorded": false,
+      "reason": "true-expiry-and-rotation-not-qualified"
+    },
+    {
+      "id": "stream.activity",
+      "operation": "stream.activity",
+      "status": "not-run",
+      "recorded": false,
+      "reason": "real-events-and-lossless-gap-recovery-not-qualified"
+    }
+  ]
+}

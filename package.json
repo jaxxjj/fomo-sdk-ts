@@ -42,9 +42,16 @@
     "test": "npm run build && node --test test/*.test.mjs",
     "test:package": "node scripts/check-package.mjs",
     "test:smoke": "npm run build && node scripts/smoke.mjs",
+    "test:record": "npm run build && node scripts/record-cassettes.mjs",
+    "test:qualify": "npm run build && node scripts/qualify.mjs",
+    "test:coverage": "npm run build && node --test --experimental-test-coverage --test-coverage-include='dist/**' --test-coverage-lines=95 --test-coverage-branches=85 --test-coverage-functions=90 test/*.test.mjs",
+    "coverage:report": "node scripts/coverage-report.mjs",
+    "coverage:check": "node scripts/coverage-report.mjs --check",
+    "test:record:ws": "npm run build && node scripts/record-ws-trace.mjs",
+    "test:record:market": "npm run build && node scripts/record-market-trace.mjs",
     "format": "prettier --write .",
     "format:check": "prettier --check .",
-    "check": "npm run format:check && npm run typecheck && npm test && npm run test:package",
+    "check": "npm run format:check && npm run typecheck && npm test && npm run test:package && npm run coverage:check",
     "prepack": "npm run build"
   },
   "dependencies": {

@@ -4,8 +4,9 @@ import {
   type SessionRefresher,
 } from "../auth/session.js";
 import { FomoError } from "../errors.js";
-import { readText, decodeJson } from "../http/response.js";
+import { readText } from "../http/response.js";
 import { object } from "../contracts/validation.js";
+import { parse } from "lossless-json";
 
 export interface PrivyRefresherOptions {
   fetch?: typeof fetch;
@@ -15,7 +16,7 @@ export interface PrivyRefresherOptions {
   clientVersion?: string;
 }
 function header(value: string): string {
-  if (!value || /[\r\n]/.test(value))
+  if (typeof value !== "string" || !value || /[\r\n]/.test(value))
     throw new FomoError("configuration", { reason: "privy_header" });
   return value;
 }
@@ -59,10 +60,20 @@ export function createPrivyRefresher(options: PrivyRefresherOptions = {}): Sessi
         reason: "refresh_rejected",
       });
     }
-    const value = object(
-      decodeJson(await readText(response, 256 * 1024, signal)),
-      "refresh_response",
-    );
+    const text = await readText(response, 256 * 1024, signal);
+    let decoded: unknown;
+    try {
+      // Credential fields must be JSON strings on the wire. The financial
+      // decoder intentionally converts numbers to strings and is unsafe here.
+      decoded = parse(text, undefined, {
+        onDuplicateKey: () => {
+          throw new Error();
+        },
+      });
+    } catch {
+      throw new FomoError("protocol", { reason: "invalid_json" });
+    }
+    const value = object(decoded, "refresh_response");
     if (value.session_update_action === "ignore") return { action: "ignore" };
     if (value.session_update_action === "clear") return { action: "clear" };
     if (value.session_update_action !== "set" || typeof value.token !== "string" || !value.token) {

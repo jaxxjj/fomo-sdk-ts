@@ -1,0 +1,46 @@
+{
+  "format": "sdk-http-cassette/v1",
+  "service": "fomo",
+  "provenance": {
+    "kind": "live",
+    "source": "SDK native read-only qualification",
+    "operation": "activity.list"
+  },
+  "capturedAt": "2026-09-08T13:19:00.012Z",
+  "inputs": {
+    "args": [
+      {
+        "limit": 1
+      }
+    ]
+  },
+  "exchanges": [
+    {
+      "request": {
+        "method": "GET",
+        "origin": "https://fomo.fixture.invalid",
+        "path": "/feed/tradingActivity",
+        "query": [["limit", "1"]],
+        "headers": {
+          "authentication": "<present>",
+          "content-type": "application/json"
+        },
+        "body": ""
+      },
+      "response": {
+        "status": 200,
+        "headers": {
+          "content-type": "application/json; charset=utf-8"
+        },
+        "body": "{\"success\":true,\"message\":\"[redacted text]\",\"responseObject\":{\"items\":[{\"type\":\"swap_sell\",\"id\":\"00000000-0000-4000-8000-000000000001\",\"tradeId\":\"00000000-0000-4000-8000-000000000002\",\"createdAt\":\"2026-09-06T18:33:07.905Z\",\"userId\":\"00000000-0000-4000-8000-000000000003\",\"displayName\":\"[redacted text]\",\"userHandle\":\"fixture-id-4\",\"profilePictureLink\":\"https://fixture.invalid/redacted\",\"verified\":false,\"usdAmount\":386.203387,\"marketCap\":1263086.6961797387,\"fdv\":1263086.6961797387,\"price\":0.0013062994934863019,\"ticker\":\"[redacted text]\",\"tokenImageUrl\":\"https://fixture.invalid/redacted\",\"tokenAddress\":\"11111111111111111111111111111116\",\"networkId\":1399811149,\"equity\":6982.628192947426,\"twitter\":null}],\"hasNextPage\":true},\"statusCode\":200}"
+      }
+    }
+  ],
+  "expected": {
+    "ok": true,
+    "summary": {
+      "type": "array",
+      "rows": 1
+    }
+  }
+}

@@ -1,0 +1,53 @@
+{
+  "format": "sdk-ws-trace/v1",
+  "provenance": {
+    "kind": "live",
+    "source": "FomoStreamClient current-account handshake; capture ends at ready"
+  },
+  "capturedAt": "2026-09-08T11:59:48.233Z",
+  "inputs": {
+    "accountId": "00000000-0000-4000-8000-000000000001"
+  },
+  "frames": [
+    {
+      "direction": "server",
+      "event": "open",
+      "offsetMs": 1763
+    },
+    {
+      "direction": "server",
+      "event": "message",
+      "offsetMs": 1763,
+      "text": "{\"type\":\"challenge\"}"
+    },
+    {
+      "direction": "client",
+      "event": "message",
+      "offsetMs": 1763,
+      "text": "{\"type\":\"challengeResponse\",\"jwt\":\"<secret>\"}"
+    },
+    {
+      "direction": "server",
+      "event": "message",
+      "offsetMs": 2285,
+      "text": "{\"type\":\"challengeAccepted\"}"
+    },
+    {
+      "direction": "client",
+      "event": "message",
+      "offsetMs": 2285,
+      "text": "{\"type\":\"subscribe\",\"topicType\":\"trading_activity\",\"topicId\":\"00000000-0000-4000-8000-000000000001\"}"
+    },
+    {
+      "direction": "server",
+      "event": "message",
+      "offsetMs": 2812,
+      "text": "{\"type\":\"subscribed\",\"topicType\":\"trading_activity\",\"topicId\":\"00000000-0000-4000-8000-000000000001\",\"activeSubscriptions\":1}"
+    },
+    {
+      "direction": "client",
+      "event": "close",
+      "offsetMs": 2813
+    }
+  ]
+}

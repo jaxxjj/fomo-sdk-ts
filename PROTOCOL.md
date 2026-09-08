@@ -27,9 +27,30 @@ Dependency code/native binaries are not bundled into this package tarball.
 
 ## Evidence is not interchangeable
 
-Tests here use hand-built **synthetic** data. They test local contracts and failure
-modes, never pretend to be authenticated captures. Preflight summaries were
-redacted field/type observations, not complete replay fixtures.
+Tests include hand-built **synthetic** fault cases and explicitly labeled,
+sanitized **live** HTTP/WS captures. Preflight summaries below were redacted
+field/type observations, not the source of the new fixtures.
+
+### Package-level capture update — 2026-09-08
+
+The actual SDK recorded current user, all three time-window leaderboards,
+two nonoverlapping swaps pages and token feed/holders. Five HTTP cassette files
+contain nine exchanges, including one known-negative activity response.
+The activity response contains null `userId` fields; the current parser rejects
+the page with `invalid_user_id`. This contract incompatibility is not fixed by
+passing the explicitly negative replay test.
+
+The actual `FomoStreamClient` also recorded a current-account handshake, ending
+at ready with no data frames. Separate native protocol probes recorded trending
+snapshot/update and prices data. The trending snapshot arrived before its
+subscription ACK. Market traces exercise the production JSON decoder, not a
+public SDK market subscription implementation.
+
+See [record/replay guide](docs/record-replay.md) for provenance and commands.
+These bounded captures do not qualify actual token expiry, replay after
+disconnect, lossless recovery or all endpoint/chain combinations.
+
+### Earlier preflight observations
 
 | Capability                 | Evidence and limitation                                                                           |
 | -------------------------- | ------------------------------------------------------------------------------------------------- |
@@ -45,11 +66,18 @@ redacted field/type observations, not complete replay fixtures.
 | Privy refresh              | Native200 with session_update_action ignore; no new app token, no refresh-token rotation observed |
 | True expiry / rotation     | Not live-verified; set/clear/concurrent/persistence tests are synthetic                           |
 
-Prior preflight used small dedicated probes, **not this new package**. Passing this
-repository's tests is not a new live service qualification. No new authenticated
-requests or transactions are required by `npm run check`.
+The earlier preflight used dedicated probes; the new package-level recordings
+above are separate evidence. Replaying this repository's tests is not a fresh live
+service qualification. No authenticated requests or transactions are made by
+`npm run check`.
 
 ## Boundaries
+
+The expanded per-method/parameter/live evidence is tracked in
+[coverage.md](docs/coverage.md) and its JSON ledger. CI also runs finite failure,
+pagination and concurrency matrices. A boundary test exposed numeric Privy
+credential coercion; the auth parser now preserves wire types and rejects that
+case. This is a local bug fix, not new true-expiry/rotation evidence.
 
 - Only stable-path GET resources are in the initial surface.
 - Leaderboard window variants and activity cursor behavior include source-derived

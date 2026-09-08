@@ -1,0 +1,60 @@
+{
+  "format": "sdk-ws-trace/v1",
+  "provenance": {
+    "kind": "live",
+    "source": "Native WebSocket protocol probe; not public SDK market support"
+  },
+  "capturedAt": "2026-09-08T12:05:01.243Z",
+  "inputs": {
+    "topicType": "prices",
+    "topicId": "11111111111111111111111111111112:1399811149"
+  },
+  "frames": [
+    {
+      "direction": "server",
+      "event": "open",
+      "offsetMs": 1584
+    },
+    {
+      "direction": "server",
+      "event": "message",
+      "offsetMs": 1584,
+      "text": "{\"type\":\"challenge\"}"
+    },
+    {
+      "direction": "client",
+      "event": "message",
+      "offsetMs": 1584,
+      "text": "{\"type\":\"challengeResponse\",\"jwt\":\"<secret>\"}"
+    },
+    {
+      "direction": "server",
+      "event": "message",
+      "offsetMs": 2044,
+      "text": "{\"type\":\"challengeAccepted\"}"
+    },
+    {
+      "direction": "client",
+      "event": "message",
+      "offsetMs": 2044,
+      "text": "{\"type\":\"subscribe\",\"topicType\":\"prices\",\"topicId\":\"11111111111111111111111111111112:1399811149\"}"
+    },
+    {
+      "direction": "server",
+      "event": "message",
+      "offsetMs": 2502,
+      "text": "{\"type\":\"subscribed\",\"topicType\":\"prices\",\"topicId\":\"11111111111111111111111111111112:1399811149\",\"activeSubscriptions\":1}"
+    },
+    {
+      "direction": "server",
+      "event": "message",
+      "offsetMs": 14792,
+      "text": "{\"type\":\"data\",\"topicType\":\"prices\",\"topicId\":\"11111111111111111111111111111112:1399811149\",\"payload\":{\"priceUsd\":78251.18735802906,\"timestamp\":1788869101,\"blockNumber\":0}}"
+    },
+    {
+      "direction": "client",
+      "event": "close",
+      "offsetMs": 14792
+    }
+  ]
+}

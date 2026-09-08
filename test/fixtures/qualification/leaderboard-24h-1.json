@@ -1,0 +1,47 @@
+{
+  "format": "sdk-http-cassette/v1",
+  "service": "fomo",
+  "provenance": {
+    "kind": "live",
+    "source": "SDK native read-only qualification",
+    "operation": "leaderboards.list"
+  },
+  "capturedAt": "2026-09-08T13:18:36.479Z",
+  "inputs": {
+    "args": [
+      {
+        "window": "24h",
+        "limit": 1
+      }
+    ]
+  },
+  "exchanges": [
+    {
+      "request": {
+        "method": "GET",
+        "origin": "https://fomo.fixture.invalid",
+        "path": "/v2/leaderboard/24h",
+        "query": [["limit", "1"]],
+        "headers": {
+          "authentication": "<present>",
+          "content-type": "application/json"
+        },
+        "body": ""
+      },
+      "response": {
+        "status": 200,
+        "headers": {
+          "content-type": "application/json; charset=utf-8"
+        },
+        "body": "{\"success\":true,\"message\":\"[redacted text]\",\"responseObject\":{\"leaderboard\":[{\"id\":\"00000000-0000-4000-8000-000000000001\",\"address\":\"11111111111111111111111111111113\",\"evmAddress\":\"0x0000000000000000000000000000000000000003\",\"createdAt\":\"2025-10-03T01:49:40.755Z\",\"displayName\":\"[redacted text]\",\"userHandle\":\"fixture-id-4\",\"profilePictureLink\":\"https://fixture.invalid/redacted\",\"description\":\"[redacted text]\",\"following\":0,\"followers\":88966,\"activated\":false,\"verified\":false,\"isReferred\":false,\"isRestricted\":false,\"swapCount\":15512,\"numTrades\":2381,\"totalVolume\":10350610.573646,\"private\":false,\"thumbhash\":\"[redacted text]\",\"coverPhotoLink\":\"https://fixture.invalid/redacted\",\"coverPhotoThumbhash\":\"[redacted text]\",\"twitter\":null,\"pnl24h\":1796539.4835975957,\"clan\":null,\"totalHoldings\":42,\"topHoldings\":[{\"imageUrl\":\"https://fixture.invalid/redacted\",\"tokenAddress\":\"11111111111111111111111111111116\",\"networkId\":1399811149,\"humanAmount\":35629194.37501652,\"price\":0.158615432998,\"value\":5651340.09316315,\"pnl\":5207820.163971326},{\"imageUrl\":\"https://fixture.invalid/redacted\",\"tokenAddress\":\"11111111111111111111111111111117\",\"networkId\":1399811149,\"humanAmount\":7623902.571802973,\"price\":0.0913142204886,\"value\":696170.7204252213,\"pnl\":490989.361784222},{\"imageUrl\":\"https://fixture.invalid/redacted\",\"tokenAddress\":\"11111111111111111111111111111118\",\"networkId\":1399811149,\"humanAmount\":32429718.283191845,\"price\":0.00793235649762,\"value\":257244.08653966297,\"pnl\":246846.90647684195}]}]},\"statusCode\":200}"
+      }
+    }
+  ],
+  "expected": {
+    "ok": true,
+    "summary": {
+      "type": "array",
+      "rows": 1
+    }
+  }
+}
