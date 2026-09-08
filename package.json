@@ -1,0 +1,59 @@
+{
+  "name": "@jaxonchenjc/fomo-sdk",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Independent, read-only Fomo SDK with native transport and explicit session management",
+  "license": "MIT",
+  "type": "module",
+  "engines": {
+    "node": ">=22"
+  },
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js"
+    },
+    "./experimental/privy": {
+      "types": "./dist/experimental/privy.d.ts",
+      "import": "./dist/experimental/privy.js"
+    },
+    "./experimental/stream": {
+      "types": "./dist/experimental/stream.d.ts",
+      "import": "./dist/experimental/stream.js"
+    }
+  },
+  "files": [
+    "dist",
+    "LICENSE",
+    "README.md",
+    "CHANGELOG.md",
+    "PROTOCOL.md",
+    "SECURITY.md"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jaxxjj/fomo-sdk-ts.git"
+  },
+  "scripts": {
+    "build": "node scripts/build.mjs",
+    "typecheck": "tsc --noEmit",
+    "test": "npm run build && node --test test/*.test.mjs",
+    "test:package": "node scripts/check-package.mjs",
+    "test:smoke": "npm run build && node scripts/smoke.mjs",
+    "format": "prettier --write .",
+    "format:check": "prettier --check .",
+    "check": "npm run format:check && npm run typecheck && npm test && npm run test:package",
+    "prepack": "npm run build"
+  },
+  "dependencies": {
+    "impit": "0.14.3",
+    "lossless-json": "4.3.1"
+  },
+  "devDependencies": {
+    "@types/node": "22.20.1",
+    "typescript": "7.0.2",
+    "prettier": "3.9.6"
+  }
+}
