@@ -16,9 +16,12 @@ for (const file of files) {
       file: new URL(file, directory),
       policy: providerPolicy("fomo"),
     });
-    const scenario = cassette.data.provenance.scenario;
+    const capturedScenario = cassette.data.provenance.scenario;
+    // Keep the original capture and its historical name; the current SDK must
+    // now accept every row without dropping unattributed activity.
+    const scenario = capturedScenario === "activity-rejected" ? "activity" : capturedScenario;
     assert.ok(Object.hasOwn(scenarios, scenario), "Unknown fixture scenario");
-    if (scenario === "activity-rejected") {
+    if (capturedScenario === "activity-rejected") {
       const raw = JSON.parse(cassette.data.exchanges[0].response.body);
       assert.ok(raw.responseObject.items.some((row) => row.userId === null));
     }
@@ -27,7 +30,15 @@ for (const file of files) {
       transport: cassette.transport(),
       maxRetries: 0,
     });
-    await scenarios[scenario](client, cassette.fixtureInputs);
+    const result = await scenarios[scenario](client, cassette.fixtureInputs);
+    if (capturedScenario === "activity-rejected") {
+      const wire = JSON.parse(cassette.data.exchanges[0].response.body).responseObject.items;
+      assert.equal(result.data.length, wire.length);
+      assert.deepEqual(
+        result.data.map((row) => row.userId),
+        wire.map((row) => row.userId),
+      );
+    }
     cassette.assertConsumed();
   });
 }

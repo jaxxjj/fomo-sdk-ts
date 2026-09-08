@@ -66,20 +66,17 @@ These assets test protocol shape, not identity resolution or trading correctness
 HTTP preserves FIFO per matching request key, not global cross-request order.
 WS replay preserves frame order but does not reproduce wall-clock latency.
 
-## Known live incompatibility
+## Resolved null-actor regression
 
 On September 8, 2026, `/feed/tradingActivity?limit=25` returned rows with
-`userId: null`. `parseActivity` currently requires a nonempty string, so the SDK
-rejects the whole page with `protocol / invalid_user_id`. `activity-rejected.json`
-preserves a sanitized real response and explicitly tests that rejection.
+`userId: null`. The capture-time parser rejected the page. The historical
+`activity-rejected.json` and qualification ledger retain that original outcome.
+The release parser now accepts explicit null actors; regression replay verifies
+that all rows survive and the cursor is unchanged. Missing/invalid normalized
+actors still reject. This is post-fix replay evidence, not a new live capture.
 
-It is not a successful activity qualification or an endorsement of this public
-contract. Before changing it, decide how nullable/unattributed actors should be
-represented to callers; keep null distinct from missing and do not fabricate an
-identity. To refresh this negative evidence, explicitly select
-`FOMO_RECORD=1 npm run test:record -- activity-rejected`.
-The `activity` scenario remains a success-only capture and fails without writing
-a fixture when this incompatibility occurs.
+Use `FOMO_RECORD=1 npm run test:record -- activity` for an explicitly authorized
+new capture. The obsolete negative recording scenario is no longer offered.
 
 The live current-account WS trace stops at ready and contains no activity data.
 Market traces exercise the production lossless JSON decoder only, not a public

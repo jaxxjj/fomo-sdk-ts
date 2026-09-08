@@ -3,13 +3,19 @@
 Independent, unofficial, **read-only** Fomo SDK. Native Node.js HTTP via Impit,
 explicit session management, exact decimal text and experimental streaming.
 
-**Version 0.1.0 is under development and has not been published to npm.**
-The package remains `private: true`. No browser, CLI process, credential discovery,
+**Pre-1.0 SDK: Privy refresh and WebSocket APIs remain experimental.**
+No browser, CLI process, credential discovery,
 Keychain access or network request starts merely from importing/constructing it.
 
-## Install from a tested local artifact
+## Install
 
 Node.js 22+; ESM only.
+
+```sh
+npm install @jaxonchenjc/fomo-sdk
+```
+
+For a tested local artifact when working from the source repository:
 
 ```sh
 npm ci --ignore-scripts
@@ -21,6 +27,11 @@ npm install /path/to/fomo-sdk-ts/artifacts/jaxonchenjc-fomo-sdk-0.1.0.tgz
 ```
 
 ## Read data
+
+Activity may have `userId: null`: the provider has not associated that event
+with a Fomo user. The event is retained, and consumers must handle the nullable
+actor. Actual token rotation and automatic WS gap recovery are not qualified;
+do not treat the experimental stream as a lossless collector.
 
 ```ts
 import { FomoClient, StaticSession } from "@jaxonchenjc/fomo-sdk";

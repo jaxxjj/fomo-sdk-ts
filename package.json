@@ -1,7 +1,10 @@
 {
   "name": "@jaxonchenjc/fomo-sdk",
   "version": "0.1.0",
-  "private": true,
+  "publishConfig": {
+    "access": "public",
+    "registry": "https://registry.npmjs.org/"
+  },
   "description": "Independent, read-only Fomo SDK with native transport and explicit session management",
   "license": "MIT",
   "type": "module",

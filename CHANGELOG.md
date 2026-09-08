@@ -1,6 +1,10 @@
 # Changelog
 
-## 0.1.0 — unreleased
+## 0.1.0 — 2026-09-08
+
+- Accept explicit `userId: null` in activity and token feeds without dropping
+  events or breaking the page. Missing/invalid normalized actors still reject.
+  Public `Activity.userId` is `string | null`; consumers must handle both.
 
 - Fixed a boundary-test finding: Privy credential parsing now preserves wire
   types instead of converting numeric tokens into strings. Duplicate keys remain
@@ -14,8 +18,8 @@
 - Added test-only HTTP record/replay with explicit read-only recording,
   lossless scrubbing, strict offline matching and atomic fixture replacement.
 - Added real HTTP fixtures and separate synthetic/live WS traces; no runtime API change.
-- Live activity capture exposed null `userId` rows rejected by the current parser.
-  A negative regression preserves this known incompatibility; it is not resolved here.
+- Historical live activity failures are retained as evidence; post-fix replay
+  accepts the complete captured pages including null actors.
 
 Initial independent, read-only Fomo SDK.
 
@@ -30,5 +34,5 @@ Initial independent, read-only Fomo SDK.
   bounded reconnects/backpressure and cancellation cleanup.
 - Synthetic contract/adversarial tests, exact package-consumer checks and CI.
 
-No npm release, real-expiry refresh qualification, lossless streaming guarantee,
+No real-expiry refresh qualification, lossless streaming guarantee,
 trading or private-key functionality is claimed.

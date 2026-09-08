@@ -37,7 +37,17 @@ for (const row of report.cases.filter((entry) => entry.recorded))
       const result = await invoke(client, row.operation, cassette.fixtureInputs.args);
       return Array.isArray(result) ? result.map((page) => page.data) : result.data;
     });
-    assert.deepEqual(actual, cassette.data.expected);
-    assert.equal(actual.ok, row.status === "passed");
+    if (row.id === "activity-25") {
+      // Preserve the historical live failure in the ledger; this is a
+      // post-fix offline replay, not a fabricated new live qualification.
+      assert.equal(row.status, "failed");
+      assert.equal(cassette.data.expected.error.reason, "invalid_user_id");
+      const wire = JSON.parse(cassette.data.exchanges[0].response.body).responseObject.items;
+      assert.ok(wire.some((item) => item.userId === null));
+      assert.deepEqual(actual, { ok: true, summary: { type: "array", rows: wire.length } });
+    } else {
+      assert.deepEqual(actual, cassette.data.expected);
+      assert.equal(actual.ok, row.status === "passed");
+    }
     cassette.assertConsumed();
   });

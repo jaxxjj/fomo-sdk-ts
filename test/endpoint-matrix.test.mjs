@@ -116,7 +116,7 @@ for (const type of [
         ...(userId === undefined ? {} : { userId }),
       };
       const { client: c } = client(() => response(envelope({ items: [item], hasNextPage: false })));
-      if (typeof userId === "string")
+      if (typeof userId === "string" || userId === null)
         assert.equal((await c.activity.list()).data[0].userId, userId);
       else await assert.rejects(c.activity.list(), { kind: "protocol", reason: "invalid_user_id" });
     });

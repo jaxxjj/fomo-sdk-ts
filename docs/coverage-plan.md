@@ -21,8 +21,9 @@ as labeled negative evidence; do not relax contracts merely to pass tests.
 
 ## 4. Boundaries
 
-The known nullable activity actor contract remains a known failure unless a
-separate public-contract change is approved. Activity stream qualification is
+The approved release fix accepts explicit null activity actors while preserving
+missing/invalid-field rejection. Historical capture outcomes remain unchanged;
+post-fix replay is tested separately. Activity stream qualification is
 distinct from market protocol probes. Real refresh rotation and gap recovery
 cannot be inferred from synthetic tests or a successful reconnect.
 

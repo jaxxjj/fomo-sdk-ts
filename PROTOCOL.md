@@ -36,9 +36,10 @@ field/type observations, not the source of the new fixtures.
 The actual SDK recorded current user, all three time-window leaderboards,
 two nonoverlapping swaps pages and token feed/holders. Five HTTP cassette files
 contain nine exchanges, including one known-negative activity response.
-The activity response contains null `userId` fields; the current parser rejects
-the page with `invalid_user_id`. This contract incompatibility is not fixed by
-passing the explicitly negative replay test.
+The activity response contained null `userId` fields and the capture-time parser
+rejected the page with `invalid_user_id`. That historical outcome is retained.
+The release parser now accepts explicit null actors and post-fix replay preserves
+every captured row. This replay is not a new live observation.
 
 The actual `FomoStreamClient` also recorded a current-account handshake, ending
 at ready with no data frames. Separate native protocol probes recorded trending
@@ -94,6 +95,7 @@ case. This is a local bug fix, not new true-expiry/rotation evidence.
 - Do not use synthetic activity/history contracts from other repositories as
   evidence that an undocumented endpoint exists.
 
-Before public release: complete an authorized package-level live smoke, actual
-expiry/rotation test, WS data/gap observation and intended deployment-platform
-qualification. Do not turn CI failures green by weakening contracts to fit guesses.
+Before relying on unattended authentication or lossless collection, complete
+actual expiry/rotation, WS data/gap recovery and intended deployment-platform
+qualification. Public pre-1.0 availability does not imply those experimental
+capabilities are production-qualified.

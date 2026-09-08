@@ -41,7 +41,8 @@ export interface Activity extends v.SourceObject {
   id: string;
   type: string;
   kind: "buy" | "sell" | "thesis" | "transfer_in" | "transfer_out" | "withdrawal" | "unknown";
-  userId: string;
+  /** Null when the provider does not associate the event with a Fomo user. */
+  userId: string | null;
   createdAt: string;
   tradeId?: string | null;
   networkId?: number | null;
@@ -125,7 +126,7 @@ export function parseActivity(value: unknown): Activity {
     id: v.string(raw.id, "activity_id"),
     type,
     kind: Object.hasOwn(ACTIONS, type) ? ACTIONS[type] : "unknown",
-    userId: v.string(raw.userId, "user_id"),
+    userId: raw.userId === null ? null : v.string(raw.userId, "user_id"),
     createdAt: v.timestamp(raw.createdAt, "created_at"),
     tradeId: v.optionalString(raw.tradeId, "trade_id"),
     networkId: v.optionalCount(raw.networkId, "network_id"),

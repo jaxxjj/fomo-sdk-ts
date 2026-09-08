@@ -25,7 +25,7 @@ from the repository owner before sending sensitive security details.
 
 ## Release administration
 
-The package remains private/non-publishable. Protect main, require CI/review and
-configure trusted publishing only after deciding to publish. Live credentials
+Public npm publication requires explicit maintainer authorization. Protect main,
+require CI/review and review exact release artifacts before publishing. Live credentials
 must not be available to untrusted PRs or dependency-update jobs. No automated
 npm publisher or recurring live probe is configured.

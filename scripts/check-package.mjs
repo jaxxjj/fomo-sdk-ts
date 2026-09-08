@@ -53,10 +53,15 @@ assert.equal(
 writeFileSync(
   join(consumer, "consumer.mts"),
   `
-import {FomoClient,StaticSession,type DecimalString,type TokenRef} from ${moduleName};
+import {FomoClient,StaticSession,type DecimalString,type TokenRef,type Activity} from ${moduleName};
 import {FomoStreamClient} from ${JSON.stringify(manifest.name + "/experimental/stream")};
 const client=new FomoClient({session:new StaticSession({accessToken:"synthetic"})});
 const token:TokenRef={networkId:56,address:"mint"};
+const unattributed:Activity={id:"event",userId:null,type:"swap_buy",kind:"buy",createdAt:"2026-09-08T00:00:00Z"};
+const actor:string|null=unattributed.userId;
+// @ts-expect-error callers must handle unattributed activity explicitly.
+const requiredActor:string=unattributed.userId;
+void actor; void requiredActor;
 // @ts-expect-error connection configuration cannot silently override a supplied connection.
 const ambiguous=new FomoClient({connection:client.connection,session:new StaticSession({accessToken:"other"})});
 void ambiguous;

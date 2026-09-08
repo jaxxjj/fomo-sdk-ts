@@ -13,10 +13,11 @@ Capture series started: 2026-09-08T13:18:34.302Z.
   simultaneous 401s across resources with one shared refresh.
 - Successful native samples test the production parser. They are not proof of
   all service-supported chains or all parameter combinations.
-- Known-negative samples remain failures in the ledger even though replaying the
-  expected rejection passes CI. No public contract was weakened for these tests.
+- Capture-time failures remain in the historical ledger. The approved null-actor
+  fix is verified by post-fix replay without rewriting that history.
 
-Live ledger: **42 passed / 1 failed / 7 not run**.
+Historical live ledger: **42 passed / 1 failed / 7 not run**.
+The captured `activity-25` failure is resolved in current offline replay.
 
 | Method/capability   | Offline wire cases | Live pass | Live fail | Not run |
 | ------------------- | -----------------: | --------: | --------: | ------: |
@@ -37,8 +38,8 @@ See [qualification-results.json](qualification-results.json) for exact cases.
 Network samples come from a real trending snapshot, not invented token addresses.
 Networks absent from that snapshot are explicitly not qualified.
 
-Activity with a null actor still rejects the entire page (`invalid_user_id`);
-a small page that happens to contain only attributed actors can succeed.
+Activity now retains explicit null actors, with public type `string | null`.
+Mixed attributed/unattributed pages and their cursor are covered by regression tests.
 Actual refresh-token rotation, a real current-account WS activity event and
 lossless disconnect recovery remain unqualified. Existing WS traces and synthetic
 session/state-machine tests must not be substituted for those live gates.

@@ -33,13 +33,6 @@ export const scenarios = {
     for (const row of result.data) assert.equal(typeof row.kind, "string");
     return result;
   },
-  // Known live incompatibility; intentionally not a successful activity contract.
-  "activity-rejected": async (client) => {
-    await assert.rejects(client.activity.list({ limit: 25 }), {
-      kind: "protocol",
-      reason: "invalid_user_id",
-    });
-  },
   token: async (client, inputs) => {
     assert.ok(inputs.token);
     const feed = await client.tokens.feed({ token: inputs.token });
