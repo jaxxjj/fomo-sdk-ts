@@ -4,6 +4,9 @@ import { abortable, deadline, integer, sleep } from "./internal/async.js";
 import { Scheduler } from "./http/scheduler.js";
 import { createImpitTransport, type HttpTransport } from "./http/transport.js";
 import { parseEnvelope, readText } from "./http/response.js";
+import { READ_QUERIES, type ReadQueryOperation } from "./http/read-queries.js";
+/** Website-qualified provider network IDs, not RPC chain IDs. Explicitly overridable. */
+export const DEFAULT_SUPPORTED_CHAINS = "1,56,143,4663,8453,1399811149";
 
 export interface RequestOptions {
   signal?: AbortSignal;
@@ -13,8 +16,10 @@ export interface ResponseMeta {
   operation: string;
   observedAt: string;
   /** SDK contract revision, not an official Fomo API version. */
-  contractRevision: "2026-09-08";
+  contractRevision: "2026-09-09";
   sessionGeneration: string;
+  /** Exact chain scope sent with this request; null means explicitly omitted. */
+  supportedChains: string | null;
 }
 export interface ApiResult<T> {
   data: T;
@@ -25,7 +30,8 @@ export interface ConnectionOptions {
   transport?: HttpTransport;
   baseUrl?: string;
   allowInsecureLocalhost?: boolean;
-  supportedChains?: string;
+  /** Defaults to the qualified website scope. Null is legacy no-header replay only. */
+  supportedChains?: string | null;
   expectedAccountId?: string;
   timeoutMs?: number;
   maxRetries?: number;
@@ -34,7 +40,9 @@ export interface ConnectionOptions {
   maxConcurrency?: number;
   maxQueueSize?: number;
 }
-export type Query = Readonly<Record<string, string | number | boolean | undefined>>;
+export type Query = Readonly<
+  Record<string, string | number | boolean | readonly string[] | undefined>
+>;
 
 function parseOrigin(options: ConnectionOptions): string {
   let url: URL;
@@ -71,7 +79,7 @@ export class FomoConnection {
   readonly #retries: number;
   readonly #maxWait: number;
   readonly #maxBytes: number;
-  readonly #supportedChains?: string;
+  readonly #supportedChains: string | null;
   #accountId?: string;
   #cooldownUntil = 0;
 
@@ -96,10 +104,15 @@ export class FomoConnection {
       64 * 1024 * 1024,
       "response_limit",
     );
-    if (options.supportedChains !== undefined && !/^\d+(?:,\d+)*$/.test(options.supportedChains)) {
+    if (
+      options.supportedChains != null &&
+      (typeof options.supportedChains !== "string" ||
+        !/^\d+(?:,\d+)*$/.test(options.supportedChains))
+    ) {
       throw new FomoError("configuration", { reason: "supported_chains" });
     }
-    this.#supportedChains = options.supportedChains;
+    this.#supportedChains =
+      options.supportedChains === undefined ? DEFAULT_SUPPORTED_CHAINS : options.supportedChains;
     if (
       options.expectedAccountId !== undefined &&
       (typeof options.expectedAccountId !== "string" || !options.expectedAccountId.trim())
@@ -115,11 +128,50 @@ export class FomoConnection {
     }
     this.#accountId = accountId;
   }
+  /** Do not silently widen an explicitly configured scope for a token query. */
+  requireSupportedChains(networkIds: readonly number[]): void {
+    if (this.#supportedChains === null) return;
+    const supported = new Set(this.#supportedChains.split(","));
+    if (networkIds.some((id) => !Number.isSafeInteger(id) || !supported.has(String(id))))
+      throw new FomoError("configuration", { reason: "chain_outside_scope" });
+  }
   async request(
     operation: string,
     path: string,
     query: Query = {},
     options: RequestOptions = {},
+  ): Promise<ApiResult<unknown>> {
+    return this.#send(operation, path, query, options, "GET");
+  }
+  /** Only independently reviewed read-only POST routes can use this method. */
+  async readQuery(
+    operation: ReadQueryOperation,
+    body: unknown = undefined,
+    options: RequestOptions = {},
+  ): Promise<ApiResult<unknown>> {
+    if (!Object.hasOwn(READ_QUERIES, operation))
+      throw new FomoError("configuration", { reason: "read_query", operation });
+    let encoded: string | undefined;
+    try {
+      if (body !== undefined) {
+        encoded = JSON.stringify(body, (_key, value: unknown) => {
+          if (typeof value === "number" && !Number.isFinite(value)) throw new Error();
+          return value;
+        });
+        if (encoded === undefined || Buffer.byteLength(encoded) > 1024 * 1024) throw new Error();
+      }
+    } catch {
+      throw new FomoError("configuration", { reason: "request_body", operation });
+    }
+    return this.#send(operation, READ_QUERIES[operation], {}, options, "POST", encoded);
+  }
+  async #send(
+    operation: string,
+    path: string,
+    query: Query,
+    options: RequestOptions,
+    method: "GET" | "POST",
+    body?: string,
   ): Promise<ApiResult<unknown>> {
     if (
       !path.startsWith("/") ||
@@ -136,6 +188,12 @@ export class FomoConnection {
       throw new FomoError("configuration", { reason: "normalized_request_path" });
     for (const [key, value] of Object.entries(query)) {
       if (value === undefined) continue;
+      if (Array.isArray(value)) {
+        if (value.some((item) => typeof item !== "string"))
+          throw new FomoError("configuration", { reason: "query_value", operation });
+        for (const item of value) url.searchParams.append(key, item);
+        continue;
+      }
       if (
         !["string", "number", "boolean"].includes(typeof value) ||
         (typeof value === "number" && !Number.isFinite(value))
@@ -188,7 +246,8 @@ export class FomoConnection {
               response = await abortable(
                 this.#transport.send({
                   url: url.toString(),
-                  method: "GET",
+                  method,
+                  body,
                   headers,
                   signal: budget.signal,
                 }),
@@ -211,8 +270,9 @@ export class FomoConnection {
             meta: {
               operation,
               observedAt: new Date().toISOString(),
-              contractRevision: "2026-09-08",
+              contractRevision: "2026-09-09",
               sessionGeneration: lease.generation,
+              supportedChains: this.#supportedChains,
             },
           };
         } catch (error) {

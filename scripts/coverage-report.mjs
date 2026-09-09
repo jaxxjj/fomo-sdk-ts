@@ -1,17 +1,28 @@
 import { readFileSync, writeFileSync } from "node:fs";
 import { fileURLToPath } from "node:url";
 import { matrix } from "../test/support/endpoint-matrix.mjs";
+import { discoveredCases } from "../test/support/discovered-cases.mjs";
 import { format, resolveConfig } from "prettier";
 import assert from "node:assert/strict";
 const report = JSON.parse(
   readFileSync(new URL("../docs/qualification-results.json", import.meta.url), "utf8"),
 );
+const discovered = JSON.parse(
+  readFileSync(new URL("../docs/discovered-qualification.json", import.meta.url), "utf8"),
+);
 const names = [
-  ...new Set([...matrix.map((row) => row.name), ...report.cases.map((row) => row.operation)]),
+  ...new Set([
+    ...matrix.map((row) => row.name),
+    ...report.cases.map((row) => row.operation),
+    ...discoveredCases.map((row) => row.operation),
+  ]),
 ].sort();
 const rows = names.map((name) => {
-  const samples = report.cases.filter((row) => row.operation === name);
-  return `| \`${name}\` | ${matrix.filter((row) => row.name === name).length} | ${samples.filter((row) => row.status === "passed").length} | ${samples.filter((row) => row.status === "failed").length} | ${samples.filter((row) => row.status === "not-run").length} |`;
+  const samples = [
+    ...report.cases,
+    ...discovered.cases.map((row) => ({ ...row, status: row.ok ? "passed" : "failed" })),
+  ].filter((row) => row.operation === name);
+  return `| \`${name}\` | ${matrix.filter((row) => row.name === name).length + discoveredCases.filter((row) => row.operation === name).length} | ${samples.filter((row) => row.status === "passed").length} | ${samples.filter((row) => row.status === "failed").length} | ${samples.filter((row) => row.status === "not-run").length} |`;
 });
 const counts = Object.fromEntries(
   ["passed", "failed", "not-run"].map((status) => [
@@ -39,6 +50,11 @@ Capture series started: ${report.capturedAt}.
 
 Historical live ledger: **${counts.passed} passed / ${counts.failed} failed / ${counts["not-run"]} not run**.
 The captured \`activity-25\` failure is resolved in current offline replay.
+Website-discovered expansion: **${discovered.cases.length} native SDK scenarios,
+${discovered.cases.filter((row) => row.ok).length} accepted responses**.
+See [website-capabilities.md](website-capabilities.md) for source-discovered,
+wrapped, deferred and excluded capabilities. The table below combines both
+capture series; it is not an exhaustive provider API coverage percentage.
 
 | Method/capability | Offline wire cases | Live pass | Live fail | Not run |
 | --- | ---: | ---: | ---: | ---: |

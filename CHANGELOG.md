@@ -1,5 +1,28 @@
 # Changelog
 
+## Unreleased
+
+- Fixed omitted chain-scope context: default to the qualified website networks,
+  preserve explicit restrictions and fail incompatible token-scoped reads early.
+  Response metadata exposes the sent scope; historical recordings use explicit
+  null scope rather than silently changing their original request context.
+- Completed cassette-backed domain models for the read expansion, including
+  comments/reactions, holders, clan members/holdings, portfolio positions,
+  nested balances, trade transfers and stable configuration fields.
+- Replaced summary-only confidence with full parsed goldens, independent
+  raw-value assertions and malformed-field mutation tests.
+
+- Expanded the first-party website read inventory and public resources from
+  8 to 45 methods: market discovery/search, token metrics/details/warnings/bars,
+  social/user graph, portfolio snapshots, trade details/comments, clan reads,
+  watchlist reads and application configuration.
+- Added a strict read-query POST allowlist and body forwarding through both
+  transports, preserving common session/deadline/retry/redirect boundaries.
+- Added token-feed pagination and activity/swap filters observed in the website.
+- Added 45 native read qualification scenarios, scrubbed replay fixtures and
+  an independent website capability inventory with explicit deferred/excluded routes.
+- No write/execution capability, automatic authentication or npm publication.
+
 ## 0.1.0 — 2026-09-08
 
 - Accept explicit `userId: null` in activity and token feeds without dropping

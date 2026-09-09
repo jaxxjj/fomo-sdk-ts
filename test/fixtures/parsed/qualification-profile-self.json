@@ -1,0 +1,34 @@
+{
+  "sourceSha256": "c5a8984340d4bdfab603f09d26e890300fa7c0d32815e7021c0b699989d27cdf",
+  "parsed": {
+    "data": {
+      "id": "00000000-0000-4000-8000-000000000002",
+      "address": "11111111111111111111111111111114",
+      "evmAddress": "0x0000000000000000000000000000000000000004",
+      "createdAt": "2026-06-30T06:51:07.640Z",
+      "displayName": "[redacted text]",
+      "userHandle": "fixture-id-1",
+      "profilePictureLink": null,
+      "description": null,
+      "following": 1,
+      "followers": 0,
+      "activated": false,
+      "verified": false,
+      "isReferred": true,
+      "isRestricted": false,
+      "swapCount": 0,
+      "numTrades": 0,
+      "totalVolume": "0",
+      "private": false,
+      "thumbhash": null,
+      "coverPhotoLink": null,
+      "coverPhotoThumbhash": null,
+      "twitter": null,
+      "clan": null,
+      "followsCurrentUser": false,
+      "numFriendsFollowing": 0,
+      "friendsFollowing": [],
+      "averageHoldTimeSeconds": null
+    }
+  }
+}

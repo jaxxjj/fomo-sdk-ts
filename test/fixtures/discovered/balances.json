@@ -1,0 +1,43 @@
+{
+  "format": "sdk-http-cassette/v1",
+  "service": "fomo",
+  "provenance": {
+    "kind": "live",
+    "source": "SDK native read-only website capability qualification",
+    "operation": "portfolio.balances"
+  },
+  "capturedAt": "2026-09-09T06:16:57.328Z",
+  "inputs": {
+    "params": {
+      "userId": "00000000-0000-4000-8000-000000000001"
+    }
+  },
+  "exchanges": [
+    {
+      "request": {
+        "method": "GET",
+        "origin": "https://fomo.fixture.invalid",
+        "path": "/v2/users/00000000-0000-4000-8000-000000000001/balances",
+        "query": [],
+        "headers": {
+          "authentication": "<present>",
+          "content-type": "application/json"
+        },
+        "body": ""
+      },
+      "response": {
+        "status": 200,
+        "headers": {
+          "content-type": "application/json; charset=utf-8"
+        },
+        "body": "{\"success\":true,\"message\":\"[redacted text]\",\"responseObject\":{\"balances\":[],\"otherPnl\":0,\"otherPnlV2\":0,\"nativeEvmBalances\":[],\"livePerpPnl\":0,\"otherEquity\":0},\"statusCode\":200}"
+      }
+    }
+  ],
+  "expected": {
+    "ok": true,
+    "summary": {
+      "type": "object"
+    }
+  }
+}

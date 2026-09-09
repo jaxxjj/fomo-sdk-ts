@@ -1,0 +1,34 @@
+{
+  "sourceSha256": "c1d7d86b4072bd1b31cb56340a8a9465717b9a47baa4cc43d3f403d5cbe7e0a7",
+  "parsed": {
+    "data": [
+      {
+        "type": "swap_buy",
+        "id": "00000000-0000-4000-8000-000000000002",
+        "tradeId": "00000000-0000-4000-8000-000000000003",
+        "createdAt": "2026-09-06T18:10:29.911Z",
+        "userId": "00000000-0000-4000-8000-000000000004",
+        "displayName": "[redacted text]",
+        "userHandle": "fixture-id-5",
+        "profilePictureLink": "https://fixture.invalid/redacted",
+        "verified": false,
+        "usdAmount": "499.1",
+        "marketCap": "1632317.559305371",
+        "fdv": "1632317.559305371",
+        "price": "0.0016881625049005936",
+        "ticker": "[redacted text]",
+        "tokenImageUrl": "https://fixture.invalid/redacted",
+        "tokenAddress": "11111111111111111111111111111117",
+        "networkId": 1399811149,
+        "equity": "6982.628192947426",
+        "twitter": null,
+        "kind": "buy"
+      }
+    ],
+    "pageInfo": {
+      "hasNextPage": true,
+      "nextCursor": "00000000-0000-4000-8000-000000000002",
+      "sourceCount": 1
+    }
+  }
+}

@@ -1,0 +1,46 @@
+{
+  "format": "sdk-http-cassette/v1",
+  "service": "fomo",
+  "provenance": {
+    "kind": "live",
+    "source": "SDK native read-only website capability qualification",
+    "operation": "tokens.details"
+  },
+  "capturedAt": "2026-09-09T06:16:31.910Z",
+  "inputs": {
+    "params": {
+      "token": {
+        "address": "0x0000000000000000000000000000000000000001",
+        "networkId": 4663
+      }
+    }
+  },
+  "exchanges": [
+    {
+      "request": {
+        "method": "POST",
+        "origin": "https://fomo.fixture.invalid",
+        "path": "/proxy/tokenDetails",
+        "query": [],
+        "headers": {
+          "authentication": "<present>",
+          "content-type": "application/json"
+        },
+        "body": "{\"tokenId\":\"0x0000000000000000000000000000000000000001:4663\"}"
+      },
+      "response": {
+        "status": 200,
+        "headers": {
+          "content-type": "application/json; charset=utf-8"
+        },
+        "body": "{\"success\":true,\"message\":\"[redacted text]\",\"responseObject\":{\"buyCount5m\":66,\"buyCount1\":693,\"buyCount4\":2499,\"buyCount24\":14919,\"buyVolume5m\":\"71950\",\"buyVolume1\":\"782174\",\"buyVolume4\":\"2511205\",\"buyVolume24\":\"18415275\",\"sellCount5m\":16,\"sellCount1\":362,\"sellCount4\":1322,\"sellCount24\":14733,\"sellVolume5m\":\"12427\",\"sellVolume1\":\"506242\",\"sellVolume4\":\"1740244\",\"sellVolume24\":\"17255150\",\"uniqueBuys5m\":36,\"uniqueBuys1\":183,\"uniqueBuys4\":501,\"uniqueBuys24\":2234,\"uniqueSells5m\":16,\"uniqueSells1\":184,\"uniqueSells4\":543,\"uniqueSells24\":2265,\"holders\":88234,\"top10HoldersPercent\":39.56881467583012,\"isLowFees\":false},\"statusCode\":200}"
+      }
+    }
+  ],
+  "expected": {
+    "ok": true,
+    "summary": {
+      "type": "object"
+    }
+  }
+}

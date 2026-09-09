@@ -1,0 +1,56 @@
+{
+  "format": "sdk-http-cassette/v1",
+  "service": "fomo",
+  "provenance": {
+    "kind": "live",
+    "source": "SDK native read-only website capability qualification",
+    "operation": "tokens.feed"
+  },
+  "capturedAt": "2026-09-09T06:17:21.085Z",
+  "inputs": {
+    "params": {
+      "token": {
+        "address": "0x0000000000000000000000000000000000000001",
+        "networkId": 4663
+      },
+      "limit": 5,
+      "excludeThesis": true,
+      "threshold": 0
+    }
+  },
+  "exchanges": [
+    {
+      "request": {
+        "method": "GET",
+        "origin": "https://fomo.fixture.invalid",
+        "path": "/feed/token",
+        "query": [
+          ["networkId", "4663"],
+          ["tokenAddress", "0x0000000000000000000000000000000000000001"],
+          ["excludeThesis", "true"],
+          ["threshold", "0"],
+          ["limit", "5"]
+        ],
+        "headers": {
+          "authentication": "<present>",
+          "content-type": "application/json"
+        },
+        "body": ""
+      },
+      "response": {
+        "status": 200,
+        "headers": {
+          "content-type": "application/json; charset=utf-8"
+        },
+        "body": "{\"success\":true,\"message\":\"[redacted text]\",\"responseObject\":{\"items\":[{\"type\":\"swap_buy\",\"id\":\"00000000-0000-4000-8000-000000000002\",\"tradeId\":\"00000000-0000-4000-8000-000000000003\",\"createdAt\":\"2026-09-09T06:17:36.876Z\",\"userId\":\"00000000-0000-4000-8000-000000000004\",\"displayName\":\"[redacted text]\",\"userHandle\":\"fixture-id-5\",\"profilePictureLink\":\"https://fixture.invalid/redacted\",\"verified\":false,\"twitter\":null,\"usdAmount\":4.1146270000000005,\"marketCap\":640312505.6746043,\"fdv\":899183013.2142524,\"price\":0.8991830132142523,\"isDev\":false},{\"type\":\"swap_buy\",\"id\":\"00000000-0000-4000-8000-000000000006\",\"tradeId\":\"00000000-0000-4000-8000-000000000007\",\"createdAt\":\"2026-09-09T06:17:15.400Z\",\"userId\":\"00000000-0000-4000-8000-000000000008\",\"displayName\":\"[redacted text]\",\"userHandle\":\"fixture-id-9\",\"profilePictureLink\":null,\"verified\":false,\"twitter\":null,\"usdAmount\":200.075739,\"marketCap\":589667861.1043353,\"fdv\":828063358.8200567,\"price\":0.8280633588200567,\"isDev\":false},{\"type\":\"swap_buy\",\"id\":\"00000000-0000-4000-8000-00000000000a\",\"tradeId\":\"00000000-0000-4000-8000-00000000000b\",\"createdAt\":\"2026-09-09T06:17:06.773Z\",\"userId\":\"00000000-0000-4000-8000-00000000000c\",\"displayName\":\"[redacted text]\",\"userHandle\":\"fixture-id-13\",\"profilePictureLink\":null,\"verified\":false,\"twitter\":null,\"usdAmount\":19.378280999999998,\"marketCap\":602057427.5243108,\"fdv\":845461875.2744473,\"price\":0.8454618752744473,\"isDev\":false},{\"type\":\"swap_buy\",\"id\":\"00000000-0000-4000-8000-00000000000e\",\"tradeId\":\"00000000-0000-4000-8000-00000000000f\",\"createdAt\":\"2026-09-09T06:17:11.964Z\",\"userId\":\"00000000-0000-4000-8000-000000000010\",\"displayName\":\"[redacted text]\",\"userHandle\":\"fixture-id-17\",\"profilePictureLink\":null,\"verified\":false,\"twitter\":null,\"usdAmount\":4.430281,\"marketCap\":641585166.1652372,\"fdv\":900970194.7617381,\"price\":0.9009701947617381,\"isDev\":false},{\"type\":\"swap_sell\",\"id\":\"00000000-0000-4000-8000-000000000012\",\"tradeId\":\"00000000-0000-4000-8000-000000000013\",\"createdAt\":\"2026-09-09T06:16:31.069Z\",\"userId\":\"00000000-0000-4000-8000-000000000014\",\"displayName\":\"[redacted text]\",\"userHandle\":\"fixture-id-21\",\"profilePictureLink\":\"https://fixture.invalid/redacted\",\"verified\":false,\"twitter\":null,\"usdAmount\":15.015309,\"marketCap\":556732150.1641955,\"fdv\":781812143.1354477,\"price\":0.7818121431354478,\"isDev\":false}],\"hasNextPage\":true},\"statusCode\":200}"
+      }
+    }
+  ],
+  "expected": {
+    "ok": true,
+    "summary": {
+      "type": "array",
+      "rows": 5
+    }
+  }
+}

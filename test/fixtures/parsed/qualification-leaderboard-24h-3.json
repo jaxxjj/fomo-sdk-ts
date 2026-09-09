@@ -1,0 +1,185 @@
+{
+  "sourceSha256": "14ea5e889c1f6cb29a1f2344663b15a20ed820e618a3e361ffa4533d7eec5db5",
+  "parsed": {
+    "data": [
+      {
+        "id": "00000000-0000-4000-8000-000000000001",
+        "address": "11111111111111111111111111111113",
+        "evmAddress": "0x0000000000000000000000000000000000000003",
+        "createdAt": "2025-10-03T01:49:40.755Z",
+        "displayName": "[redacted text]",
+        "userHandle": "fixture-id-4",
+        "profilePictureLink": "https://fixture.invalid/redacted",
+        "description": "[redacted text]",
+        "following": 0,
+        "followers": 88966,
+        "activated": false,
+        "verified": false,
+        "isReferred": false,
+        "isRestricted": false,
+        "swapCount": 15512,
+        "numTrades": 2381,
+        "totalVolume": "10350610.573646",
+        "private": false,
+        "thumbhash": "[redacted text]",
+        "coverPhotoLink": "https://fixture.invalid/redacted",
+        "coverPhotoThumbhash": "[redacted text]",
+        "twitter": null,
+        "pnl24h": "1796539.4835975957",
+        "clan": null,
+        "totalHoldings": "42",
+        "topHoldings": [
+          {
+            "imageUrl": "https://fixture.invalid/redacted",
+            "tokenAddress": "11111111111111111111111111111116",
+            "networkId": "1399811149",
+            "humanAmount": "35629194.37501652",
+            "price": "0.158615432998",
+            "value": "5651340.09316315",
+            "pnl": "5207820.163971326"
+          },
+          {
+            "imageUrl": "https://fixture.invalid/redacted",
+            "tokenAddress": "11111111111111111111111111111117",
+            "networkId": "1399811149",
+            "humanAmount": "7623902.571802973",
+            "price": "0.0913142204886",
+            "value": "696170.7204252213",
+            "pnl": "490989.361784222"
+          },
+          {
+            "imageUrl": "https://fixture.invalid/redacted",
+            "tokenAddress": "11111111111111111111111111111118",
+            "networkId": "1399811149",
+            "humanAmount": "32429718.283191845",
+            "price": "0.00793235649762",
+            "value": "257244.08653966297",
+            "pnl": "246846.90647684195"
+          }
+        ]
+      },
+      {
+        "id": "00000000-0000-4000-8000-000000000008",
+        "address": "1111111111111111111111111111111A",
+        "evmAddress": "0x000000000000000000000000000000000000000a",
+        "createdAt": "2026-03-10T03:10:23.127Z",
+        "displayName": "[redacted text]",
+        "userHandle": "fixture-id-11",
+        "profilePictureLink": "https://fixture.invalid/redacted",
+        "description": "[redacted text]",
+        "following": 71,
+        "followers": 146055,
+        "activated": false,
+        "verified": false,
+        "isReferred": true,
+        "isRestricted": false,
+        "swapCount": 1061,
+        "numTrades": 1820,
+        "totalVolume": "2430789.491979",
+        "private": false,
+        "thumbhash": "1111111111111111111111111111111D",
+        "coverPhotoLink": null,
+        "coverPhotoThumbhash": null,
+        "twitter": null,
+        "pnl24h": "930641.4280541628",
+        "clan": {
+          "id": "00000000-0000-4000-8000-00000000000d",
+          "name": "[redacted text]",
+          "iconLink": "https://fixture.invalid/redacted",
+          "iconThumbhash": "[redacted text]"
+        },
+        "totalHoldings": "30",
+        "topHoldings": [
+          {
+            "imageUrl": "https://fixture.invalid/redacted",
+            "tokenAddress": "11111111111111111111111111111116",
+            "networkId": "1399811149",
+            "humanAmount": "20842243.623321347",
+            "price": "0.158615432998",
+            "value": "3305901.49696292",
+            "pnl": "3169263.8134029107"
+          },
+          {
+            "imageUrl": "https://fixture.invalid/redacted",
+            "tokenAddress": "0x000000000000000000000000000000000000000e",
+            "networkId": "8453",
+            "humanAmount": "10695001.874245692",
+            "price": "0.042028862106",
+            "value": "449498.75899608375",
+            "pnl": "337985.18035722885"
+          },
+          {
+            "imageUrl": "https://fixture.invalid/redacted",
+            "tokenAddress": "0x000000000000000000000000000000000000000f",
+            "networkId": "8453",
+            "humanAmount": "21445828.364752743",
+            "price": "0.0130540108961",
+            "value": "279954.0771493727",
+            "pnl": "229066.30520337276"
+          }
+        ]
+      },
+      {
+        "id": "00000000-0000-4000-8000-000000000010",
+        "address": "1111111111111111111111111111111J",
+        "evmAddress": "0x0000000000000000000000000000000000000012",
+        "createdAt": "2025-12-08T17:22:08.034Z",
+        "displayName": "[redacted text]",
+        "userHandle": "fixture-id-19",
+        "profilePictureLink": "https://fixture.invalid/redacted",
+        "description": "",
+        "following": 87,
+        "followers": 147056,
+        "activated": false,
+        "verified": false,
+        "isReferred": true,
+        "isRestricted": false,
+        "swapCount": 1654,
+        "numTrades": 2479,
+        "totalVolume": "3534704.241434",
+        "private": false,
+        "thumbhash": "[redacted text]",
+        "coverPhotoLink": null,
+        "coverPhotoThumbhash": null,
+        "twitter": null,
+        "pnl24h": "702209.1223509037",
+        "clan": {
+          "id": "00000000-0000-4000-8000-000000000014",
+          "name": "[redacted text]",
+          "iconLink": "https://fixture.invalid/redacted",
+          "iconThumbhash": "[redacted text]"
+        },
+        "totalHoldings": "26",
+        "topHoldings": [
+          {
+            "imageUrl": "https://fixture.invalid/redacted",
+            "tokenAddress": "11111111111111111111111111111116",
+            "networkId": "1399811149",
+            "humanAmount": "18070426.79259318",
+            "price": "0.158615432998",
+            "value": "2866248.5701658274",
+            "pnl": "2685961.0590870916"
+          },
+          {
+            "imageUrl": "https://fixture.invalid/redacted",
+            "tokenAddress": "0x0000000000000000000000000000000000000015",
+            "networkId": "4663",
+            "humanAmount": "1299115.7403807815",
+            "price": "0.773495904012",
+            "value": "1004860.7040220512",
+            "pnl": "866308.5890334886"
+          },
+          {
+            "imageUrl": "https://fixture.invalid/redacted",
+            "tokenAddress": "1111111111111111111111111111111P",
+            "networkId": "1399811149",
+            "humanAmount": "2521107.05944",
+            "price": "0.187617397923",
+            "value": "473003.5463774389",
+            "pnl": "600407.1293043417"
+          }
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,45 @@
+{
+  "format": "sdk-http-cassette/v1",
+  "service": "fomo",
+  "provenance": {
+    "kind": "live",
+    "source": "SDK native read-only website capability qualification",
+    "operation": "clans.theses"
+  },
+  "capturedAt": "2026-09-09T06:17:17.750Z",
+  "inputs": {
+    "params": {
+      "clanId": "00000000-0000-4000-8000-000000000001",
+      "limit": 5
+    }
+  },
+  "exchanges": [
+    {
+      "request": {
+        "method": "GET",
+        "origin": "https://fomo.fixture.invalid",
+        "path": "/v2/clans/00000000-0000-4000-8000-000000000001/thesis",
+        "query": [["limit", "5"]],
+        "headers": {
+          "authentication": "<present>",
+          "content-type": "application/json"
+        },
+        "body": ""
+      },
+      "response": {
+        "status": 200,
+        "headers": {
+          "content-type": "application/json; charset=utf-8"
+        },
+        "body": "{\"success\":true,\"message\":\"[redacted text]\",\"responseObject\":{\"items\":[{\"type\":\"thesis\",\"id\":\"00000000-0000-4000-8000-000000000002\",\"tradeId\":\"00000000-0000-4000-8000-000000000003\",\"createdAt\":\"2026-09-09T06:00:44.322Z\",\"userId\":\"00000000-0000-4000-8000-000000000004\",\"displayName\":\"[redacted text]\",\"userHandle\":\"fixture-id-5\",\"profilePictureLink\":\"https://fixture.invalid/redacted\",\"verified\":false,\"comment\":{\"id\":\"00000000-0000-4000-8000-000000000002\",\"userId\":\"00000000-0000-4000-8000-000000000004\",\"tradeId\":\"00000000-0000-4000-8000-000000000003\",\"comment\":\"[redacted text]\",\"createdAt\":\"2026-09-09T06:00:44.322Z\",\"parentId\":null,\"numLikes\":114,\"tokenAddress\":\"11111111111111111111111111111117\",\"networkId\":1399811149,\"shortCommentSegments\":[{\"text\":\"[redacted text]\",\"link\":null,\"provider\":null}],\"reactions\":{\"counts\":{\"likeCount\":114},\"reactions\":{\"like\":false}},\"olderThesis\":55,\"newerThesis\":0},\"numReplies\":0,\"authorTrade\":{\"humanTokenAmount\":15874805.737223,\"usdValue\":5077500.197848539,\"unrealizedPnlUsd\":4232055.508557066,\"realizedPnlUsd\":15655.716458360603,\"percentageUnrealizedPnl\":500.5715408897716,\"percentageRealizedPnl\":46.470819179054,\"closedAt\":null},\"tokenAddress\":\"11111111111111111111111111111117\",\"networkId\":1399811149,\"ticker\":\"[redacted text]\",\"tokenImageUrl\":\"https://fixture.invalid/redacted\",\"equity\":0,\"threshold\":5093155.9143068995,\"isDev\":false},{\"type\":\"thesis\",\"id\":\"00000000-0000-4000-8000-000000000007\",\"tradeId\":\"00000000-0000-4000-8000-000000000003\",\"createdAt\":\"2026-09-09T05:30:37.163Z\",\"userId\":\"00000000-0000-4000-8000-000000000004\",\"displayName\":\"[redacted text]\",\"userHandle\":\"fixture-id-5\",\"profilePictureLink\":\"https://fixture.invalid/redacted\",\"verified\":false,\"comment\":{\"id\":\"00000000-0000-4000-8000-000000000007\",\"userId\":\"00000000-0000-4000-8000-000000000004\",\"tradeId\":\"00000000-0000-4000-8000-000000000003\",\"comment\":\"[redacted text]\",\"createdAt\":\"2026-09-09T05:30:37.163Z\",\"parentId\":null,\"numLikes\":131,\"tokenAddress\":\"11111111111111111111111111111117\",\"networkId\":1399811149,\"shortCommentSegments\":[{\"text\":\"[redacted text]\",\"link\":null,\"provider\":null}],\"reactions\":{\"counts\":{\"likeCount\":131},\"reactions\":{\"like\":false}},\"olderThesis\":54,\"newerThesis\":1},\"numReplies\":0,\"authorTrade\":{\"humanTokenAmount\":15874805.737223,\"usdValue\":5077500.197848539,\"unrealizedPnlUsd\":4232055.508557066,\"realizedPnlUsd\":15655.716458360603,\"percentageUnrealizedPnl\":500.5715408897716,\"percentageRealizedPnl\":46.470819179054,\"closedAt\":null},\"tokenAddress\":\"11111111111111111111111111111117\",\"networkId\":1399811149,\"ticker\":\"[redacted text]\",\"tokenImageUrl\":\"https://fixture.invalid/redacted\",\"equity\":0,\"threshold\":5093155.9143068995,\"isDev\":false},{\"type\":\"thesis\",\"id\":\"00000000-0000-4000-8000-000000000008\",\"tradeId\":\"00000000-0000-4000-8000-000000000003\",\"createdAt\":\"2026-09-09T05:10:10.130Z\",\"userId\":\"00000000-0000-4000-8000-000000000004\",\"displayName\":\"[redacted text]\",\"userHandle\":\"fixture-id-5\",\"profilePictureLink\":\"https://fixture.invalid/redacted\",\"verified\":false,\"comment\":{\"id\":\"00000000-0000-4000-8000-000000000008\",\"userId\":\"00000000-0000-4000-8000-000000000004\",\"tradeId\":\"00000000-0000-4000-8000-000000000003\",\"comment\":\"[redacted text]\",\"createdAt\":\"2026-09-09T05:10:10.130Z\",\"parentId\":null,\"numLikes\":259,\"tokenAddress\":\"11111111111111111111111111111117\",\"networkId\":1399811149,\"shortCommentSegments\":[{\"text\":\"[redacted text]\",\"link\":null,\"provider\":null}],\"reactions\":{\"counts\":{\"likeCount\":259},\"reactions\":{\"like\":false}},\"olderThesis\":53,\"newerThesis\":2},\"numReplies\":0,\"authorTrade\":{\"humanTokenAmount\":15874805.737223,\"usdValue\":5077500.197848539,\"unrealizedPnlUsd\":4232055.508557066,\"realizedPnlUsd\":15655.716458360603,\"percentageUnrealizedPnl\":500.5715408897716,\"percentageRealizedPnl\":46.470819179054,\"closedAt\":null},\"tokenAddress\":\"11111111111111111111111111111117\",\"networkId\":1399811149,\"ticker\":\"[redacted text]\",\"tokenImageUrl\":\"https://fixture.invalid/redacted\",\"equity\":0,\"threshold\":5093155.9143068995,\"isDev\":false},{\"type\":\"thesis\",\"id\":\"00000000-0000-4000-8000-000000000009\",\"tradeId\":\"00000000-0000-4000-8000-00000000000a\",\"createdAt\":\"2026-09-09T04:03:20.865Z\",\"userId\":\"00000000-0000-4000-8000-00000000000b\",\"displayName\":\"[redacted text]\",\"userHandle\":\"fixture-id-12\",\"profilePictureLink\":\"https://fixture.invalid/redacted\",\"verified\":false,\"comment\":{\"id\":\"00000000-0000-4000-8000-000000000009\",\"userId\":\"00000000-0000-4000-8000-00000000000b\",\"tradeId\":\"00000000-0000-4000-8000-00000000000a\",\"comment\":\"[redacted text]\",\"createdAt\":\"2026-09-09T04:03:20.865Z\",\"parentId\":null,\"numLikes\":28,\"tokenAddress\":\"1111111111111111111111111111111E\",\"networkId\":1399811149,\"shortCommentSegments\":[{\"text\":\"[redacted text]\",\"link\":null,\"provider\":null}],\"reactions\":{\"counts\":{\"likeCount\":28},\"reactions\":{\"like\":false}},\"olderThesis\":4,\"newerThesis\":0},\"numReplies\":0,\"authorTrade\":{\"humanTokenAmount\":15722525.046751004,\"usdValue\":5143.978237505294,\"unrealizedPnlUsd\":3975.25049675918,\"realizedPnlUsd\":4753.994249746114,\"percentageUnrealizedPnl\":340.1348627372689,\"percentageRealizedPnl\":291.8938554233112,\"closedAt\":null},\"tokenAddress\":\"1111111111111111111111111111111E\",\"networkId\":1399811149,\"ticker\":\"[redacted text]\",\"tokenImageUrl\":\"https://fixture.invalid/redacted\",\"equity\":0,\"threshold\":9897.972487251409,\"isDev\":false},{\"type\":\"thesis\",\"id\":\"00000000-0000-4000-8000-00000000000e\",\"tradeId\":\"00000000-0000-4000-8000-00000000000f\",\"createdAt\":\"2026-09-09T03:08:16.106Z\",\"userId\":\"00000000-0000-4000-8000-000000000010\",\"displayName\":\"[redacted text]\",\"userHandle\":\"fixture-id-17\",\"profilePictureLink\":\"https://fixture.invalid/redacted\",\"verified\":false,\"comment\":{\"id\":\"00000000-0000-4000-8000-00000000000e\",\"userId\":\"00000000-0000-4000-8000-000000000010\",\"tradeId\":\"00000000-0000-4000-8000-00000000000f\",\"comment\":\"[redacted text]\",\"createdAt\":\"2026-09-09T03:08:16.106Z\",\"parentId\":null,\"numLikes\":19,\"tokenAddress\":\"1111111111111111111111111111111K\",\"networkId\":1399811149,\"shortCommentSegments\":[{\"text\":\"[redacted text]\",\"link\":null,\"provider\":null}],\"reactions\":{\"counts\":{\"likeCount\":19},\"reactions\":{\"like\":false}},\"olderThesis\":0,\"newerThesis\":0},\"numReplies\":0,\"authorTrade\":{\"humanTokenAmount\":341848.17182381,\"usdValue\":37018.2805230638,\"unrealizedPnlUsd\":7030.279773063797,\"realizedPnlUsd\":0,\"percentageUnrealizedPnl\":23.44364278123408,\"percentageRealizedPnl\":0,\"closedAt\":null},\"tokenAddress\":\"1111111111111111111111111111111K\",\"networkId\":1399811149,\"ticker\":\"[redacted text]\",\"tokenImageUrl\":\"https://fixture.invalid/redacted\",\"equity\":0,\"threshold\":37018.2805230638,\"isDev\":false}],\"hasNextPage\":true},\"statusCode\":200}"
+      }
+    }
+  ],
+  "expected": {
+    "ok": true,
+    "summary": {
+      "type": "object",
+      "rows": 5
+    }
+  }
+}

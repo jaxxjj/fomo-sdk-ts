@@ -1,0 +1,170 @@
+{
+  "sourceSha256": "e3686fcf088af601a85b7dff6c3caa5423ddb6bd0cf64ecf70b2e5dba04708b7",
+  "parsed": {
+    "data": [
+      {
+        "buyCount1": null,
+        "buyCount4": null,
+        "buyCount12": null,
+        "buyCount24": null,
+        "change5m": "-0.008409613960228497",
+        "change1": "-0.0073864124150485955",
+        "change4": "0.08263920338724223",
+        "change12": "-0.009277671931167245",
+        "change24": "0.11428175494723578",
+        "createdAt": 1783975341,
+        "exchanges": [
+          {
+            "name": "[redacted text]"
+          }
+        ],
+        "holders": 88361,
+        "liquidity": "9025976.881504824",
+        "marketCap": "568841103.259762",
+        "pair": {
+          "protocol": "[redacted text]"
+        },
+        "priceUSD": "0.8145605033370623",
+        "sellCount1": null,
+        "sellCount4": null,
+        "sellCount12": null,
+        "sellCount24": null,
+        "token": {
+          "address": "0x0000000000000000000000000000000000000001",
+          "decimals": 18,
+          "networkId": 4663,
+          "createdAt": 1783975341,
+          "name": "[redacted text]",
+          "symbol": "[redacted text]",
+          "freezable": null,
+          "mintable": null,
+          "isScam": null,
+          "i18n": null,
+          "info": {
+            "address": "0x0000000000000000000000000000000000000001",
+            "circulatingSupply": "698341131.1122429",
+            "cmcId": null,
+            "description": null,
+            "id": "fixture-id-3",
+            "imageBannerUrl": null,
+            "imageLargeUrl": "https://fixture.invalid/redacted",
+            "imageSmallUrl": "https://fixture.invalid/redacted",
+            "imageThumbUrl": "https://fixture.invalid/redacted",
+            "name": "[redacted text]",
+            "networkId": "4663",
+            "symbol": "[redacted text]",
+            "totalSupply": "1000000000"
+          },
+          "socialLinks": {
+            "discord": null,
+            "telegram": null,
+            "twitter": "https://fixture.invalid/redacted",
+            "website": "https://fixture.invalid/redacted"
+          },
+          "launchpad": {
+            "launchpadName": "[redacted text]",
+            "launchpadIconUrl": "https://fixture.invalid/redacted",
+            "graduationPercent": null,
+            "migrated": false
+          }
+        },
+        "txnCount1": 5069,
+        "txnCount4": 21324,
+        "txnCount12": 55691,
+        "txnCount24": 147894,
+        "uniqueBuys1": null,
+        "uniqueBuys4": null,
+        "uniqueBuys12": null,
+        "uniqueBuys24": null,
+        "uniqueSells1": null,
+        "uniqueSells4": null,
+        "uniqueSells12": null,
+        "uniqueSells24": null,
+        "volume1": "2980667.2570684818",
+        "volume5m": "342797.13508318225",
+        "volume4": "13226917.764139935",
+        "volume12": "36173478.65248206",
+        "volume24": "108669440.99509218"
+      },
+      {
+        "buyCount1": null,
+        "buyCount4": null,
+        "buyCount12": null,
+        "buyCount24": null,
+        "change5m": "-0.0038468171508770116",
+        "change1": "-0.0012275090112331519",
+        "change4": "0.00858916888887831",
+        "change12": "0.008612481863398452",
+        "change24": "0.010444739508239381",
+        "createdAt": 1731000424,
+        "exchanges": [
+          {
+            "name": "[redacted text]"
+          }
+        ],
+        "holders": 72930,
+        "liquidity": "7310254.074407513",
+        "marketCap": "1572504791107.9912",
+        "pair": {
+          "protocol": "[redacted text]"
+        },
+        "priceUSD": "79261.1517760992",
+        "sellCount1": null,
+        "sellCount4": null,
+        "sellCount12": null,
+        "sellCount24": null,
+        "token": {
+          "address": "11111111111111111111111111111113",
+          "decimals": 8,
+          "networkId": 1399811149,
+          "createdAt": 1731000424,
+          "name": "[redacted text]",
+          "symbol": "[redacted text]",
+          "freezable": null,
+          "mintable": null,
+          "isScam": null,
+          "i18n": null,
+          "info": {
+            "address": "11111111111111111111111111111113",
+            "circulatingSupply": "19839540",
+            "cmcId": null,
+            "description": null,
+            "id": "fixture-id-4",
+            "imageBannerUrl": null,
+            "imageLargeUrl": "https://fixture.invalid/redacted",
+            "imageSmallUrl": "https://fixture.invalid/redacted",
+            "imageThumbUrl": "https://fixture.invalid/redacted",
+            "name": "[redacted text]",
+            "networkId": "1399811149",
+            "symbol": "[redacted text]",
+            "totalSupply": "19839540"
+          },
+          "socialLinks": {
+            "discord": null,
+            "telegram": null,
+            "twitter": "https://fixture.invalid/redacted",
+            "website": "https://fixture.invalid/redacted"
+          },
+          "launchpad": null
+        },
+        "txnCount1": 1276,
+        "txnCount4": 6962,
+        "txnCount12": 21906,
+        "txnCount24": 47999,
+        "uniqueBuys1": null,
+        "uniqueBuys4": null,
+        "uniqueBuys12": null,
+        "uniqueBuys24": null,
+        "uniqueSells1": null,
+        "uniqueSells4": null,
+        "uniqueSells12": null,
+        "uniqueSells24": null,
+        "volume1": "762861.7950053456",
+        "volume5m": "311651.78435901535",
+        "volume4": "3250667.2312374404",
+        "volume12": "8796951.440103587",
+        "volume24": "23733650.30353435"
+      }
+    ]
+  }
+}

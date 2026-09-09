@@ -1,0 +1,13 @@
+{
+  "sourceSha256": "00f53f1298be5cdfdd4ca81d3fa6b00f55c438cfb9dbe709853be472c12032a8",
+  "parsed": {
+    "data": {
+      "balances": [],
+      "otherPnl": "0",
+      "otherPnlV2": "0",
+      "nativeEvmBalances": [],
+      "livePerpPnl": "0",
+      "otherEquity": "0"
+    }
+  }
+}

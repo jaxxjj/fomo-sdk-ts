@@ -1,0 +1,46 @@
+{
+  "format": "sdk-http-cassette/v1",
+  "service": "fomo",
+  "provenance": {
+    "kind": "live",
+    "source": "SDK native read-only website capability qualification",
+    "operation": "tokens.warnings"
+  },
+  "capturedAt": "2026-09-09T06:16:33.550Z",
+  "inputs": {
+    "params": {
+      "token": {
+        "address": "0x0000000000000000000000000000000000000001",
+        "networkId": 4663
+      }
+    }
+  },
+  "exchanges": [
+    {
+      "request": {
+        "method": "POST",
+        "origin": "https://fomo.fixture.invalid",
+        "path": "/proxy/tokenWarnings",
+        "query": [],
+        "headers": {
+          "authentication": "<present>",
+          "content-type": "application/json"
+        },
+        "body": "{\"address\":\"0x0000000000000000000000000000000000000001\",\"networkId\":4663}"
+      },
+      "response": {
+        "status": 200,
+        "headers": {
+          "content-type": "application/json; charset=utf-8"
+        },
+        "body": "{\"success\":true,\"message\":\"[redacted text]\",\"responseObject\":{\"disableBuying\":true,\"disableSelling\":false,\"warnings\":[{\"type\":\"TOKEN_UNSUPPORTED\",\"severity\":\"[redacted text]\",\"priority\":0,\"name\":\"[redacted text]\",\"description\":\"[redacted text]\"}]},\"statusCode\":200}"
+      }
+    }
+  ],
+  "expected": {
+    "ok": true,
+    "summary": {
+      "type": "object"
+    }
+  }
+}

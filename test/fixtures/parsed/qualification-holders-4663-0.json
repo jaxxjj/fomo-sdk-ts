@@ -1,0 +1,3094 @@
+{
+  "sourceSha256": "06ff0ced31c972c8bbfed291e2f776e8c6d999560e7c5761177e30cf3a66f837",
+  "parsed": {
+    "data": [
+      {
+        "tokenAddress": "0x0000000000000000000000000000000000000001",
+        "networkId": 4663,
+        "topHolders": [
+          {
+            "user": {
+              "id": "00000000-0000-4000-8000-000000000002",
+              "address": "11111111111111111111111111111114",
+              "evmAddress": "0x0000000000000000000000000000000000000004",
+              "createdAt": "2026-07-06T19:16:25.904Z",
+              "displayName": "[redacted text]",
+              "userHandle": "fixture-id-5",
+              "profilePictureLink": "https://fixture.invalid/redacted",
+              "description": "[redacted text]",
+              "following": 3,
+              "followers": 129116,
+              "activated": false,
+              "verified": false,
+              "isReferred": true,
+              "isRestricted": false,
+              "swapCount": 230,
+              "numTrades": 760,
+              "totalVolume": "426249.525224",
+              "private": false,
+              "thumbhash": "[redacted text]",
+              "coverPhotoLink": null,
+              "coverPhotoThumbhash": null,
+              "twitter": null,
+              "clan": null
+            },
+            "tradeId": "00000000-0000-4000-8000-000000000006",
+            "humanAmount": "10958143.37",
+            "sumSwapOpen": "12917246.2",
+            "price": "0.773325986349",
+            "value": "8474217.03",
+            "pnl": "4821058.94",
+            "unrealizedPnl": "6756619.94",
+            "realizedPnl": "-1935561",
+            "costBasis": "3722321.17",
+            "averageEntryPrice": "0.156742",
+            "comment": {
+              "id": "00000000-0000-4000-8000-000000000007",
+              "userId": "00000000-0000-4000-8000-000000000002",
+              "tradeId": "00000000-0000-4000-8000-000000000006",
+              "comment": "[redacted text]",
+              "createdAt": "2026-09-07T01:00:23.314Z",
+              "parentId": null,
+              "numLikes": 143,
+              "tokenAddress": "0x0000000000000000000000000000000000000001",
+              "networkId": 4663,
+              "shortCommentSegments": [
+                {
+                  "text": "[redacted text]",
+                  "link": null,
+                  "provider": null
+                }
+              ],
+              "reactions": {
+                "counts": {
+                  "likeCount": 143
+                },
+                "reactions": {
+                  "like": false
+                }
+              },
+              "olderThesis": 22,
+              "newerThesis": 0
+            },
+            "numReplies": 0,
+            "showComment": true,
+            "averageHoldTimeSeconds": "555789",
+            "isDev": false
+          },
+          {
+            "user": {
+              "id": "00000000-0000-4000-8000-000000000008",
+              "address": "1111111111111111111111111111111A",
+              "evmAddress": "0x000000000000000000000000000000000000000a",
+              "createdAt": "2026-05-18T12:45:58.832Z",
+              "displayName": "[redacted text]",
+              "userHandle": "fixture-id-11",
+              "profilePictureLink": "https://fixture.invalid/redacted",
+              "description": "[redacted text]",
+              "following": 36,
+              "followers": 602903,
+              "activated": false,
+              "verified": false,
+              "isReferred": true,
+              "isRestricted": false,
+              "swapCount": 525,
+              "numTrades": 3688,
+              "totalVolume": "3565769.589095",
+              "private": false,
+              "thumbhash": "[redacted text]",
+              "coverPhotoLink": null,
+              "coverPhotoThumbhash": null,
+              "twitter": null,
+              "clan": {
+                "id": "00000000-0000-4000-8000-00000000000c",
+                "name": "[redacted text]",
+                "iconLink": "https://fixture.invalid/redacted",
+                "iconThumbhash": "[redacted text]"
+              }
+            },
+            "tradeId": "00000000-0000-4000-8000-00000000000d",
+            "humanAmount": "10957901.42",
+            "sumSwapOpen": "10957269.68",
+            "price": "0.773325986349",
+            "value": "8474029.92",
+            "pnl": "8406319.2",
+            "unrealizedPnl": "8406319.2",
+            "realizedPnl": "0",
+            "costBasis": "67710.71",
+            "averageEntryPrice": "0.00617917",
+            "comment": {
+              "id": "00000000-0000-4000-8000-00000000000e",
+              "userId": "00000000-0000-4000-8000-000000000008",
+              "tradeId": "00000000-0000-4000-8000-00000000000d",
+              "comment": "[redacted text]",
+              "createdAt": "2026-08-30T15:04:50.309Z",
+              "parentId": null,
+              "numLikes": 1943,
+              "tokenAddress": "0x0000000000000000000000000000000000000001",
+              "networkId": 4663,
+              "shortCommentSegments": [
+                {
+                  "text": "[redacted text]",
+                  "link": null,
+                  "provider": null
+                }
+              ],
+              "reactions": {
+                "counts": {
+                  "likeCount": 1943
+                },
+                "reactions": {
+                  "like": false
+                }
+              },
+              "olderThesis": 27,
+              "newerThesis": 0
+            },
+            "numReplies": 0,
+            "showComment": true,
+            "averageHoldTimeSeconds": "465172",
+            "isDev": false
+          },
+          {
+            "user": {
+              "id": "00000000-0000-4000-8000-00000000000f",
+              "address": "1111111111111111111111111111111H",
+              "evmAddress": "0x0000000000000000000000000000000000000011",
+              "createdAt": "2026-07-09T19:03:42.003Z",
+              "displayName": "[redacted text]",
+              "userHandle": "fixture-id-18",
+              "profilePictureLink": null,
+              "description": null,
+              "following": 0,
+              "followers": 33282,
+              "activated": false,
+              "verified": false,
+              "isReferred": true,
+              "isRestricted": false,
+              "swapCount": 569,
+              "numTrades": 685,
+              "totalVolume": "2028704.16155",
+              "private": false,
+              "thumbhash": null,
+              "coverPhotoLink": null,
+              "coverPhotoThumbhash": null,
+              "twitter": null,
+              "clan": null
+            },
+            "tradeId": "00000000-0000-4000-8000-000000000013",
+            "humanAmount": "4340623.37",
+            "sumSwapOpen": "6846598.38",
+            "price": "0.773325986349",
+            "value": "3356716.85",
+            "pnl": "3134544.28",
+            "unrealizedPnl": "3103391.37",
+            "realizedPnl": "31152.91",
+            "costBasis": "399579.71",
+            "averageEntryPrice": "0.0583616",
+            "comment": null,
+            "showComment": true,
+            "averageHoldTimeSeconds": "324067",
+            "isDev": false
+          },
+          {
+            "user": {
+              "id": "00000000-0000-4000-8000-000000000014",
+              "address": "1111111111111111111111111111111N",
+              "evmAddress": "0x0000000000000000000000000000000000000016",
+              "createdAt": "2025-10-06T03:35:36.994Z",
+              "displayName": "[redacted text]",
+              "userHandle": "fixture-id-23",
+              "profilePictureLink": "https://fixture.invalid/redacted",
+              "description": "[redacted text]",
+              "following": 161,
+              "followers": 130392,
+              "activated": false,
+              "verified": false,
+              "isReferred": true,
+              "isRestricted": false,
+              "swapCount": 2017,
+              "numTrades": 1445,
+              "totalVolume": "2327034.023782",
+              "private": false,
+              "thumbhash": "[redacted text]",
+              "coverPhotoLink": null,
+              "coverPhotoThumbhash": null,
+              "twitter": null,
+              "clan": null
+            },
+            "tradeId": "00000000-0000-4000-8000-000000000018",
+            "humanAmount": "4233761.12",
+            "sumSwapOpen": "6105186.79",
+            "price": "0.773325986349",
+            "value": "3274077.5",
+            "pnl": "4016389.37",
+            "unrealizedPnl": "3254755.35",
+            "realizedPnl": "761634.02",
+            "costBasis": "27897.75",
+            "averageEntryPrice": "0.00456383",
+            "comment": {
+              "id": "00000000-0000-4000-8000-000000000019",
+              "userId": "00000000-0000-4000-8000-000000000014",
+              "tradeId": "00000000-0000-4000-8000-000000000018",
+              "comment": "[redacted text]",
+              "createdAt": "2026-08-22T15:16:41.579Z",
+              "parentId": null,
+              "numLikes": 660,
+              "tokenAddress": "0x0000000000000000000000000000000000000001",
+              "networkId": 4663,
+              "shortCommentSegments": [
+                {
+                  "text": "[redacted text]",
+                  "link": null,
+                  "provider": null
+                }
+              ],
+              "reactions": {
+                "counts": {
+                  "likeCount": 660
+                },
+                "reactions": {
+                  "like": false
+                }
+              },
+              "olderThesis": 11,
+              "newerThesis": 0
+            },
+            "numReplies": 0,
+            "showComment": true,
+            "averageHoldTimeSeconds": "363984",
+            "isDev": false
+          },
+          {
+            "user": {
+              "id": "00000000-0000-4000-8000-00000000001a",
+              "address": "1111111111111111111111111111111U",
+              "evmAddress": "0x000000000000000000000000000000000000001c",
+              "createdAt": "2026-01-31T10:15:55.146Z",
+              "displayName": "[redacted text]",
+              "userHandle": "fixture-id-29",
+              "profilePictureLink": "https://fixture.invalid/redacted",
+              "description": "[redacted text]",
+              "following": 30,
+              "followers": 25308,
+              "activated": false,
+              "verified": false,
+              "isReferred": true,
+              "isRestricted": false,
+              "swapCount": 372,
+              "numTrades": 702,
+              "totalVolume": "649500.04772",
+              "private": false,
+              "thumbhash": "[redacted text]",
+              "coverPhotoLink": null,
+              "coverPhotoThumbhash": null,
+              "twitter": null,
+              "clan": {
+                "id": "00000000-0000-4000-8000-00000000001e",
+                "name": "[redacted text]",
+                "iconLink": "https://fixture.invalid/redacted",
+                "iconThumbhash": "[redacted text]"
+              }
+            },
+            "tradeId": "00000000-0000-4000-8000-00000000001f",
+            "humanAmount": "3493719.9",
+            "sumSwapOpen": "92904.22",
+            "price": "0.773325986349",
+            "value": "2701784.39",
+            "pnl": "2666509.07",
+            "unrealizedPnl": "2545086.84",
+            "realizedPnl": "121422.24",
+            "costBasis": "166079.72",
+            "averageEntryPrice": "0.0448512",
+            "comment": {
+              "id": "00000000-0000-4000-8000-000000000020",
+              "userId": "00000000-0000-4000-8000-00000000001a",
+              "tradeId": "00000000-0000-4000-8000-00000000001f",
+              "comment": "[redacted text]",
+              "createdAt": "2026-09-03T23:11:36.891Z",
+              "parentId": null,
+              "numLikes": 90,
+              "tokenAddress": "0x0000000000000000000000000000000000000001",
+              "networkId": 4663,
+              "shortCommentSegments": [
+                {
+                  "text": "[redacted text]",
+                  "link": null,
+                  "provider": null
+                }
+              ],
+              "reactions": {
+                "counts": {
+                  "likeCount": 90
+                },
+                "reactions": {
+                  "like": false
+                }
+              },
+              "olderThesis": 5,
+              "newerThesis": 0
+            },
+            "numReplies": 0,
+            "showComment": true,
+            "averageHoldTimeSeconds": "238762",
+            "isDev": false
+          },
+          {
+            "user": {
+              "id": "00000000-0000-4000-8000-000000000021",
+              "address": "1111111111111111111111111111111b",
+              "evmAddress": "0x0000000000000000000000000000000000000023",
+              "createdAt": "2026-02-21T05:31:51.934Z",
+              "displayName": "[redacted text]",
+              "userHandle": "fixture-id-36",
+              "profilePictureLink": "https://fixture.invalid/redacted",
+              "description": "[redacted text]",
+              "following": 68,
+              "followers": 21406,
+              "activated": false,
+              "verified": false,
+              "isReferred": false,
+              "isRestricted": false,
+              "swapCount": 472,
+              "numTrades": 738,
+              "totalVolume": "1091363.15277",
+              "private": false,
+              "thumbhash": "[redacted text]",
+              "coverPhotoLink": null,
+              "coverPhotoThumbhash": null,
+              "twitter": null,
+              "clan": null
+            },
+            "tradeId": "00000000-0000-4000-8000-000000000025",
+            "humanAmount": "3368369.72",
+            "sumSwapOpen": "4125551.14",
+            "price": "0.773325986349",
+            "value": "2604847.84",
+            "pnl": "2596197.16",
+            "unrealizedPnl": "2519245.3",
+            "realizedPnl": "76951.86",
+            "costBasis": "104845.27",
+            "averageEntryPrice": "0.0254136",
+            "comment": {
+              "id": "00000000-0000-4000-8000-000000000026",
+              "userId": "00000000-0000-4000-8000-000000000021",
+              "tradeId": "00000000-0000-4000-8000-000000000025",
+              "comment": "[redacted text]",
+              "createdAt": "2026-09-08T06:10:28.305Z",
+              "parentId": null,
+              "numLikes": 8,
+              "tokenAddress": "0x0000000000000000000000000000000000000001",
+              "networkId": 4663,
+              "shortCommentSegments": [
+                {
+                  "text": "[redacted text]",
+                  "link": null,
+                  "provider": null
+                }
+              ],
+              "reactions": {
+                "counts": {
+                  "likeCount": 8
+                },
+                "reactions": {
+                  "like": false
+                }
+              },
+              "olderThesis": 16,
+              "newerThesis": 0
+            },
+            "numReplies": 0,
+            "showComment": true,
+            "averageHoldTimeSeconds": "133574",
+            "isDev": false
+          },
+          {
+            "user": {
+              "id": "00000000-0000-4000-8000-000000000027",
+              "address": "1111111111111111111111111111111h",
+              "evmAddress": "0x0000000000000000000000000000000000000029",
+              "createdAt": "2025-09-07T20:27:26.795Z",
+              "displayName": "[redacted text]",
+              "userHandle": "fixture-id-42",
+              "profilePictureLink": "https://fixture.invalid/redacted",
+              "description": "[redacted text]",
+              "following": 63,
+              "followers": 48237,
+              "activated": false,
+              "verified": false,
+              "isReferred": true,
+              "isRestricted": false,
+              "swapCount": 2827,
+              "numTrades": 1312,
+              "totalVolume": "1072501.641723",
+              "private": false,
+              "thumbhash": "[redacted text]",
+              "coverPhotoLink": "https://fixture.invalid/redacted",
+              "coverPhotoThumbhash": "[redacted text]",
+              "twitter": null,
+              "clan": {
+                "id": "00000000-0000-4000-8000-00000000002b",
+                "name": "[redacted text]",
+                "iconLink": "https://fixture.invalid/redacted",
+                "iconThumbhash": "[redacted text]"
+              }
+            },
+            "tradeId": "00000000-0000-4000-8000-00000000002c",
+            "humanAmount": "3100183.6",
+            "sumSwapOpen": "18993245.27",
+            "price": "0.773325986349",
+            "value": "2397452.54",
+            "pnl": "2457228.87",
+            "unrealizedPnl": "2397092.32",
+            "realizedPnl": "60136.56",
+            "costBasis": "2206.91",
+            "averageEntryPrice": "0.000116194",
+            "comment": {
+              "id": "00000000-0000-4000-8000-00000000002d",
+              "userId": "00000000-0000-4000-8000-000000000027",
+              "tradeId": "00000000-0000-4000-8000-00000000002c",
+              "comment": "[redacted text]",
+              "createdAt": "2026-09-06T04:18:21.328Z",
+              "parentId": null,
+              "numLikes": 36,
+              "tokenAddress": "0x0000000000000000000000000000000000000001",
+              "networkId": 4663,
+              "shortCommentSegments": [
+                {
+                  "text": "[redacted text]",
+                  "link": null,
+                  "provider": null
+                }
+              ],
+              "reactions": {
+                "counts": {
+                  "likeCount": 36
+                },
+                "reactions": {
+                  "like": false
+                }
+              },
+              "olderThesis": 36,
+              "newerThesis": 0
+            },
+            "numReplies": 0,
+            "showComment": true,
+            "averageHoldTimeSeconds": "176447",
+            "isDev": false
+          },
+          {
+            "user": {
+              "id": "00000000-0000-4000-8000-00000000002e",
+              "address": "1111111111111111111111111111111p",
+              "evmAddress": "0x0000000000000000000000000000000000000030",
+              "createdAt": "2026-08-13T01:24:43.640Z",
+              "displayName": "230",
+              "userHandle": "fixture-id-49",
+              "profilePictureLink": "https://fixture.invalid/redacted",
+              "description": "[redacted text]",
+              "following": 45,
+              "followers": 25429,
+              "activated": false,
+              "verified": false,
+              "isReferred": true,
+              "isRestricted": false,
+              "swapCount": 145,
+              "numTrades": 113,
+              "totalVolume": "128612.196136",
+              "private": false,
+              "thumbhash": "[redacted text]",
+              "coverPhotoLink": "https://fixture.invalid/redacted",
+              "coverPhotoThumbhash": "[redacted text]",
+              "twitter": null,
+              "clan": {
+                "id": "00000000-0000-4000-8000-000000000032",
+                "name": "[redacted text]",
+                "iconLink": "https://fixture.invalid/redacted",
+                "iconThumbhash": "[redacted text]"
+              }
+            },
+            "tradeId": "00000000-0000-4000-8000-000000000033",
+            "humanAmount": "2500000",
+            "sumSwapOpen": "12317.84",
+            "price": "0.773325986349",
+            "value": "1933314.97",
+            "pnl": "2727166.78",
+            "unrealizedPnl": "1332374.02",
+            "realizedPnl": "1394792.76",
+            "costBasis": "1689254.04",
+            "averageEntryPrice": "0.240376",
+            "comment": {
+              "id": "00000000-0000-4000-8000-000000000034",
+              "userId": "00000000-0000-4000-8000-00000000002e",
+              "tradeId": "00000000-0000-4000-8000-000000000033",
+              "comment": "[redacted text]",
+              "createdAt": "2026-09-08T13:02:42.581Z",
+              "parentId": null,
+              "numLikes": 3,
+              "tokenAddress": "0x0000000000000000000000000000000000000001",
+              "networkId": 4663,
+              "shortCommentSegments": [
+                {
+                  "text": "[redacted text]",
+                  "link": null,
+                  "provider": null
+                }
+              ],
+              "reactions": {
+                "counts": {
+                  "likeCount": 3
+                },
+                "reactions": {
+                  "like": false
+                }
+              },
+              "olderThesis": 18,
+              "newerThesis": 0
+            },
+            "numReplies": 0,
+            "showComment": true,
+            "averageHoldTimeSeconds": "441753",
+            "isDev": false
+          },
+          {
+            "user": {
+              "id": "00000000-0000-4000-8000-000000000035",
+              "address": "1111111111111111111111111111111w",
+              "evmAddress": "0x0000000000000000000000000000000000000037",
+              "createdAt": "2025-10-21T19:14:29.217Z",
+              "displayName": "[redacted text]",
+              "userHandle": "fixture-id-56",
+              "profilePictureLink": "https://fixture.invalid/redacted",
+              "description": "[redacted text]",
+              "following": 42,
+              "followers": 15059,
+              "activated": false,
+              "verified": false,
+              "isReferred": true,
+              "isRestricted": false,
+              "swapCount": 5935,
+              "numTrades": 1979,
+              "totalVolume": "2301123.612686",
+              "private": false,
+              "thumbhash": "[redacted text]",
+              "coverPhotoLink": null,
+              "coverPhotoThumbhash": null,
+              "twitter": null,
+              "clan": null
+            },
+            "tradeId": "00000000-0000-4000-8000-000000000039",
+            "humanAmount": "1837927.73",
+            "sumSwapOpen": "2031546.07",
+            "price": "0.773325986349",
+            "value": "1421317.27",
+            "pnl": "1419645.61",
+            "unrealizedPnl": "1418910.06",
+            "realizedPnl": "735.544",
+            "costBasis": "2660.8",
+            "averageEntryPrice": "0.00130974",
+            "comment": {
+              "id": "00000000-0000-4000-8000-00000000003a",
+              "userId": "00000000-0000-4000-8000-000000000035",
+              "tradeId": "00000000-0000-4000-8000-000000000039",
+              "comment": "https://fixture.invalid/redacted",
+              "createdAt": "2026-07-13T23:04:33.058Z",
+              "parentId": null,
+              "numLikes": 97,
+              "tokenAddress": "0x0000000000000000000000000000000000000001",
+              "networkId": 4663,
+              "shortCommentSegments": [
+                {
+                  "text": "https://fixture.invalid/redacted",
+                  "link": null,
+                  "provider": null
+                }
+              ],
+              "reactions": {
+                "counts": {
+                  "likeCount": 97
+                },
+                "reactions": {
+                  "like": false
+                }
+              },
+              "olderThesis": 0,
+              "newerThesis": 0
+            },
+            "numReplies": 0,
+            "showComment": true,
+            "averageHoldTimeSeconds": "247757",
+            "isDev": false
+          },
+          {
+            "user": {
+              "id": "00000000-0000-4000-8000-00000000003b",
+              "address": "111111111111111111111111111111123",
+              "evmAddress": "0x000000000000000000000000000000000000003d",
+              "createdAt": "2026-08-31T17:56:31.169Z",
+              "displayName": "[redacted text]",
+              "userHandle": "fixture-id-62",
+              "profilePictureLink": "https://fixture.invalid/redacted",
+              "description": "[redacted text]",
+              "following": 21,
+              "followers": 1240,
+              "activated": false,
+              "verified": false,
+              "isReferred": true,
+              "isRestricted": false,
+              "swapCount": 162,
+              "numTrades": 35,
+              "totalVolume": "9715483.748591",
+              "private": false,
+              "thumbhash": "[redacted text]",
+              "coverPhotoLink": null,
+              "coverPhotoThumbhash": null,
+              "twitter": null,
+              "clan": null
+            },
+            "tradeId": "00000000-0000-4000-8000-00000000003f",
+            "humanAmount": "1617568.62",
+            "sumSwapOpen": "2006591.36",
+            "price": "0.773325986349",
+            "value": "1250907.85",
+            "pnl": "478147.05",
+            "unrealizedPnl": "426721.17",
+            "realizedPnl": "51425.88",
+            "costBasis": "1022402.3",
+            "averageEntryPrice": "0.509522",
+            "comment": {
+              "id": "00000000-0000-4000-8000-000000000040",
+              "userId": "00000000-0000-4000-8000-00000000003b",
+              "tradeId": "00000000-0000-4000-8000-00000000003f",
+              "comment": "[redacted text]",
+              "createdAt": "2026-09-03T23:21:21.699Z",
+              "parentId": null,
+              "numLikes": 57,
+              "tokenAddress": "0x0000000000000000000000000000000000000001",
+              "networkId": 4663,
+              "shortCommentSegments": [
+                {
+                  "text": "[redacted text]",
+                  "link": null,
+                  "provider": null
+                }
+              ],
+              "reactions": {
+                "counts": {
+                  "likeCount": 57
+                },
+                "reactions": {
+                  "like": false
+                }
+              },
+              "olderThesis": 0,
+              "newerThesis": 0
+            },
+            "numReplies": 0,
+            "showComment": true,
+            "averageHoldTimeSeconds": "133419",
+            "isDev": false
+          },
+          {
+            "user": {
+              "id": "00000000-0000-4000-8000-000000000041",
+              "address": "111111111111111111111111111111129",
+              "evmAddress": "0x0000000000000000000000000000000000000043",
+              "createdAt": "2025-04-30T00:39:39.018Z",
+              "displayName": "[redacted text]",
+              "userHandle": "fixture-id-68",
+              "profilePictureLink": "https://fixture.invalid/redacted",
+              "description": "[redacted text]",
+              "following": 100,
+              "followers": 38328,
+              "activated": true,
+              "verified": false,
+              "isReferred": true,
+              "isRestricted": false,
+              "swapCount": 1234,
+              "numTrades": 1166,
+              "totalVolume": "1886731.274519",
+              "private": false,
+              "thumbhash": "[redacted text]",
+              "coverPhotoLink": "https://fixture.invalid/redacted",
+              "coverPhotoThumbhash": "[redacted text]",
+              "twitter": null,
+              "clan": null
+            },
+            "tradeId": "00000000-0000-4000-8000-000000000045",
+            "humanAmount": "1556660.19",
+            "sumSwapOpen": "0",
+            "price": "0.773325986349",
+            "value": "1203805.78",
+            "pnl": "1187507.05",
+            "unrealizedPnl": "1144889.04",
+            "realizedPnl": "42618.02",
+            "costBasis": "63045.78",
+            "averageEntryPrice": "0.0378482",
+            "comment": {
+              "id": "00000000-0000-4000-8000-000000000046",
+              "userId": "00000000-0000-4000-8000-000000000041",
+              "tradeId": "00000000-0000-4000-8000-000000000045",
+              "comment": "[redacted text]",
+              "createdAt": "2026-09-03T01:35:29.828Z",
+              "parentId": null,
+              "numLikes": 38,
+              "tokenAddress": "0x0000000000000000000000000000000000000001",
+              "networkId": 4663,
+              "shortCommentSegments": [
+                {
+                  "text": "[redacted text]",
+                  "link": null,
+                  "provider": null
+                }
+              ],
+              "reactions": {
+                "counts": {
+                  "likeCount": 38
+                },
+                "reactions": {
+                  "like": false
+                }
+              },
+              "olderThesis": 3,
+              "newerThesis": 0
+            },
+            "numReplies": 0,
+            "showComment": true,
+            "averageHoldTimeSeconds": "413044",
+            "isDev": false
+          },
+          {
+            "user": {
+              "id": "00000000-0000-4000-8000-000000000047",
+              "address": "11111111111111111111111111111112F",
+              "evmAddress": "0x0000000000000000000000000000000000000049",
+              "createdAt": "2026-06-23T03:31:25.574Z",
+              "displayName": "[redacted text]",
+              "userHandle": "fixture-id-74",
+              "profilePictureLink": "https://fixture.invalid/redacted",
+              "description": "",
+              "following": 19,
+              "followers": 4933,
+              "activated": false,
+              "verified": false,
+              "isReferred": false,
+              "isRestricted": false,
+              "swapCount": 90,
+              "numTrades": 108,
+              "totalVolume": "586132.434661",
+              "private": false,
+              "thumbhash": "[redacted text]",
+              "coverPhotoLink": null,
+              "coverPhotoThumbhash": null,
+              "twitter": null,
+              "clan": null
+            },
+            "tradeId": "00000000-0000-4000-8000-00000000004b",
+            "humanAmount": "1522126.08",
+            "sumSwapOpen": "1879168",
+            "price": "0.773325986349",
+            "value": "1177099.65",
+            "pnl": "1292568.91",
+            "unrealizedPnl": "1165816.35",
+            "realizedPnl": "126752.55",
+            "costBasis": "13930",
+            "averageEntryPrice": "0.00741286",
+            "comment": null,
+            "showComment": true,
+            "averageHoldTimeSeconds": "256507",
+            "isDev": false
+          },
+          {
+            "user": {
+              "id": "00000000-0000-4000-8000-00000000004c",
+              "address": "11111111111111111111111111111112L",
+              "evmAddress": "0x000000000000000000000000000000000000004e",
+              "createdAt": "2026-01-28T20:01:27.283Z",
+              "displayName": "[redacted text]",
+              "userHandle": "fixture-id-79",
+              "profilePictureLink": null,
+              "description": null,
+              "following": 44,
+              "followers": 1839,
+              "activated": false,
+              "verified": false,
+              "isReferred": true,
+              "isRestricted": false,
+              "swapCount": 601,
+              "numTrades": 196,
+              "totalVolume": "512103.635409",
+              "private": false,
+              "thumbhash": null,
+              "coverPhotoLink": null,
+              "coverPhotoThumbhash": null,
+              "twitter": null,
+              "clan": null
+            },
+            "tradeId": "00000000-0000-4000-8000-000000000050",
+            "humanAmount": "1377013.24",
+            "sumSwapOpen": "1384784.45",
+            "price": "0.773325986349",
+            "value": "1064880.12",
+            "pnl": "938762.84",
+            "unrealizedPnl": "938481.58",
+            "realizedPnl": "281.264",
+            "costBasis": "127111.87",
+            "averageEntryPrice": "0.0917918",
+            "comment": null,
+            "showComment": true,
+            "averageHoldTimeSeconds": "60896",
+            "isDev": false
+          },
+          {
+            "user": {
+              "id": "00000000-0000-4000-8000-000000000051",
+              "address": "11111111111111111111111111111112R",
+              "evmAddress": "0x0000000000000000000000000000000000000053",
+              "createdAt": "2026-07-08T00:38:28.337Z",
+              "displayName": "[redacted text]",
+              "userHandle": "fixture-id-84",
+              "profilePictureLink": "https://fixture.invalid/redacted",
+              "description": "[redacted text]",
+              "following": 33,
+              "followers": 8406,
+              "activated": false,
+              "verified": false,
+              "isReferred": true,
+              "isRestricted": false,
+              "swapCount": 170,
+              "numTrades": 91,
+              "totalVolume": "1385670.228154",
+              "private": false,
+              "thumbhash": "[redacted text]",
+              "coverPhotoLink": null,
+              "coverPhotoThumbhash": null,
+              "twitter": null,
+              "clan": null
+            },
+            "tradeId": "00000000-0000-4000-8000-000000000055",
+            "humanAmount": "1376052.15",
+            "sumSwapOpen": "1376052.15",
+            "price": "0.773325986349",
+            "value": "1064136.89",
+            "pnl": "848524.18",
+            "unrealizedPnl": "848524.18",
+            "realizedPnl": "0",
+            "costBasis": "215612.71",
+            "averageEntryPrice": "0.156689",
+            "comment": {
+              "id": "00000000-0000-4000-8000-000000000056",
+              "userId": "00000000-0000-4000-8000-000000000051",
+              "tradeId": "00000000-0000-4000-8000-000000000055",
+              "comment": "[redacted text]",
+              "createdAt": "2026-09-06T18:39:11.775Z",
+              "parentId": null,
+              "numLikes": 31,
+              "tokenAddress": "0x0000000000000000000000000000000000000001",
+              "networkId": 4663,
+              "shortCommentSegments": [
+                {
+                  "text": "[redacted text]",
+                  "link": null,
+                  "provider": null
+                }
+              ],
+              "reactions": {
+                "counts": {
+                  "likeCount": 31
+                },
+                "reactions": {
+                  "like": false
+                }
+              },
+              "olderThesis": 5,
+              "newerThesis": 0
+            },
+            "numReplies": 0,
+            "showComment": true,
+            "averageHoldTimeSeconds": "288633",
+            "isDev": false
+          },
+          {
+            "user": {
+              "id": "00000000-0000-4000-8000-000000000057",
+              "address": "11111111111111111111111111111112X",
+              "evmAddress": "0x0000000000000000000000000000000000000059",
+              "createdAt": "2025-12-08T17:22:08.034Z",
+              "displayName": "[redacted text]",
+              "userHandle": "fixture-id-90",
+              "profilePictureLink": "https://fixture.invalid/redacted",
+              "description": "",
+              "following": 87,
+              "followers": 147060,
+              "activated": false,
+              "verified": false,
+              "isReferred": true,
+              "isRestricted": false,
+              "swapCount": 1654,
+              "numTrades": 2479,
+              "totalVolume": "3534704.241434",
+              "private": false,
+              "thumbhash": "[redacted text]",
+              "coverPhotoLink": null,
+              "coverPhotoThumbhash": null,
+              "twitter": null,
+              "clan": {
+                "id": "00000000-0000-4000-8000-00000000005b",
+                "name": "[redacted text]",
+                "iconLink": "https://fixture.invalid/redacted",
+                "iconThumbhash": "[redacted text]"
+              }
+            },
+            "tradeId": "00000000-0000-4000-8000-00000000005c",
+            "humanAmount": "1299115.74",
+            "sumSwapOpen": "0",
+            "price": "0.773325986349",
+            "value": "1004639.96",
+            "pnl": "866087.85",
+            "unrealizedPnl": "947136.6",
+            "realizedPnl": "-81048.76",
+            "costBasis": "270128.04",
+            "averageEntryPrice": "0.0442635",
+            "comment": {
+              "id": "00000000-0000-4000-8000-00000000005d",
+              "userId": "00000000-0000-4000-8000-000000000057",
+              "tradeId": "00000000-0000-4000-8000-00000000005c",
+              "comment": "[redacted text]",
+              "createdAt": "2026-09-07T10:36:25.195Z",
+              "parentId": null,
+              "numLikes": 7,
+              "tokenAddress": "0x0000000000000000000000000000000000000001",
+              "networkId": 4663,
+              "shortCommentSegments": [
+                {
+                  "text": "[redacted text]",
+                  "link": null,
+                  "provider": null
+                }
+              ],
+              "reactions": {
+                "counts": {
+                  "likeCount": 7
+                },
+                "reactions": {
+                  "like": false
+                }
+              },
+              "olderThesis": 8,
+              "newerThesis": 0
+            },
+            "numReplies": 0,
+            "showComment": true,
+            "averageHoldTimeSeconds": "66829",
+            "isDev": false
+          },
+          {
+            "user": {
+              "id": "00000000-0000-4000-8000-00000000005e",
+              "address": "11111111111111111111111111111112e",
+              "evmAddress": "0x0000000000000000000000000000000000000060",
+              "createdAt": "2025-10-27T23:08:57.648Z",
+              "displayName": "[redacted text]",
+              "userHandle": "fixture-id-97",
+              "profilePictureLink": "https://fixture.invalid/redacted",
+              "description": "[redacted text]",
+              "following": 21,
+              "followers": 2081,
+              "activated": false,
+              "verified": false,
+              "isReferred": false,
+              "isRestricted": false,
+              "swapCount": 179,
+              "numTrades": 102,
+              "totalVolume": "1969875.042423",
+              "private": false,
+              "thumbhash": "[redacted text]",
+              "coverPhotoLink": null,
+              "coverPhotoThumbhash": null,
+              "twitter": null,
+              "clan": null
+            },
+            "tradeId": "00000000-0000-4000-8000-000000000062",
+            "humanAmount": "1276668.07",
+            "sumSwapOpen": "1534385.59",
+            "price": "0.773325986349",
+            "value": "987280.6",
+            "pnl": "1012384.37",
+            "unrealizedPnl": "826288.98",
+            "realizedPnl": "186095.39",
+            "costBasis": "193511.48",
+            "averageEntryPrice": "0.126103",
+            "comment": {
+              "id": "00000000-0000-4000-8000-000000000063",
+              "userId": "00000000-0000-4000-8000-00000000005e",
+              "tradeId": "00000000-0000-4000-8000-000000000062",
+              "comment": "[redacted text]",
+              "createdAt": "2026-09-08T05:56:47.275Z",
+              "parentId": null,
+              "numLikes": 3,
+              "tokenAddress": "0x0000000000000000000000000000000000000001",
+              "networkId": 4663,
+              "shortCommentSegments": [
+                {
+                  "text": "[redacted text]",
+                  "link": null,
+                  "provider": null
+                }
+              ],
+              "reactions": {
+                "counts": {
+                  "likeCount": 3
+                },
+                "reactions": {
+                  "like": false
+                }
+              },
+              "olderThesis": 7,
+              "newerThesis": 0
+            },
+            "numReplies": 0,
+            "showComment": true,
+            "averageHoldTimeSeconds": "102667",
+            "isDev": false
+          },
+          {
+            "user": {
+              "id": "00000000-0000-4000-8000-000000000064",
+              "address": "11111111111111111111111111111112k",
+              "evmAddress": "0x0000000000000000000000000000000000000066",
+              "createdAt": "2026-08-13T18:32:58.800Z",
+              "displayName": "[redacted text]",
+              "userHandle": "fixture-id-103",
+              "profilePictureLink": "https://fixture.invalid/redacted",
+              "description": null,
+              "following": 17,
+              "followers": 3185,
+              "activated": false,
+              "verified": false,
+              "isReferred": true,
+              "isRestricted": false,
+              "swapCount": 144,
+              "numTrades": 68,
+              "totalVolume": "2595052.555312",
+              "private": false,
+              "thumbhash": "[redacted text]",
+              "coverPhotoLink": null,
+              "coverPhotoThumbhash": null,
+              "twitter": null,
+              "clan": null
+            },
+            "tradeId": "00000000-0000-4000-8000-000000000068",
+            "humanAmount": "1272319.05",
+            "sumSwapOpen": "1272319.05",
+            "price": "0.773325986349",
+            "value": "983917.38",
+            "pnl": "534476.13",
+            "unrealizedPnl": "534476.13",
+            "realizedPnl": "0",
+            "costBasis": "449441.25",
+            "averageEntryPrice": "0.353246",
+            "comment": {
+              "id": "00000000-0000-4000-8000-000000000069",
+              "userId": "00000000-0000-4000-8000-000000000064",
+              "tradeId": "00000000-0000-4000-8000-000000000068",
+              "comment": "[redacted text]",
+              "createdAt": "2026-09-08T00:09:29.684Z",
+              "parentId": null,
+              "numLikes": 4,
+              "tokenAddress": "0x0000000000000000000000000000000000000001",
+              "networkId": 4663,
+              "shortCommentSegments": [
+                {
+                  "text": "[redacted text]",
+                  "link": null,
+                  "provider": null
+                }
+              ],
+              "reactions": {
+                "counts": {
+                  "likeCount": 4
+                },
+                "reactions": {
+                  "like": false
+                }
+              },
+              "olderThesis": 0,
+              "newerThesis": 0
+            },
+            "numReplies": 0,
+            "showComment": true,
+            "averageHoldTimeSeconds": "39649",
+            "isDev": false
+          },
+          {
+            "user": {
+              "id": "00000000-0000-4000-8000-00000000006a",
+              "address": "11111111111111111111111111111112r",
+              "evmAddress": "0x000000000000000000000000000000000000006c",
+              "createdAt": "2026-08-30T06:10:49.056Z",
+              "displayName": "[redacted text]",
+              "userHandle": "fixture-id-109",
+              "profilePictureLink": null,
+              "description": "",
+              "following": 5,
+              "followers": 20,
+              "activated": false,
+              "verified": false,
+              "isReferred": true,
+              "isRestricted": false,
+              "swapCount": 74,
+              "numTrades": 9,
+              "totalVolume": "399429.773115",
+              "private": false,
+              "thumbhash": null,
+              "coverPhotoLink": null,
+              "coverPhotoThumbhash": null,
+              "twitter": null,
+              "clan": null
+            },
+            "tradeId": "00000000-0000-4000-8000-00000000006e",
+            "humanAmount": "1215738.63",
+            "sumSwapOpen": "144339.13",
+            "price": "0.773325986349",
+            "value": "940162.27",
+            "pnl": "13212.96",
+            "unrealizedPnl": "14815.86",
+            "realizedPnl": "-1602.9",
+            "costBasis": "954929.35",
+            "averageEntryPrice": "0.761139",
+            "comment": null,
+            "showComment": true,
+            "averageHoldTimeSeconds": "92161",
+            "isDev": false
+          },
+          {
+            "user": {
+              "id": "00000000-0000-4000-8000-00000000006f",
+              "address": "11111111111111111111111111111112w",
+              "evmAddress": "0x0000000000000000000000000000000000000071",
+              "createdAt": "2025-10-02T23:30:40.730Z",
+              "displayName": "[redacted text]",
+              "userHandle": "fixture-id-114",
+              "profilePictureLink": "https://fixture.invalid/redacted",
+              "description": "[redacted text]",
+              "following": 52,
+              "followers": 29125,
+              "activated": false,
+              "verified": false,
+              "isReferred": true,
+              "isRestricted": false,
+              "swapCount": 2162,
+              "numTrades": 1503,
+              "totalVolume": "628858.217936",
+              "private": false,
+              "thumbhash": "[redacted text]",
+              "coverPhotoLink": "https://fixture.invalid/redacted",
+              "coverPhotoThumbhash": "[redacted text]",
+              "twitter": null,
+              "clan": {
+                "id": "00000000-0000-4000-8000-000000000073",
+                "name": "[redacted text]",
+                "iconLink": "https://fixture.invalid/redacted",
+                "iconThumbhash": "[redacted text]"
+              }
+            },
+            "tradeId": "00000000-0000-4000-8000-000000000074",
+            "humanAmount": "1177414.4",
+            "sumSwapOpen": "10512478.77",
+            "price": "0.773325986349",
+            "value": "910525.15",
+            "pnl": "1457664.58",
+            "unrealizedPnl": "909089.42",
+            "realizedPnl": "548575.16",
+            "costBasis": "12818.85",
+            "averageEntryPrice": "0.00121939",
+            "comment": {
+              "id": "00000000-0000-4000-8000-000000000075",
+              "userId": "00000000-0000-4000-8000-00000000006f",
+              "tradeId": "00000000-0000-4000-8000-000000000074",
+              "comment": "[redacted text]",
+              "createdAt": "2026-07-15T20:59:26.841Z",
+              "parentId": null,
+              "numLikes": 385,
+              "tokenAddress": "0x0000000000000000000000000000000000000001",
+              "networkId": 4663,
+              "shortCommentSegments": [
+                {
+                  "text": "[redacted text]",
+                  "link": null,
+                  "provider": null
+                }
+              ],
+              "reactions": {
+                "counts": {
+                  "likeCount": 385
+                },
+                "reactions": {
+                  "like": false
+                }
+              },
+              "olderThesis": 0,
+              "newerThesis": 0
+            },
+            "numReplies": 0,
+            "showComment": true,
+            "averageHoldTimeSeconds": "165757",
+            "isDev": false
+          },
+          {
+            "user": {
+              "id": "00000000-0000-4000-8000-000000000076",
+              "address": "111111111111111111111111111111134",
+              "evmAddress": "0x0000000000000000000000000000000000000078",
+              "createdAt": "2026-07-21T04:51:24.382Z",
+              "displayName": "[redacted text]",
+              "userHandle": "fixture-id-121",
+              "profilePictureLink": "https://fixture.invalid/redacted",
+              "description": "[redacted text]",
+              "following": 63,
+              "followers": 7670,
+              "activated": false,
+              "verified": false,
+              "isReferred": true,
+              "isRestricted": false,
+              "swapCount": 279,
+              "numTrades": 202,
+              "totalVolume": "1156708.05353",
+              "private": false,
+              "thumbhash": "[redacted text]",
+              "coverPhotoLink": "https://fixture.invalid/redacted",
+              "coverPhotoThumbhash": "[redacted text]",
+              "twitter": null,
+              "clan": {
+                "id": "00000000-0000-4000-8000-00000000005b",
+                "name": "[redacted text]",
+                "iconLink": "https://fixture.invalid/redacted",
+                "iconThumbhash": "[redacted text]"
+              }
+            },
+            "tradeId": "00000000-0000-4000-8000-00000000007a",
+            "humanAmount": "1160271.96",
+            "sumSwapOpen": "712606.88",
+            "price": "0.773325986349",
+            "value": "897268.46",
+            "pnl": "1153884.75",
+            "unrealizedPnl": "787307.91",
+            "realizedPnl": "366576.83",
+            "costBasis": "224664.37",
+            "averageEntryPrice": "0.0947714",
+            "comment": {
+              "id": "00000000-0000-4000-8000-00000000007b",
+              "userId": "00000000-0000-4000-8000-000000000076",
+              "tradeId": "00000000-0000-4000-8000-00000000007a",
+              "comment": "[redacted text]",
+              "createdAt": "2026-09-05T16:08:59.085Z",
+              "parentId": null,
+              "numLikes": 21,
+              "tokenAddress": "0x0000000000000000000000000000000000000001",
+              "networkId": 4663,
+              "shortCommentSegments": [
+                {
+                  "text": "[redacted text]",
+                  "link": null,
+                  "provider": null
+                }
+              ],
+              "reactions": {
+                "counts": {
+                  "likeCount": 21
+                },
+                "reactions": {
+                  "like": false
+                }
+              },
+              "olderThesis": 17,
+              "newerThesis": 0
+            },
+            "numReplies": 0,
+            "showComment": true,
+            "averageHoldTimeSeconds": "448431",
+            "isDev": false
+          },
+          {
+            "user": {
+              "id": "00000000-0000-4000-8000-00000000007c",
+              "address": "11111111111111111111111111111113A",
+              "evmAddress": "0x000000000000000000000000000000000000007e",
+              "createdAt": "2026-08-30T06:08:02.784Z",
+              "displayName": "[redacted text]",
+              "userHandle": "fixture-id-127",
+              "profilePictureLink": null,
+              "description": null,
+              "following": 5,
+              "followers": 22,
+              "activated": false,
+              "verified": false,
+              "isReferred": false,
+              "isRestricted": false,
+              "swapCount": 35,
+              "numTrades": 3,
+              "totalVolume": "1015597.286288",
+              "private": false,
+              "thumbhash": null,
+              "coverPhotoLink": null,
+              "coverPhotoThumbhash": null,
+              "twitter": null,
+              "clan": null
+            },
+            "tradeId": "00000000-0000-4000-8000-000000000080",
+            "humanAmount": "1041730.25",
+            "sumSwapOpen": "1041730.25",
+            "price": "0.773325986349",
+            "value": "805597.07",
+            "pnl": "49799.27",
+            "unrealizedPnl": "49799.27",
+            "realizedPnl": "0",
+            "costBasis": "755797.8",
+            "averageEntryPrice": "0.725522",
+            "comment": null,
+            "showComment": true,
+            "averageHoldTimeSeconds": "639",
+            "isDev": false
+          },
+          {
+            "user": {
+              "id": "00000000-0000-4000-8000-000000000081",
+              "address": "11111111111111111111111111111113F",
+              "evmAddress": "0x0000000000000000000000000000000000000083",
+              "createdAt": "2026-06-25T18:11:09.852Z",
+              "displayName": "[redacted text]",
+              "userHandle": "fixture-id-132",
+              "profilePictureLink": "https://fixture.invalid/redacted",
+              "description": "[redacted text]",
+              "following": 72,
+              "followers": 3259,
+              "activated": false,
+              "verified": false,
+              "isReferred": true,
+              "isRestricted": false,
+              "swapCount": 1049,
+              "numTrades": 506,
+              "totalVolume": "2250617.395689",
+              "private": false,
+              "thumbhash": "[redacted text]",
+              "coverPhotoLink": null,
+              "coverPhotoThumbhash": null,
+              "twitter": null,
+              "clan": null
+            },
+            "tradeId": "00000000-0000-4000-8000-000000000085",
+            "humanAmount": "1028188.12",
+            "sumSwapOpen": "1034209.18",
+            "price": "0.773325986349",
+            "value": "795124.59",
+            "pnl": "728433.9",
+            "unrealizedPnl": "723372.02",
+            "realizedPnl": "5061.88",
+            "costBasis": "72173.63",
+            "averageEntryPrice": "0.0697854",
+            "comment": {
+              "id": "00000000-0000-4000-8000-000000000086",
+              "userId": "00000000-0000-4000-8000-000000000081",
+              "tradeId": "00000000-0000-4000-8000-000000000085",
+              "comment": "[redacted text]",
+              "createdAt": "2026-09-03T21:45:40.702Z",
+              "parentId": null,
+              "numLikes": 22,
+              "tokenAddress": "0x0000000000000000000000000000000000000001",
+              "networkId": 4663,
+              "shortCommentSegments": [
+                {
+                  "text": "[redacted text]",
+                  "link": null,
+                  "provider": null
+                }
+              ],
+              "reactions": {
+                "counts": {
+                  "likeCount": 22
+                },
+                "reactions": {
+                  "like": false
+                }
+              },
+              "olderThesis": 0,
+              "newerThesis": 0
+            },
+            "numReplies": 0,
+            "showComment": true,
+            "averageHoldTimeSeconds": "197085",
+            "isDev": false
+          },
+          {
+            "user": {
+              "id": "00000000-0000-4000-8000-000000000087",
+              "address": "11111111111111111111111111111113M",
+              "evmAddress": "0x0000000000000000000000000000000000000089",
+              "createdAt": "2026-01-17T00:35:19.633Z",
+              "displayName": "[redacted text]",
+              "userHandle": "fixture-id-138",
+              "profilePictureLink": null,
+              "description": "[redacted text]",
+              "following": 56,
+              "followers": 2230,
+              "activated": false,
+              "verified": false,
+              "isReferred": false,
+              "isRestricted": false,
+              "swapCount": 218,
+              "numTrades": 109,
+              "totalVolume": "201585.23996",
+              "private": false,
+              "thumbhash": null,
+              "coverPhotoLink": null,
+              "coverPhotoThumbhash": null,
+              "twitter": null,
+              "clan": null
+            },
+            "tradeId": "00000000-0000-4000-8000-00000000008b",
+            "humanAmount": "937753.15",
+            "sumSwapOpen": "1278125.12",
+            "price": "0.773325986349",
+            "value": "725188.88",
+            "pnl": "759104.03",
+            "unrealizedPnl": "724446.46",
+            "realizedPnl": "34657.57",
+            "costBasis": "1011.9",
+            "averageEntryPrice": "0.000791703",
+            "comment": {
+              "id": "00000000-0000-4000-8000-00000000008c",
+              "userId": "00000000-0000-4000-8000-000000000087",
+              "tradeId": "00000000-0000-4000-8000-00000000008b",
+              "comment": "[redacted text]",
+              "createdAt": "2026-08-25T19:10:51.663Z",
+              "parentId": null,
+              "numLikes": 68,
+              "tokenAddress": "0x0000000000000000000000000000000000000001",
+              "networkId": 4663,
+              "shortCommentSegments": [
+                {
+                  "text": "[redacted text]",
+                  "link": null,
+                  "provider": null
+                }
+              ],
+              "reactions": {
+                "counts": {
+                  "likeCount": 68
+                },
+                "reactions": {
+                  "like": false
+                }
+              },
+              "olderThesis": 3,
+              "newerThesis": 0
+            },
+            "numReplies": 0,
+            "showComment": true,
+            "averageHoldTimeSeconds": "174293",
+            "isDev": false
+          },
+          {
+            "user": {
+              "id": "00000000-0000-4000-8000-00000000008d",
+              "address": "11111111111111111111111111111113T",
+              "evmAddress": "0x000000000000000000000000000000000000008f",
+              "createdAt": "2026-07-31T17:08:34.916Z",
+              "displayName": "[redacted text]",
+              "userHandle": "fixture-id-144",
+              "profilePictureLink": "https://fixture.invalid/redacted",
+              "description": null,
+              "following": 8,
+              "followers": 5208,
+              "activated": false,
+              "verified": false,
+              "isReferred": true,
+              "isRestricted": false,
+              "swapCount": 351,
+              "numTrades": 574,
+              "totalVolume": "2368718.332491",
+              "private": false,
+              "thumbhash": "[redacted text]",
+              "coverPhotoLink": null,
+              "coverPhotoThumbhash": null,
+              "twitter": null,
+              "clan": null
+            },
+            "tradeId": "00000000-0000-4000-8000-000000000091",
+            "humanAmount": "896726.32",
+            "sumSwapOpen": "1538390.86",
+            "price": "0.773325986349",
+            "value": "693461.77",
+            "pnl": "794208.45",
+            "unrealizedPnl": "625841.38",
+            "realizedPnl": "168367.08",
+            "costBasis": "116007.07",
+            "averageEntryPrice": "0.0754081",
+            "comment": null,
+            "showComment": true,
+            "averageHoldTimeSeconds": "300675",
+            "isDev": false
+          },
+          {
+            "user": {
+              "id": "00000000-0000-4000-8000-000000000092",
+              "address": "11111111111111111111111111111113Y",
+              "evmAddress": "0x0000000000000000000000000000000000000094",
+              "createdAt": "2026-08-26T14:36:24.846Z",
+              "displayName": "[redacted text]",
+              "userHandle": "fixture-id-149",
+              "profilePictureLink": null,
+              "description": "[redacted text]",
+              "following": 14,
+              "followers": 396,
+              "activated": false,
+              "verified": false,
+              "isReferred": false,
+              "isRestricted": false,
+              "swapCount": 43,
+              "numTrades": 19,
+              "totalVolume": "319440.078311",
+              "private": false,
+              "thumbhash": null,
+              "coverPhotoLink": null,
+              "coverPhotoThumbhash": null,
+              "twitter": null,
+              "clan": null
+            },
+            "tradeId": "00000000-0000-4000-8000-000000000096",
+            "humanAmount": "829889.27",
+            "sumSwapOpen": "888952.39",
+            "price": "0.773325986349",
+            "value": "641774.94",
+            "pnl": "430445.18",
+            "unrealizedPnl": "421272.95",
+            "realizedPnl": "9172.24",
+            "costBasis": "236195.09",
+            "averageEntryPrice": "0.2657",
+            "comment": null,
+            "showComment": true,
+            "averageHoldTimeSeconds": "49756",
+            "isDev": false
+          },
+          {
+            "user": {
+              "id": "00000000-0000-4000-8000-000000000097",
+              "address": "11111111111111111111111111111113d",
+              "evmAddress": "0x0000000000000000000000000000000000000099",
+              "createdAt": "2026-08-10T04:17:41.477Z",
+              "displayName": "[redacted text]",
+              "userHandle": "fixture-id-154",
+              "profilePictureLink": "https://fixture.invalid/redacted",
+              "description": "[redacted text]",
+              "following": 14,
+              "followers": 914,
+              "activated": false,
+              "verified": false,
+              "isReferred": true,
+              "isRestricted": false,
+              "swapCount": 120,
+              "numTrades": 21,
+              "totalVolume": "2977581.442385",
+              "private": false,
+              "thumbhash": "[redacted text]",
+              "coverPhotoLink": null,
+              "coverPhotoThumbhash": null,
+              "twitter": null,
+              "clan": null
+            },
+            "tradeId": "00000000-0000-4000-8000-00000000009b",
+            "humanAmount": "812342.06",
+            "sumSwapOpen": "1401434.53",
+            "price": "0.773325986349",
+            "value": "628205.23",
+            "pnl": "122826.8",
+            "unrealizedPnl": "99739.34",
+            "realizedPnl": "23087.46",
+            "costBasis": "911697.64",
+            "averageEntryPrice": "0.650546",
+            "comment": {
+              "id": "00000000-0000-4000-8000-00000000009c",
+              "userId": "00000000-0000-4000-8000-000000000097",
+              "tradeId": "00000000-0000-4000-8000-00000000009b",
+              "comment": "[redacted text]",
+              "createdAt": "2026-09-06T18:42:36.112Z",
+              "parentId": null,
+              "numLikes": 8,
+              "tokenAddress": "0x0000000000000000000000000000000000000001",
+              "networkId": 4663,
+              "shortCommentSegments": [
+                {
+                  "text": "[redacted text]",
+                  "link": null,
+                  "provider": null
+                }
+              ],
+              "reactions": {
+                "counts": {
+                  "likeCount": 8
+                },
+                "reactions": {
+                  "like": false
+                }
+              },
+              "olderThesis": 1,
+              "newerThesis": 0
+            },
+            "numReplies": 0,
+            "showComment": true,
+            "averageHoldTimeSeconds": "46836",
+            "isDev": false
+          },
+          {
+            "user": {
+              "id": "00000000-0000-4000-8000-00000000009d",
+              "address": "11111111111111111111111111111113j",
+              "evmAddress": "0x000000000000000000000000000000000000009f",
+              "createdAt": "2026-03-11T06:56:45.765Z",
+              "displayName": "[redacted text]",
+              "userHandle": "fixture-id-160",
+              "profilePictureLink": "https://fixture.invalid/redacted",
+              "description": "[redacted text]",
+              "following": 140,
+              "followers": 12263,
+              "activated": false,
+              "verified": false,
+              "isReferred": false,
+              "isRestricted": false,
+              "swapCount": 2792,
+              "numTrades": 776,
+              "totalVolume": "6352786.027593",
+              "private": false,
+              "thumbhash": "[redacted text]",
+              "coverPhotoLink": null,
+              "coverPhotoThumbhash": null,
+              "twitter": null,
+              "clan": {
+                "id": "00000000-0000-4000-8000-000000000073",
+                "name": "[redacted text]",
+                "iconLink": "https://fixture.invalid/redacted",
+                "iconThumbhash": "[redacted text]"
+              }
+            },
+            "tradeId": "00000000-0000-4000-8000-0000000000a1",
+            "humanAmount": "735883.84",
+            "sumSwapOpen": "9169538.04",
+            "price": "0.773325986349",
+            "value": "569078.1",
+            "pnl": "893889.47",
+            "unrealizedPnl": "543429.98",
+            "realizedPnl": "350459.49",
+            "costBasis": "369184.47",
+            "averageEntryPrice": "0.0348534",
+            "comment": {
+              "id": "00000000-0000-4000-8000-0000000000a2",
+              "userId": "00000000-0000-4000-8000-00000000009d",
+              "tradeId": "00000000-0000-4000-8000-0000000000a1",
+              "comment": "[redacted text]",
+              "createdAt": "2026-09-02T13:55:01.899Z",
+              "parentId": null,
+              "numLikes": 20,
+              "tokenAddress": "0x0000000000000000000000000000000000000001",
+              "networkId": 4663,
+              "shortCommentSegments": [
+                {
+                  "text": "[redacted text]",
+                  "link": null,
+                  "provider": null
+                }
+              ],
+              "reactions": {
+                "counts": {
+                  "likeCount": 20
+                },
+                "reactions": {
+                  "like": false
+                }
+              },
+              "olderThesis": 4,
+              "newerThesis": 0
+            },
+            "numReplies": 0,
+            "showComment": true,
+            "averageHoldTimeSeconds": "72744",
+            "isDev": false
+          },
+          {
+            "user": {
+              "id": "00000000-0000-4000-8000-0000000000a3",
+              "address": "11111111111111111111111111111113q",
+              "evmAddress": "0x00000000000000000000000000000000000000a5",
+              "createdAt": "2026-01-28T06:27:27.899Z",
+              "displayName": "[redacted text]",
+              "userHandle": "fixture-id-166",
+              "profilePictureLink": "https://fixture.invalid/redacted",
+              "description": "[redacted text]",
+              "following": 19,
+              "followers": 9766,
+              "activated": false,
+              "verified": false,
+              "isReferred": true,
+              "isRestricted": false,
+              "swapCount": 1619,
+              "numTrades": 521,
+              "totalVolume": "2277450.534576",
+              "private": false,
+              "thumbhash": "[redacted text]",
+              "coverPhotoLink": null,
+              "coverPhotoThumbhash": null,
+              "twitter": null,
+              "clan": {
+                "id": "00000000-0000-4000-8000-000000000073",
+                "name": "[redacted text]",
+                "iconLink": "https://fixture.invalid/redacted",
+                "iconThumbhash": "[redacted text]"
+              }
+            },
+            "tradeId": "00000000-0000-4000-8000-0000000000a7",
+            "humanAmount": "726015.09",
+            "sumSwapOpen": "5104524.98",
+            "price": "0.773325986349",
+            "value": "561446.34",
+            "pnl": "632784.96",
+            "unrealizedPnl": "551505.65",
+            "realizedPnl": "81279.31",
+            "costBasis": "69892.46",
+            "averageEntryPrice": "0.0136921",
+            "comment": {
+              "id": "00000000-0000-4000-8000-0000000000a8",
+              "userId": "00000000-0000-4000-8000-0000000000a3",
+              "tradeId": "00000000-0000-4000-8000-0000000000a7",
+              "comment": "[redacted text]",
+              "createdAt": "2026-07-27T21:12:33.198Z",
+              "parentId": null,
+              "numLikes": 30,
+              "tokenAddress": "0x0000000000000000000000000000000000000001",
+              "networkId": 4663,
+              "shortCommentSegments": [
+                {
+                  "text": "[redacted text]",
+                  "link": null,
+                  "provider": null
+                }
+              ],
+              "reactions": {
+                "counts": {
+                  "likeCount": 30
+                },
+                "reactions": {
+                  "like": false
+                }
+              },
+              "olderThesis": 0,
+              "newerThesis": 0
+            },
+            "numReplies": 0,
+            "showComment": true,
+            "averageHoldTimeSeconds": "220321",
+            "isDev": false
+          },
+          {
+            "user": {
+              "id": "00000000-0000-4000-8000-0000000000a9",
+              "address": "11111111111111111111111111111113w",
+              "evmAddress": "0x00000000000000000000000000000000000000ab",
+              "createdAt": "2026-08-24T21:32:13.131Z",
+              "displayName": "[redacted text]",
+              "userHandle": "fixture-id-172",
+              "profilePictureLink": "https://fixture.invalid/redacted",
+              "description": "[redacted text]",
+              "following": 9,
+              "followers": 1284,
+              "activated": false,
+              "verified": false,
+              "isReferred": true,
+              "isRestricted": false,
+              "swapCount": 518,
+              "numTrades": 147,
+              "totalVolume": "806214.258471",
+              "private": false,
+              "thumbhash": "[redacted text]",
+              "coverPhotoLink": null,
+              "coverPhotoThumbhash": null,
+              "twitter": null,
+              "clan": null
+            },
+            "tradeId": "00000000-0000-4000-8000-0000000000ad",
+            "humanAmount": "718631.95",
+            "sumSwapOpen": "718631.45",
+            "price": "0.773325986349",
+            "value": "555736.76",
+            "pnl": "477883.34",
+            "unrealizedPnl": "477883.34",
+            "realizedPnl": "0",
+            "costBasis": "77853.42",
+            "averageEntryPrice": "0.108336",
+            "comment": {
+              "id": "00000000-0000-4000-8000-0000000000ae",
+              "userId": "00000000-0000-4000-8000-0000000000a9",
+              "tradeId": "00000000-0000-4000-8000-0000000000ad",
+              "comment": "[redacted text]",
+              "createdAt": "2026-09-05T08:57:57.795Z",
+              "parentId": null,
+              "numLikes": 7,
+              "tokenAddress": "0x0000000000000000000000000000000000000001",
+              "networkId": 4663,
+              "shortCommentSegments": [
+                {
+                  "text": "[redacted text]",
+                  "link": null,
+                  "provider": null
+                }
+              ],
+              "reactions": {
+                "counts": {
+                  "likeCount": 7
+                },
+                "reactions": {
+                  "like": false
+                }
+              },
+              "olderThesis": 2,
+              "newerThesis": 0
+            },
+            "numReplies": 0,
+            "showComment": true,
+            "averageHoldTimeSeconds": "100941",
+            "isDev": false
+          },
+          {
+            "user": {
+              "id": "00000000-0000-4000-8000-0000000000af",
+              "address": "111111111111111111111111111111143",
+              "evmAddress": "0x00000000000000000000000000000000000000b1",
+              "createdAt": "2026-08-29T13:10:26.427Z",
+              "displayName": "[redacted text]",
+              "userHandle": "fixture-id-178",
+              "profilePictureLink": "https://fixture.invalid/redacted",
+              "description": "[redacted text]",
+              "following": 13,
+              "followers": 569,
+              "activated": false,
+              "verified": false,
+              "isReferred": true,
+              "isRestricted": false,
+              "swapCount": 1839,
+              "numTrades": 424,
+              "totalVolume": "2138877.934837",
+              "private": false,
+              "thumbhash": "[redacted text]",
+              "coverPhotoLink": null,
+              "coverPhotoThumbhash": null,
+              "twitter": null,
+              "clan": null
+            },
+            "tradeId": "00000000-0000-4000-8000-0000000000b3",
+            "humanAmount": "715032.46",
+            "sumSwapOpen": "789251.34",
+            "price": "0.773325986349",
+            "value": "552953.19",
+            "pnl": "88694.04",
+            "unrealizedPnl": "85132.87",
+            "realizedPnl": "3561.17",
+            "costBasis": "516379.09",
+            "averageEntryPrice": "0.654264",
+            "comment": {
+              "id": "00000000-0000-4000-8000-0000000000b4",
+              "userId": "00000000-0000-4000-8000-0000000000af",
+              "tradeId": "00000000-0000-4000-8000-0000000000b3",
+              "comment": "[redacted text]",
+              "createdAt": "2026-09-04T01:27:13.773Z",
+              "parentId": null,
+              "numLikes": 13,
+              "tokenAddress": "0x0000000000000000000000000000000000000001",
+              "networkId": 4663,
+              "shortCommentSegments": [
+                {
+                  "text": "[redacted text]",
+                  "link": null,
+                  "provider": null
+                }
+              ],
+              "reactions": {
+                "counts": {
+                  "likeCount": 13
+                },
+                "reactions": {
+                  "like": false
+                }
+              },
+              "olderThesis": 1,
+              "newerThesis": 0
+            },
+            "numReplies": 0,
+            "showComment": true,
+            "averageHoldTimeSeconds": "16765",
+            "isDev": false
+          },
+          {
+            "user": {
+              "id": "00000000-0000-4000-8000-0000000000b5",
+              "address": "111111111111111111111111111111149",
+              "evmAddress": "0x00000000000000000000000000000000000000b7",
+              "createdAt": "2026-08-09T20:33:27.837Z",
+              "displayName": "[redacted text]",
+              "userHandle": "fixture-id-184",
+              "profilePictureLink": "https://fixture.invalid/redacted",
+              "description": "[redacted text]",
+              "following": 1,
+              "followers": 235,
+              "activated": false,
+              "verified": false,
+              "isReferred": false,
+              "isRestricted": false,
+              "swapCount": 306,
+              "numTrades": 142,
+              "totalVolume": "384438.688806",
+              "private": false,
+              "thumbhash": "[redacted text]",
+              "coverPhotoLink": "https://fixture.invalid/redacted",
+              "coverPhotoThumbhash": "[redacted text]",
+              "twitter": null,
+              "clan": null
+            },
+            "tradeId": "00000000-0000-4000-8000-0000000000b9",
+            "humanAmount": "633401.72",
+            "sumSwapOpen": "635250.91",
+            "price": "0.773325986349",
+            "value": "489826.01",
+            "pnl": "240686.24",
+            "unrealizedPnl": "239768.32",
+            "realizedPnl": "917.917",
+            "costBasis": "250787.72",
+            "averageEntryPrice": "0.394786",
+            "comment": {
+              "id": "00000000-0000-4000-8000-0000000000ba",
+              "userId": "00000000-0000-4000-8000-0000000000b5",
+              "tradeId": "00000000-0000-4000-8000-0000000000b9",
+              "comment": "[redacted text]",
+              "createdAt": "2026-09-08T10:11:53.665Z",
+              "parentId": null,
+              "numLikes": 1,
+              "tokenAddress": "0x0000000000000000000000000000000000000001",
+              "networkId": 4663,
+              "shortCommentSegments": [
+                {
+                  "text": "[redacted text]",
+                  "link": null,
+                  "provider": null
+                }
+              ],
+              "reactions": {
+                "counts": {
+                  "likeCount": 1
+                },
+                "reactions": {
+                  "like": false
+                }
+              },
+              "olderThesis": 15,
+              "newerThesis": 0
+            },
+            "numReplies": 0,
+            "showComment": true,
+            "averageHoldTimeSeconds": "83523",
+            "isDev": false
+          },
+          {
+            "user": {
+              "id": "00000000-0000-4000-8000-0000000000bb",
+              "address": "11111111111111111111111111111114F",
+              "evmAddress": "0x00000000000000000000000000000000000000bd",
+              "createdAt": "2026-08-30T07:00:44.065Z",
+              "displayName": "[redacted text]",
+              "userHandle": "fixture-id-190",
+              "profilePictureLink": "https://fixture.invalid/redacted",
+              "description": "[redacted text]",
+              "following": 74,
+              "followers": 3439,
+              "activated": false,
+              "verified": false,
+              "isReferred": true,
+              "isRestricted": false,
+              "swapCount": 392,
+              "numTrades": 74,
+              "totalVolume": "5185172.414127",
+              "private": false,
+              "thumbhash": "[redacted text]",
+              "coverPhotoLink": null,
+              "coverPhotoThumbhash": null,
+              "twitter": null,
+              "clan": null
+            },
+            "tradeId": "00000000-0000-4000-8000-0000000000bf",
+            "humanAmount": "567750.01",
+            "sumSwapOpen": "567750.01",
+            "price": "0.773325986349",
+            "value": "439055.83",
+            "pnl": "-33438.26",
+            "unrealizedPnl": "-33438.26",
+            "realizedPnl": "0",
+            "costBasis": "472494.09",
+            "averageEntryPrice": "0.832222",
+            "comment": {
+              "id": "00000000-0000-4000-8000-0000000000c0",
+              "userId": "00000000-0000-4000-8000-0000000000bb",
+              "tradeId": "00000000-0000-4000-8000-0000000000bf",
+              "comment": "[redacted text]",
+              "createdAt": "2026-09-07T09:49:28.771Z",
+              "parentId": null,
+              "numLikes": 9,
+              "tokenAddress": "0x0000000000000000000000000000000000000001",
+              "networkId": 4663,
+              "shortCommentSegments": [
+                {
+                  "text": "[redacted text]",
+                  "link": null,
+                  "provider": null
+                }
+              ],
+              "reactions": {
+                "counts": {
+                  "likeCount": 9
+                },
+                "reactions": {
+                  "like": false
+                }
+              },
+              "olderThesis": 0,
+              "newerThesis": 0
+            },
+            "numReplies": 0,
+            "showComment": true,
+            "averageHoldTimeSeconds": "164930",
+            "isDev": false
+          },
+          {
+            "user": {
+              "id": "00000000-0000-4000-8000-0000000000c1",
+              "address": "11111111111111111111111111111114M",
+              "evmAddress": "0x00000000000000000000000000000000000000c3",
+              "createdAt": "2026-01-16T15:23:35.541Z",
+              "displayName": "[redacted text]",
+              "userHandle": "fixture-id-196",
+              "profilePictureLink": null,
+              "description": null,
+              "following": 11,
+              "followers": 528,
+              "activated": false,
+              "verified": false,
+              "isReferred": false,
+              "isRestricted": false,
+              "swapCount": 102,
+              "numTrades": 26,
+              "totalVolume": "105030.235436",
+              "private": false,
+              "thumbhash": null,
+              "coverPhotoLink": null,
+              "coverPhotoThumbhash": null,
+              "twitter": null,
+              "clan": null
+            },
+            "tradeId": "00000000-0000-4000-8000-0000000000c5",
+            "humanAmount": "558954.39",
+            "sumSwapOpen": "43128.26",
+            "price": "0.773325986349",
+            "value": "432253.96",
+            "pnl": "503500.22",
+            "unrealizedPnl": "421634.86",
+            "realizedPnl": "81865.36",
+            "costBasis": "19465.76",
+            "averageEntryPrice": "0.0189981",
+            "comment": null,
+            "showComment": true,
+            "averageHoldTimeSeconds": "1456459",
+            "isDev": false
+          },
+          {
+            "user": {
+              "id": "00000000-0000-4000-8000-0000000000c6",
+              "address": "11111111111111111111111111111114S",
+              "evmAddress": "0x00000000000000000000000000000000000000c8",
+              "createdAt": "2025-09-07T12:48:07.656Z",
+              "displayName": "[redacted text]",
+              "userHandle": "fixture-id-201",
+              "profilePictureLink": "https://fixture.invalid/redacted",
+              "description": "[redacted text]",
+              "following": 16,
+              "followers": 286,
+              "activated": false,
+              "verified": false,
+              "isReferred": false,
+              "isRestricted": false,
+              "swapCount": 22,
+              "numTrades": 10,
+              "totalVolume": "211933.4423",
+              "private": false,
+              "thumbhash": "[redacted text]",
+              "coverPhotoLink": null,
+              "coverPhotoThumbhash": null,
+              "twitter": null,
+              "clan": null
+            },
+            "tradeId": "00000000-0000-4000-8000-0000000000ca",
+            "humanAmount": "545001",
+            "sumSwapOpen": "627928.53",
+            "price": "0.773325986349",
+            "value": "421463.44",
+            "pnl": "377122.27",
+            "unrealizedPnl": "337401.79",
+            "realizedPnl": "39720.48",
+            "costBasis": "96852.49",
+            "averageEntryPrice": "0.154241",
+            "comment": {
+              "id": "00000000-0000-4000-8000-0000000000cb",
+              "userId": "00000000-0000-4000-8000-0000000000c6",
+              "tradeId": "00000000-0000-4000-8000-0000000000ca",
+              "comment": "[redacted text]",
+              "createdAt": "2026-09-05T11:38:38.485Z",
+              "parentId": null,
+              "numLikes": 6,
+              "tokenAddress": "0x0000000000000000000000000000000000000001",
+              "networkId": 4663,
+              "shortCommentSegments": [
+                {
+                  "text": "[redacted text]",
+                  "link": null,
+                  "provider": null
+                }
+              ],
+              "reactions": {
+                "counts": {
+                  "likeCount": 6
+                },
+                "reactions": {
+                  "like": false
+                }
+              },
+              "olderThesis": 7,
+              "newerThesis": 0
+            },
+            "numReplies": 0,
+            "showComment": true,
+            "averageHoldTimeSeconds": "37970",
+            "isDev": false
+          },
+          {
+            "user": {
+              "id": "00000000-0000-4000-8000-0000000000cc",
+              "address": "11111111111111111111111111111114Y",
+              "evmAddress": "0x00000000000000000000000000000000000000ce",
+              "createdAt": "2026-08-25T03:21:19.394Z",
+              "displayName": "[redacted text]",
+              "userHandle": "fixture-id-207",
+              "profilePictureLink": "https://fixture.invalid/redacted",
+              "description": "",
+              "following": 6,
+              "followers": 152,
+              "activated": false,
+              "verified": false,
+              "isReferred": true,
+              "isRestricted": false,
+              "swapCount": 207,
+              "numTrades": 68,
+              "totalVolume": "161840.899448",
+              "private": false,
+              "thumbhash": "[redacted text]",
+              "coverPhotoLink": null,
+              "coverPhotoThumbhash": null,
+              "twitter": null,
+              "clan": null
+            },
+            "tradeId": "00000000-0000-4000-8000-0000000000d0",
+            "humanAmount": "504576.38",
+            "sumSwapOpen": "575416.55",
+            "price": "0.773325986349",
+            "value": "390202.03",
+            "pnl": "340068.91",
+            "unrealizedPnl": "332612.7",
+            "realizedPnl": "7456.21",
+            "costBasis": "65674.6",
+            "averageEntryPrice": "0.114134",
+            "comment": null,
+            "showComment": true,
+            "averageHoldTimeSeconds": "40042",
+            "isDev": false
+          },
+          {
+            "user": {
+              "id": "00000000-0000-4000-8000-0000000000d1",
+              "address": "11111111111111111111111111111114d",
+              "evmAddress": "0x00000000000000000000000000000000000000d3",
+              "createdAt": "2026-07-23T21:45:38.966Z",
+              "displayName": "[redacted text]",
+              "userHandle": "fixture-id-212",
+              "profilePictureLink": "https://fixture.invalid/redacted",
+              "description": "[redacted text]",
+              "following": 11,
+              "followers": 3568,
+              "activated": false,
+              "verified": false,
+              "isReferred": false,
+              "isRestricted": false,
+              "swapCount": 279,
+              "numTrades": 82,
+              "totalVolume": "2797746.602362",
+              "private": false,
+              "thumbhash": "[redacted text]",
+              "coverPhotoLink": null,
+              "coverPhotoThumbhash": null,
+              "twitter": null,
+              "clan": null
+            },
+            "tradeId": "00000000-0000-4000-8000-0000000000d5",
+            "humanAmount": "500183.39",
+            "sumSwapOpen": "1000183.39",
+            "price": "0.773325986349",
+            "value": "386804.82",
+            "pnl": "344879.71",
+            "unrealizedPnl": "176052.09",
+            "realizedPnl": "168827.62",
+            "costBasis": "421428.18",
+            "averageEntryPrice": "0.421351",
+            "comment": {
+              "id": "00000000-0000-4000-8000-0000000000d6",
+              "userId": "00000000-0000-4000-8000-0000000000d1",
+              "tradeId": "00000000-0000-4000-8000-0000000000d5",
+              "comment": "[redacted text]",
+              "createdAt": "2026-09-06T20:11:07.692Z",
+              "parentId": null,
+              "numLikes": 8,
+              "tokenAddress": "0x0000000000000000000000000000000000000001",
+              "networkId": 4663,
+              "shortCommentSegments": [
+                {
+                  "text": "[redacted text]",
+                  "link": null,
+                  "provider": null
+                }
+              ],
+              "reactions": {
+                "counts": {
+                  "likeCount": 8
+                },
+                "reactions": {
+                  "like": false
+                }
+              },
+              "olderThesis": 11,
+              "newerThesis": 0
+            },
+            "numReplies": 0,
+            "showComment": true,
+            "averageHoldTimeSeconds": "55494",
+            "isDev": false
+          },
+          {
+            "user": {
+              "id": "00000000-0000-4000-8000-0000000000d7",
+              "address": "11111111111111111111111111111114j",
+              "evmAddress": "0x00000000000000000000000000000000000000d9",
+              "createdAt": "2026-08-25T10:01:43.226Z",
+              "displayName": "[redacted text]",
+              "userHandle": "fixture-id-218",
+              "profilePictureLink": "https://fixture.invalid/redacted",
+              "description": "[redacted text]",
+              "following": 9,
+              "followers": 118,
+              "activated": false,
+              "verified": false,
+              "isReferred": true,
+              "isRestricted": false,
+              "swapCount": 604,
+              "numTrades": 182,
+              "totalVolume": "561366.717868",
+              "private": false,
+              "thumbhash": "[redacted text]",
+              "coverPhotoLink": null,
+              "coverPhotoThumbhash": null,
+              "twitter": null,
+              "clan": null
+            },
+            "tradeId": "00000000-0000-4000-8000-0000000000db",
+            "humanAmount": "485574",
+            "sumSwapOpen": "54874.28",
+            "price": "0.773325986349",
+            "value": "375506.99",
+            "pnl": "121761.6",
+            "unrealizedPnl": "122205.63",
+            "realizedPnl": "-444.032",
+            "costBasis": "258540.71",
+            "averageEntryPrice": "0.521653",
+            "comment": null,
+            "showComment": true,
+            "averageHoldTimeSeconds": "112700",
+            "isDev": false
+          },
+          {
+            "user": {
+              "id": "00000000-0000-4000-8000-0000000000dc",
+              "address": "11111111111111111111111111111114p",
+              "evmAddress": "0x00000000000000000000000000000000000000de",
+              "createdAt": "2026-07-14T16:36:16.209Z",
+              "displayName": "[redacted text]",
+              "userHandle": "fixture-id-223",
+              "profilePictureLink": null,
+              "description": null,
+              "following": 51,
+              "followers": 1284,
+              "activated": false,
+              "verified": false,
+              "isReferred": true,
+              "isRestricted": false,
+              "swapCount": 481,
+              "numTrades": 73,
+              "totalVolume": "1026938.614832",
+              "private": false,
+              "thumbhash": null,
+              "coverPhotoLink": null,
+              "coverPhotoThumbhash": null,
+              "twitter": null,
+              "clan": null
+            },
+            "tradeId": "00000000-0000-4000-8000-0000000000e0",
+            "humanAmount": "464437.07",
+            "sumSwapOpen": "3114256.26",
+            "price": "0.773325986349",
+            "value": "359161.26",
+            "pnl": "670811.55",
+            "unrealizedPnl": "345527.29",
+            "realizedPnl": "325284.27",
+            "costBasis": "91421.81",
+            "averageEntryPrice": "0.0293559",
+            "comment": {
+              "id": "00000000-0000-4000-8000-0000000000e1",
+              "userId": "00000000-0000-4000-8000-0000000000dc",
+              "tradeId": "00000000-0000-4000-8000-0000000000e0",
+              "comment": "[redacted text]",
+              "createdAt": "2026-09-07T10:37:42.031Z",
+              "parentId": null,
+              "numLikes": 1,
+              "tokenAddress": "0x0000000000000000000000000000000000000001",
+              "networkId": 4663,
+              "shortCommentSegments": [
+                {
+                  "text": "[redacted text]",
+                  "link": null,
+                  "provider": null
+                }
+              ],
+              "reactions": {
+                "counts": {
+                  "likeCount": 1
+                },
+                "reactions": {
+                  "like": false
+                }
+              },
+              "olderThesis": 11,
+              "newerThesis": 0
+            },
+            "numReplies": 0,
+            "showComment": true,
+            "averageHoldTimeSeconds": "105052",
+            "isDev": false
+          },
+          {
+            "user": {
+              "id": "00000000-0000-4000-8000-0000000000e2",
+              "address": "11111111111111111111111111111114v",
+              "evmAddress": "0x00000000000000000000000000000000000000e4",
+              "createdAt": "2026-08-30T18:15:26.390Z",
+              "displayName": "[redacted text]",
+              "userHandle": "fixture-id-229",
+              "profilePictureLink": null,
+              "description": null,
+              "following": 36,
+              "followers": 44,
+              "activated": false,
+              "verified": false,
+              "isReferred": true,
+              "isRestricted": false,
+              "swapCount": 24,
+              "numTrades": 16,
+              "totalVolume": "523539.310344",
+              "private": false,
+              "thumbhash": null,
+              "coverPhotoLink": null,
+              "coverPhotoThumbhash": null,
+              "twitter": null,
+              "clan": null
+            },
+            "tradeId": "00000000-0000-4000-8000-0000000000e6",
+            "humanAmount": "434587.94",
+            "sumSwapOpen": "783680.1",
+            "price": "0.773325986349",
+            "value": "336078.15",
+            "pnl": "147357.19",
+            "unrealizedPnl": "172362.15",
+            "realizedPnl": "-25004.96",
+            "costBasis": "295224.41",
+            "averageEntryPrice": "0.376715",
+            "comment": {
+              "id": "00000000-0000-4000-8000-0000000000e7",
+              "userId": "00000000-0000-4000-8000-0000000000e2",
+              "tradeId": "00000000-0000-4000-8000-0000000000e6",
+              "comment": "[redacted text]",
+              "createdAt": "2026-09-05T03:13:05.743Z",
+              "parentId": null,
+              "numLikes": 4,
+              "tokenAddress": "0x0000000000000000000000000000000000000001",
+              "networkId": 4663,
+              "shortCommentSegments": [
+                {
+                  "text": "[redacted text]",
+                  "link": null,
+                  "provider": null
+                }
+              ],
+              "reactions": {
+                "counts": {
+                  "likeCount": 4
+                },
+                "reactions": {
+                  "like": false
+                }
+              },
+              "olderThesis": 0,
+              "newerThesis": 0
+            },
+            "numReplies": 0,
+            "showComment": true,
+            "averageHoldTimeSeconds": "9953",
+            "isDev": false
+          },
+          {
+            "user": {
+              "id": "00000000-0000-4000-8000-0000000000e8",
+              "address": "111111111111111111111111111111152",
+              "evmAddress": "0x00000000000000000000000000000000000000ea",
+              "createdAt": "2026-08-09T15:16:12.705Z",
+              "displayName": "[redacted text]",
+              "userHandle": "fixture-id-235",
+              "profilePictureLink": "https://fixture.invalid/redacted",
+              "description": null,
+              "following": 13,
+              "followers": 309,
+              "activated": false,
+              "verified": false,
+              "isReferred": false,
+              "isRestricted": false,
+              "swapCount": 63,
+              "numTrades": 29,
+              "totalVolume": "1135519.921049",
+              "private": false,
+              "thumbhash": "[redacted text]",
+              "coverPhotoLink": null,
+              "coverPhotoThumbhash": null,
+              "twitter": null,
+              "clan": null
+            },
+            "tradeId": "00000000-0000-4000-8000-0000000000ec",
+            "humanAmount": "425244.34",
+            "sumSwapOpen": "425244.34",
+            "price": "0.773325986349",
+            "value": "328852.5",
+            "pnl": "21659.32",
+            "unrealizedPnl": "21659.32",
+            "realizedPnl": "0",
+            "costBasis": "307193.18",
+            "averageEntryPrice": "0.722392",
+            "comment": null,
+            "showComment": true,
+            "averageHoldTimeSeconds": "547468",
+            "isDev": false
+          },
+          {
+            "user": {
+              "id": "00000000-0000-4000-8000-0000000000ed",
+              "address": "111111111111111111111111111111157",
+              "evmAddress": "0x00000000000000000000000000000000000000ef",
+              "createdAt": "2026-08-08T15:21:04.807Z",
+              "displayName": "[redacted text]",
+              "userHandle": "fixture-id-240",
+              "profilePictureLink": null,
+              "description": null,
+              "following": 10,
+              "followers": 1143,
+              "activated": false,
+              "verified": false,
+              "isReferred": false,
+              "isRestricted": false,
+              "swapCount": 168,
+              "numTrades": 109,
+              "totalVolume": "657992.075328",
+              "private": false,
+              "thumbhash": null,
+              "coverPhotoLink": null,
+              "coverPhotoThumbhash": null,
+              "twitter": null,
+              "clan": null
+            },
+            "tradeId": "00000000-0000-4000-8000-0000000000f1",
+            "humanAmount": "421239.55",
+            "sumSwapOpen": "585554.28",
+            "price": "0.773325986349",
+            "value": "325755.49",
+            "pnl": "337990.94",
+            "unrealizedPnl": "309107.7",
+            "realizedPnl": "28883.24",
+            "costBasis": "23141.66",
+            "averageEntryPrice": "0.039521",
+            "comment": null,
+            "showComment": true,
+            "averageHoldTimeSeconds": "201060",
+            "isDev": false
+          },
+          {
+            "user": {
+              "id": "00000000-0000-4000-8000-0000000000f2",
+              "address": "11111111111111111111111111111115C",
+              "evmAddress": "0x00000000000000000000000000000000000000f4",
+              "createdAt": "2026-08-23T14:43:29.706Z",
+              "displayName": "[redacted text]",
+              "userHandle": "fixture-id-245",
+              "profilePictureLink": "https://fixture.invalid/redacted",
+              "description": "",
+              "following": 7,
+              "followers": 8739,
+              "activated": false,
+              "verified": false,
+              "isReferred": true,
+              "isRestricted": false,
+              "swapCount": 264,
+              "numTrades": 112,
+              "totalVolume": "3869264.214701",
+              "private": false,
+              "thumbhash": "[redacted text]",
+              "coverPhotoLink": null,
+              "coverPhotoThumbhash": null,
+              "twitter": null,
+              "clan": null
+            },
+            "tradeId": "00000000-0000-4000-8000-0000000000f6",
+            "humanAmount": "406678",
+            "sumSwapOpen": "0",
+            "price": "0.773325986349",
+            "value": "314494.67",
+            "pnl": "-5470.45",
+            "unrealizedPnl": "7247.96",
+            "realizedPnl": "-12718.41",
+            "costBasis": "478944.8",
+            "averageEntryPrice": "0.755504",
+            "comment": {
+              "id": "00000000-0000-4000-8000-0000000000f7",
+              "userId": "00000000-0000-4000-8000-0000000000f2",
+              "tradeId": "00000000-0000-4000-8000-0000000000f6",
+              "comment": "[redacted text]",
+              "createdAt": "2026-09-08T07:02:51.416Z",
+              "parentId": null,
+              "numLikes": 36,
+              "tokenAddress": "0x0000000000000000000000000000000000000001",
+              "networkId": 4663,
+              "shortCommentSegments": [
+                {
+                  "text": "[redacted text]",
+                  "link": null,
+                  "provider": null
+                }
+              ],
+              "reactions": {
+                "counts": {
+                  "likeCount": 36
+                },
+                "reactions": {
+                  "like": false
+                }
+              },
+              "olderThesis": 1,
+              "newerThesis": 0
+            },
+            "numReplies": 0,
+            "showComment": true,
+            "averageHoldTimeSeconds": "232528",
+            "isDev": false
+          },
+          {
+            "user": {
+              "id": "00000000-0000-4000-8000-0000000000f8",
+              "address": "11111111111111111111111111111115J",
+              "evmAddress": "0x00000000000000000000000000000000000000fa",
+              "createdAt": "2026-07-09T22:39:53.061Z",
+              "displayName": "[redacted text]",
+              "userHandle": "fixture-id-251",
+              "profilePictureLink": null,
+              "description": null,
+              "following": 12,
+              "followers": 90,
+              "activated": false,
+              "verified": false,
+              "isReferred": true,
+              "isRestricted": false,
+              "swapCount": 955,
+              "numTrades": 202,
+              "totalVolume": "232411.360022",
+              "private": false,
+              "thumbhash": null,
+              "coverPhotoLink": null,
+              "coverPhotoThumbhash": null,
+              "twitter": null,
+              "clan": null
+            },
+            "tradeId": "00000000-0000-4000-8000-0000000000fc",
+            "humanAmount": "393806.5",
+            "sumSwapOpen": "985580.87",
+            "price": "0.773325986349",
+            "value": "304540.8",
+            "pnl": "315403.93",
+            "unrealizedPnl": "291421.59",
+            "realizedPnl": "23982.34",
+            "costBasis": "32833.69",
+            "averageEntryPrice": "0.0333139",
+            "comment": null,
+            "showComment": true,
+            "averageHoldTimeSeconds": "169429",
+            "isDev": false
+          },
+          {
+            "user": {
+              "id": "00000000-0000-4000-8000-0000000000fd",
+              "address": "11111111111111111111111111111115P",
+              "evmAddress": "0x00000000000000000000000000000000000000ff",
+              "createdAt": "2026-08-25T05:49:57.820Z",
+              "displayName": "[redacted text]",
+              "userHandle": "fixture-id-256",
+              "profilePictureLink": null,
+              "description": null,
+              "following": 3,
+              "followers": 83,
+              "activated": false,
+              "verified": false,
+              "isReferred": false,
+              "isRestricted": false,
+              "swapCount": 28,
+              "numTrades": 38,
+              "totalVolume": "618068.730256",
+              "private": false,
+              "thumbhash": null,
+              "coverPhotoLink": null,
+              "coverPhotoThumbhash": null,
+              "twitter": null,
+              "clan": null
+            },
+            "tradeId": "00000000-0000-4000-8000-000000000101",
+            "humanAmount": "379251.51",
+            "sumSwapOpen": "379251.51",
+            "price": "0.773325986349",
+            "value": "293285.04",
+            "pnl": "69474.25",
+            "unrealizedPnl": "69474.25",
+            "realizedPnl": "0",
+            "costBasis": "223810.8",
+            "averageEntryPrice": "0.590138",
+            "comment": null,
+            "showComment": true,
+            "averageHoldTimeSeconds": "490874",
+            "isDev": false
+          },
+          {
+            "user": {
+              "id": "00000000-0000-4000-8000-000000000102",
+              "address": "1111111111111111111111111111115U",
+              "evmAddress": "0x0000000000000000000000000000000000000104",
+              "createdAt": "2026-08-24T10:46:14.662Z",
+              "displayName": "[redacted text]",
+              "userHandle": "fixture-id-261",
+              "profilePictureLink": null,
+              "description": null,
+              "following": 39,
+              "followers": 241,
+              "activated": false,
+              "verified": false,
+              "isReferred": true,
+              "isRestricted": false,
+              "swapCount": 163,
+              "numTrades": 59,
+              "totalVolume": "1552838.341613",
+              "private": false,
+              "thumbhash": null,
+              "coverPhotoLink": null,
+              "coverPhotoThumbhash": null,
+              "twitter": null,
+              "clan": null
+            },
+            "tradeId": "00000000-0000-4000-8000-000000000106",
+            "humanAmount": "377488.14",
+            "sumSwapOpen": "696734.35",
+            "price": "0.773325986349",
+            "value": "291921.39",
+            "pnl": "327622.82",
+            "unrealizedPnl": "188959.18",
+            "realizedPnl": "138663.65",
+            "costBasis": "190040.38",
+            "averageEntryPrice": "0.272756",
+            "comment": {
+              "id": "00000000-0000-4000-8000-000000000107",
+              "userId": "00000000-0000-4000-8000-000000000102",
+              "tradeId": "00000000-0000-4000-8000-000000000106",
+              "comment": "[redacted text]",
+              "createdAt": "2026-09-08T10:09:25.739Z",
+              "parentId": null,
+              "numLikes": 0,
+              "tokenAddress": "0x0000000000000000000000000000000000000001",
+              "networkId": 4663,
+              "shortCommentSegments": [
+                {
+                  "text": "[redacted text]",
+                  "link": null,
+                  "provider": null
+                }
+              ],
+              "reactions": {
+                "counts": {
+                  "likeCount": 0
+                },
+                "reactions": {
+                  "like": false
+                }
+              },
+              "olderThesis": 2,
+              "newerThesis": 0
+            },
+            "numReplies": 0,
+            "showComment": true,
+            "averageHoldTimeSeconds": "79897",
+            "isDev": false
+          },
+          {
+            "user": {
+              "id": "00000000-0000-4000-8000-000000000108",
+              "address": "1111111111111111111111111111115a",
+              "evmAddress": "0x000000000000000000000000000000000000010a",
+              "createdAt": "2026-07-15T05:51:05.148Z",
+              "displayName": "[redacted text]",
+              "userHandle": "fixture-id-267",
+              "profilePictureLink": null,
+              "description": null,
+              "following": 2,
+              "followers": 77,
+              "activated": false,
+              "verified": false,
+              "isReferred": true,
+              "isRestricted": false,
+              "swapCount": 40,
+              "numTrades": 18,
+              "totalVolume": "52095.15383",
+              "private": false,
+              "thumbhash": null,
+              "coverPhotoLink": null,
+              "coverPhotoThumbhash": null,
+              "twitter": null,
+              "clan": null
+            },
+            "tradeId": "00000000-0000-4000-8000-00000000010c",
+            "humanAmount": "372572.64",
+            "sumSwapOpen": "372572.64",
+            "price": "0.773325986349",
+            "value": "288120.1",
+            "pnl": "272765.58",
+            "unrealizedPnl": "272765.58",
+            "realizedPnl": "0",
+            "costBasis": "15354.53",
+            "averageEntryPrice": "0.0412122",
+            "comment": null,
+            "showComment": true,
+            "averageHoldTimeSeconds": "335989",
+            "isDev": false
+          },
+          {
+            "user": {
+              "id": "00000000-0000-4000-8000-00000000010d",
+              "address": "1111111111111111111111111111115f",
+              "evmAddress": "0x000000000000000000000000000000000000010f",
+              "createdAt": "2026-02-10T22:29:30.503Z",
+              "displayName": "[redacted text]",
+              "userHandle": "fixture-id-272",
+              "profilePictureLink": "https://fixture.invalid/redacted",
+              "description": "",
+              "following": 12,
+              "followers": 379,
+              "activated": false,
+              "verified": false,
+              "isReferred": true,
+              "isRestricted": false,
+              "swapCount": 257,
+              "numTrades": 168,
+              "totalVolume": "120843.674602",
+              "private": false,
+              "thumbhash": "[redacted text]",
+              "coverPhotoLink": null,
+              "coverPhotoThumbhash": null,
+              "twitter": null,
+              "clan": null
+            },
+            "tradeId": "00000000-0000-4000-8000-000000000111",
+            "humanAmount": "357290.63",
+            "sumSwapOpen": "820997.98",
+            "price": "0.773325986349",
+            "value": "276302.13",
+            "pnl": "335097.5",
+            "unrealizedPnl": "275406.09",
+            "realizedPnl": "59691.41",
+            "costBasis": "2059.05",
+            "averageEntryPrice": "0.00250786",
+            "comment": {
+              "id": "00000000-0000-4000-8000-000000000112",
+              "userId": "00000000-0000-4000-8000-00000000010d",
+              "tradeId": "00000000-0000-4000-8000-000000000111",
+              "comment": "[redacted text]",
+              "createdAt": "2026-07-23T00:52:54.043Z",
+              "parentId": null,
+              "numLikes": 36,
+              "tokenAddress": "0x0000000000000000000000000000000000000001",
+              "networkId": 4663,
+              "shortCommentSegments": [
+                {
+                  "text": "[redacted text]",
+                  "link": null,
+                  "provider": null
+                }
+              ],
+              "reactions": {
+                "counts": {
+                  "likeCount": 36
+                },
+                "reactions": {
+                  "like": false
+                }
+              },
+              "olderThesis": 0,
+              "newerThesis": 0
+            },
+            "numReplies": 0,
+            "showComment": true,
+            "averageHoldTimeSeconds": "260099",
+            "isDev": false
+          },
+          {
+            "user": {
+              "id": "00000000-0000-4000-8000-000000000113",
+              "address": "1111111111111111111111111111115m",
+              "evmAddress": "0x0000000000000000000000000000000000000115",
+              "createdAt": "2026-07-09T19:50:45.540Z",
+              "displayName": "[redacted text]",
+              "userHandle": "fixture-id-278",
+              "profilePictureLink": "https://fixture.invalid/redacted",
+              "description": "",
+              "following": 71,
+              "followers": 1254,
+              "activated": false,
+              "verified": false,
+              "isReferred": true,
+              "isRestricted": false,
+              "swapCount": 162,
+              "numTrades": 81,
+              "totalVolume": "797388.382076",
+              "private": false,
+              "thumbhash": "[redacted text]",
+              "coverPhotoLink": null,
+              "coverPhotoThumbhash": null,
+              "twitter": null,
+              "clan": null
+            },
+            "tradeId": "00000000-0000-4000-8000-000000000117",
+            "humanAmount": "352679.19",
+            "sumSwapOpen": "1591671.14",
+            "price": "0.773325986349",
+            "value": "272735.98",
+            "pnl": "629647.42",
+            "unrealizedPnl": "268125.94",
+            "realizedPnl": "361521.49",
+            "costBasis": "25670.38",
+            "averageEntryPrice": "0.0130716",
+            "comment": {
+              "id": "00000000-0000-4000-8000-000000000118",
+              "userId": "00000000-0000-4000-8000-000000000113",
+              "tradeId": "00000000-0000-4000-8000-000000000117",
+              "comment": "[redacted text]",
+              "createdAt": "2026-08-07T17:37:04.357Z",
+              "parentId": null,
+              "numLikes": 22,
+              "tokenAddress": "0x0000000000000000000000000000000000000001",
+              "networkId": 4663,
+              "shortCommentSegments": [
+                {
+                  "text": "[redacted text]",
+                  "link": null,
+                  "provider": null
+                }
+              ],
+              "reactions": {
+                "counts": {
+                  "likeCount": 22
+                },
+                "reactions": {
+                  "like": false
+                }
+              },
+              "olderThesis": 2,
+              "newerThesis": 0
+            },
+            "numReplies": 0,
+            "showComment": true,
+            "averageHoldTimeSeconds": "155883",
+            "isDev": false
+          },
+          {
+            "user": {
+              "id": "00000000-0000-4000-8000-000000000119",
+              "address": "1111111111111111111111111111115s",
+              "evmAddress": "0x000000000000000000000000000000000000011b",
+              "createdAt": "2026-08-29T11:38:25.847Z",
+              "displayName": "[redacted text]",
+              "userHandle": "fixture-id-284",
+              "profilePictureLink": null,
+              "description": null,
+              "following": 23,
+              "followers": 2253,
+              "activated": false,
+              "verified": false,
+              "isReferred": false,
+              "isRestricted": false,
+              "swapCount": 502,
+              "numTrades": 88,
+              "totalVolume": "5614155.158988",
+              "private": false,
+              "thumbhash": null,
+              "coverPhotoLink": null,
+              "coverPhotoThumbhash": null,
+              "twitter": null,
+              "clan": null
+            },
+            "tradeId": "00000000-0000-4000-8000-00000000011d",
+            "humanAmount": "352060.73",
+            "sumSwapOpen": "1444853.97",
+            "price": "0.773325986349",
+            "value": "272257.71",
+            "pnl": "435204.46",
+            "unrealizedPnl": "164679.61",
+            "realizedPnl": "270524.84",
+            "costBasis": "441499.52",
+            "averageEntryPrice": "0.305567",
+            "comment": {
+              "id": "00000000-0000-4000-8000-00000000011e",
+              "userId": "00000000-0000-4000-8000-000000000119",
+              "tradeId": "00000000-0000-4000-8000-00000000011d",
+              "comment": "[redacted text]",
+              "createdAt": "2026-08-31T08:58:47.584Z",
+              "parentId": null,
+              "numLikes": 19,
+              "tokenAddress": "0x0000000000000000000000000000000000000001",
+              "networkId": 4663,
+              "shortCommentSegments": [
+                {
+                  "text": "[redacted text]",
+                  "link": null,
+                  "provider": null
+                }
+              ],
+              "reactions": {
+                "counts": {
+                  "likeCount": 19
+                },
+                "reactions": {
+                  "like": false
+                }
+              },
+              "olderThesis": 0,
+              "newerThesis": 0
+            },
+            "numReplies": 0,
+            "showComment": true,
+            "averageHoldTimeSeconds": "230472",
+            "isDev": false
+          },
+          {
+            "user": {
+              "id": "00000000-0000-4000-8000-00000000011f",
+              "address": "1111111111111111111111111111115y",
+              "evmAddress": "0x0000000000000000000000000000000000000121",
+              "createdAt": "2026-07-30T12:02:18.288Z",
+              "displayName": "[redacted text]",
+              "userHandle": "fixture-id-290",
+              "profilePictureLink": "https://fixture.invalid/redacted",
+              "description": "[redacted text]",
+              "following": 28,
+              "followers": 1487,
+              "activated": false,
+              "verified": false,
+              "isReferred": true,
+              "isRestricted": false,
+              "swapCount": 522,
+              "numTrades": 198,
+              "totalVolume": "3097042.073572",
+              "private": false,
+              "thumbhash": "[redacted text]",
+              "coverPhotoLink": "https://fixture.invalid/redacted",
+              "coverPhotoThumbhash": "[redacted text]",
+              "twitter": null,
+              "clan": {
+                "id": "00000000-0000-4000-8000-000000000123",
+                "name": "[redacted text]",
+                "iconLink": "https://fixture.invalid/redacted",
+                "iconThumbhash": "[redacted text]"
+              }
+            },
+            "tradeId": "00000000-0000-4000-8000-000000000124",
+            "humanAmount": "338194.57",
+            "sumSwapOpen": "898588.17",
+            "price": "0.773325986349",
+            "value": "261534.65",
+            "pnl": "193709.62",
+            "unrealizedPnl": "86173.06",
+            "realizedPnl": "107536.56",
+            "costBasis": "465967.83",
+            "averageEntryPrice": "0.518523",
+            "comment": {
+              "id": "00000000-0000-4000-8000-000000000125",
+              "userId": "00000000-0000-4000-8000-00000000011f",
+              "tradeId": "00000000-0000-4000-8000-000000000124",
+              "comment": "[redacted text]",
+              "createdAt": "2026-09-02T10:36:54.586Z",
+              "parentId": null,
+              "numLikes": 11,
+              "tokenAddress": "0x0000000000000000000000000000000000000001",
+              "networkId": 4663,
+              "shortCommentSegments": [
+                {
+                  "text": "[redacted text]",
+                  "link": null,
+                  "provider": null
+                }
+              ],
+              "reactions": {
+                "counts": {
+                  "likeCount": 11
+                },
+                "reactions": {
+                  "like": false
+                }
+              },
+              "olderThesis": 0,
+              "newerThesis": 0
+            },
+            "numReplies": 0,
+            "showComment": true,
+            "averageHoldTimeSeconds": "123658",
+            "isDev": false
+          }
+        ],
+        "totalHolders": 28396
+      }
+    ]
+  }
+}

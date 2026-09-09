@@ -84,6 +84,11 @@ market subscription API. Neither proves heartbeat behavior or lossless recovery.
 
 ## Broader qualification
 
+Field-level hardening adds complete parsed-output goldens alongside source
+cassettes; see [typed-models.md](typed-models.md). Historical no-chain-header
+captures replay under an explicit legacy scope; the default live client now
+sets the qualified website chain header.
+
 `FOMO_QUALIFY=1 npm run test:qualify` uses an explicitly injected
 `FOMO_ACCESS_TOKEN` to run a finite native read plan: current/other profiles,
 four leaderboard windows, multiple actors and real cursors, activity pages,

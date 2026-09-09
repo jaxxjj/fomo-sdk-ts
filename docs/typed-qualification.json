@@ -1,0 +1,110 @@
+[
+  {
+    "id": "cross-chain-metrics",
+    "operation": "tokens.metrics",
+    "ok": false,
+    "error": {
+      "kind": "network"
+    }
+  },
+  {
+    "id": "narrow-metrics",
+    "operation": "tokens.metrics",
+    "ok": true,
+    "summary": {
+      "type": "array",
+      "rows": 1
+    }
+  },
+  {
+    "id": "active-profile",
+    "operation": "users.getByHandle",
+    "ok": true,
+    "summary": {
+      "type": "object"
+    }
+  },
+  {
+    "id": "active-balances",
+    "operation": "portfolio.balances",
+    "ok": false,
+    "error": {
+      "kind": "protocol",
+      "reason": "invalid_balance"
+    }
+  },
+  {
+    "id": "active-trades",
+    "operation": "trades.list",
+    "ok": true,
+    "summary": {
+      "type": "object"
+    }
+  },
+  {
+    "id": "active-trade-detail",
+    "operation": "trades.get",
+    "ok": true,
+    "summary": {
+      "type": "object",
+      "rows": 1
+    }
+  },
+  {
+    "id": "verified-cross-chain-metrics",
+    "operation": "tokens.metrics",
+    "ok": true,
+    "summary": {
+      "type": "array",
+      "rows": 2
+    },
+    "recorded": true
+  },
+  {
+    "id": "verified-narrow-metrics",
+    "operation": "tokens.metrics",
+    "ok": true,
+    "summary": {
+      "type": "array",
+      "rows": 1
+    },
+    "recorded": true
+  },
+  {
+    "id": "verified-active-profile",
+    "operation": "users.getByHandle",
+    "ok": true,
+    "summary": {
+      "type": "object"
+    },
+    "recorded": true
+  },
+  {
+    "id": "verified-active-balances",
+    "operation": "portfolio.balances",
+    "ok": true,
+    "summary": {
+      "type": "object"
+    },
+    "recorded": true
+  },
+  {
+    "id": "verified-active-trades",
+    "operation": "trades.list",
+    "ok": true,
+    "summary": {
+      "type": "object"
+    },
+    "recorded": true
+  },
+  {
+    "id": "verified-active-trade-detail",
+    "operation": "trades.get",
+    "ok": true,
+    "summary": {
+      "type": "object",
+      "rows": 1
+    },
+    "recorded": true
+  }
+]

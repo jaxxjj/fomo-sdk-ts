@@ -1,0 +1,32 @@
+{
+  "sourceSha256": "40f3c2957629facb1e2911030048aabf095958e9a6a067683a1160334c4e8a4f",
+  "parsed": {
+    "data": [
+      {
+        "id": "00000000-0000-4000-8000-000000000002",
+        "address": "11111111111111111111111111111114",
+        "evmAddress": "0x0000000000000000000000000000000000000004",
+        "createdAt": "2026-08-30T10:59:02.419Z",
+        "displayName": "[redacted text]",
+        "userHandle": "fixture-id-5",
+        "profilePictureLink": "https://fixture.invalid/redacted",
+        "description": "",
+        "following": 72,
+        "followers": 534,
+        "activated": false,
+        "verified": false,
+        "isReferred": true,
+        "isRestricted": false,
+        "swapCount": 233,
+        "numTrades": 98,
+        "totalVolume": "24578.567689",
+        "private": false,
+        "thumbhash": "[redacted text]",
+        "coverPhotoLink": "https://fixture.invalid/redacted",
+        "coverPhotoThumbhash": "[redacted text]",
+        "twitter": null,
+        "pnl24h": "-3578.438575383694"
+      }
+    ]
+  }
+}

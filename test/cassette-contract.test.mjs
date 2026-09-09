@@ -26,6 +26,7 @@ for (const file of files) {
       assert.ok(raw.responseObject.items.some((row) => row.userId === null));
     }
     const client = new FomoClient({
+      supportedChains: null, // Historical recordings predate the default header fix.
       session: new StaticSession({ accessToken: "offline-placeholder" }),
       transport: cassette.transport(),
       maxRetries: 0,

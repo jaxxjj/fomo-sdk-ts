@@ -1,0 +1,49 @@
+{
+  "format": "sdk-http-cassette/v1",
+  "service": "fomo",
+  "provenance": {
+    "kind": "live",
+    "source": "SDK native read-only website capability qualification",
+    "operation": "tokens.developerHolders"
+  },
+  "capturedAt": "2026-09-09T06:16:40.543Z",
+  "inputs": {
+    "params": {
+      "token": {
+        "address": "0x0000000000000000000000000000000000000001",
+        "networkId": 4663
+      }
+    }
+  },
+  "exchanges": [
+    {
+      "request": {
+        "method": "GET",
+        "origin": "https://fomo.fixture.invalid",
+        "path": "/hodlers/devs",
+        "query": [
+          ["networkId", "4663"],
+          ["tokenAddress", "0x0000000000000000000000000000000000000001"]
+        ],
+        "headers": {
+          "authentication": "<present>",
+          "content-type": "application/json"
+        },
+        "body": ""
+      },
+      "response": {
+        "status": 200,
+        "headers": {
+          "content-type": "application/json; charset=utf-8"
+        },
+        "body": "{\"success\":true,\"message\":\"[redacted text]\",\"responseObject\":{\"tokenAddress\":\"0x0000000000000000000000000000000000000001\",\"networkId\":4663,\"devHoldings\":[{\"user\":{\"id\":\"00000000-0000-4000-8000-000000000002\",\"address\":\"11111111111111111111111111111114\",\"evmAddress\":\"0x0000000000000000000000000000000000000004\",\"createdAt\":\"2025-11-04T14:44:25.261Z\",\"displayName\":\"[redacted text]\",\"userHandle\":\"fixture-id-5\",\"profilePictureLink\":\"https://fixture.invalid/redacted\",\"description\":\"[redacted text]\",\"following\":31,\"followers\":29586,\"activated\":false,\"verified\":false,\"isReferred\":false,\"isRestricted\":false,\"swapCount\":282,\"numTrades\":2366,\"totalVolume\":43476.705201,\"private\":false,\"thumbhash\":\"[redacted text]\",\"coverPhotoLink\":\"https://fixture.invalid/redacted\",\"coverPhotoThumbhash\":\"[redacted text]\",\"twitter\":null,\"clan\":null},\"tradeId\":\"00000000-0000-4000-8000-000000000006\",\"humanAmount\":126831.6,\"sumSwapOpen\":46531.21,\"price\":0.820155895012,\"value\":104021.69,\"pnl\":54482.4,\"unrealizedPnl\":54482.4,\"realizedPnl\":0,\"costBasis\":49536.94,\"averageEntryPrice\":0.390591,\"comment\":{\"id\":\"00000000-0000-4000-8000-000000000007\",\"userId\":\"00000000-0000-4000-8000-000000000002\",\"tradeId\":\"00000000-0000-4000-8000-000000000006\",\"comment\":\"[redacted text]\",\"createdAt\":\"2026-08-29T22:44:28.379Z\",\"parentId\":null,\"numLikes\":735,\"tokenAddress\":\"0x0000000000000000000000000000000000000001\",\"networkId\":4663,\"shortCommentSegments\":[{\"text\":\"[redacted text]\",\"link\":null,\"provider\":null}],\"reactions\":{\"counts\":{\"likeCount\":735},\"reactions\":{\"like\":false}},\"olderThesis\":8,\"newerThesis\":0},\"numReplies\":0,\"showComment\":true,\"averageHoldTimeSeconds\":181684,\"isDev\":true}]},\"statusCode\":200}"
+      }
+    }
+  ],
+  "expected": {
+    "ok": true,
+    "summary": {
+      "type": "object"
+    }
+  }
+}

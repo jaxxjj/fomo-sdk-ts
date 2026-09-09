@@ -1,0 +1,54 @@
+{
+  "format": "sdk-http-cassette/v1",
+  "service": "fomo",
+  "provenance": {
+    "kind": "live",
+    "source": "SDK native read-only website capability qualification",
+    "operation": "tokens.theses"
+  },
+  "capturedAt": "2026-09-09T06:16:38.877Z",
+  "inputs": {
+    "params": {
+      "token": {
+        "address": "0x0000000000000000000000000000000000000001",
+        "networkId": 4663
+      },
+      "limit": 5,
+      "threshold": 0
+    }
+  },
+  "exchanges": [
+    {
+      "request": {
+        "method": "GET",
+        "origin": "https://fomo.fixture.invalid",
+        "path": "/feed/token/thesis",
+        "query": [
+          ["networkId", "4663"],
+          ["tokenAddress", "0x0000000000000000000000000000000000000001"],
+          ["limit", "5"],
+          ["threshold", "0"]
+        ],
+        "headers": {
+          "authentication": "<present>",
+          "content-type": "application/json"
+        },
+        "body": ""
+      },
+      "response": {
+        "status": 200,
+        "headers": {
+          "content-type": "application/json; charset=utf-8"
+        },
+        "body": "{\"success\":true,\"message\":\"[redacted text]\",\"responseObject\":{\"items\":[{\"type\":\"thesis\",\"id\":\"00000000-0000-4000-8000-000000000002\",\"tradeId\":\"00000000-0000-4000-8000-000000000003\",\"createdAt\":\"2026-09-09T06:15:11.994Z\",\"userId\":\"00000000-0000-4000-8000-000000000004\",\"displayName\":\"[redacted text]\",\"userHandle\":\"fixture-id-5\",\"profilePictureLink\":\"https://fixture.invalid/redacted\",\"verified\":false,\"twitter\":null,\"comment\":{\"id\":\"00000000-0000-4000-8000-000000000002\",\"userId\":\"00000000-0000-4000-8000-000000000004\",\"tradeId\":\"00000000-0000-4000-8000-000000000003\",\"comment\":\"[redacted text]\",\"createdAt\":\"2026-09-09T06:15:11.994Z\",\"parentId\":null,\"numLikes\":0,\"tokenAddress\":\"0x0000000000000000000000000000000000000001\",\"networkId\":4663,\"shortCommentSegments\":[{\"text\":\"[redacted text]\",\"link\":null,\"provider\":null}],\"reactions\":{\"counts\":{\"likeCount\":0},\"reactions\":{\"like\":false}},\"olderThesis\":4,\"newerThesis\":0},\"numReplies\":0,\"authorTrade\":{\"humanTokenAmount\":2.9370609291416856,\"usdValue\":2.4097285599837073,\"unrealizedPnlUsd\":0.02155255998370735,\"realizedPnlUsd\":0,\"percentageUnrealizedPnl\":0.9024694990531416,\"percentageRealizedPnl\":0,\"closedAt\":null},\"tokenAddress\":\"0x0000000000000000000000000000000000000001\",\"networkId\":4663,\"ticker\":\"[redacted text]\",\"tokenImageUrl\":\"https://fixture.invalid/redacted\",\"equity\":0,\"threshold\":2.4097285599837073,\"isDev\":false},{\"type\":\"thesis\",\"id\":\"00000000-0000-4000-8000-000000000006\",\"tradeId\":\"00000000-0000-4000-8000-000000000003\",\"createdAt\":\"2026-09-09T06:13:23.050Z\",\"userId\":\"00000000-0000-4000-8000-000000000004\",\"displayName\":\"[redacted text]\",\"userHandle\":\"fixture-id-5\",\"profilePictureLink\":\"https://fixture.invalid/redacted\",\"verified\":false,\"twitter\":null,\"comment\":{\"id\":\"00000000-0000-4000-8000-000000000006\",\"userId\":\"00000000-0000-4000-8000-000000000004\",\"tradeId\":\"00000000-0000-4000-8000-000000000003\",\"comment\":\"[redacted text]\",\"createdAt\":\"2026-09-09T06:13:23.050Z\",\"parentId\":null,\"numLikes\":0,\"tokenAddress\":\"0x0000000000000000000000000000000000000001\",\"networkId\":4663,\"shortCommentSegments\":[{\"text\":\"[redacted text]\",\"link\":null,\"provider\":null}],\"reactions\":{\"counts\":{\"likeCount\":0},\"reactions\":{\"like\":false}},\"olderThesis\":3,\"newerThesis\":1},\"numReplies\":0,\"authorTrade\":{\"humanTokenAmount\":2.9370609291416856,\"usdValue\":2.4097285599837073,\"unrealizedPnlUsd\":0.02155255998370735,\"realizedPnlUsd\":0,\"percentageUnrealizedPnl\":0.9024694990531416,\"percentageRealizedPnl\":0,\"closedAt\":null},\"tokenAddress\":\"0x0000000000000000000000000000000000000001\",\"networkId\":4663,\"ticker\":\"[redacted text]\",\"tokenImageUrl\":\"https://fixture.invalid/redacted\",\"equity\":0,\"threshold\":2.4097285599837073,\"isDev\":false},{\"type\":\"thesis\",\"id\":\"00000000-0000-4000-8000-000000000007\",\"tradeId\":\"00000000-0000-4000-8000-000000000008\",\"createdAt\":\"2026-09-09T06:11:13.979Z\",\"userId\":\"00000000-0000-4000-8000-000000000009\",\"displayName\":\"[redacted text]\",\"userHandle\":\"fixture-id-10\",\"profilePictureLink\":\"https://fixture.invalid/redacted\",\"verified\":false,\"twitter\":null,\"comment\":{\"id\":\"00000000-0000-4000-8000-000000000007\",\"userId\":\"00000000-0000-4000-8000-000000000009\",\"tradeId\":\"00000000-0000-4000-8000-000000000008\",\"comment\":\"[redacted text]\",\"createdAt\":\"2026-09-09T06:11:13.979Z\",\"parentId\":null,\"numLikes\":0,\"tokenAddress\":\"0x0000000000000000000000000000000000000001\",\"networkId\":4663,\"shortCommentSegments\":[{\"text\":\"[redacted text]\",\"link\":null,\"provider\":null}],\"reactions\":{\"counts\":{\"likeCount\":0},\"reactions\":{\"like\":false}},\"olderThesis\":71,\"newerThesis\":0},\"numReplies\":0,\"authorTrade\":{\"humanTokenAmount\":5.486337898016431,\"usdValue\":4.5012975357084954,\"unrealizedPnlUsd\":0.5903025357084949,\"realizedPnlUsd\":0,\"percentageUnrealizedPnl\":15.093410646357125,\"percentageRealizedPnl\":0,\"closedAt\":null},\"tokenAddress\":\"0x0000000000000000000000000000000000000001\",\"networkId\":4663,\"ticker\":\"[redacted text]\",\"tokenImageUrl\":\"https://fixture.invalid/redacted\",\"equity\":0,\"threshold\":4.5012975357084954,\"isDev\":false},{\"type\":\"thesis\",\"id\":\"00000000-0000-4000-8000-00000000000b\",\"tradeId\":\"00000000-0000-4000-8000-000000000003\",\"createdAt\":\"2026-09-09T06:09:45.472Z\",\"userId\":\"00000000-0000-4000-8000-000000000004\",\"displayName\":\"[redacted text]\",\"userHandle\":\"fixture-id-5\",\"profilePictureLink\":\"https://fixture.invalid/redacted\",\"verified\":false,\"twitter\":null,\"comment\":{\"id\":\"00000000-0000-4000-8000-00000000000b\",\"userId\":\"00000000-0000-4000-8000-000000000004\",\"tradeId\":\"00000000-0000-4000-8000-000000000003\",\"comment\":\"[redacted text]\",\"createdAt\":\"2026-09-09T06:09:45.472Z\",\"parentId\":null,\"numLikes\":0,\"tokenAddress\":\"0x0000000000000000000000000000000000000001\",\"networkId\":4663,\"shortCommentSegments\":[{\"text\":\"[redacted text]\",\"link\":null,\"provider\":null}],\"reactions\":{\"counts\":{\"likeCount\":0},\"reactions\":{\"like\":false}},\"olderThesis\":2,\"newerThesis\":2},\"numReplies\":0,\"authorTrade\":{\"humanTokenAmount\":2.9370609291416856,\"usdValue\":2.4097285599837073,\"unrealizedPnlUsd\":0.02155255998370735,\"realizedPnlUsd\":0,\"percentageUnrealizedPnl\":0.9024694990531416,\"percentageRealizedPnl\":0,\"closedAt\":null},\"tokenAddress\":\"0x0000000000000000000000000000000000000001\",\"networkId\":4663,\"ticker\":\"[redacted text]\",\"tokenImageUrl\":\"https://fixture.invalid/redacted\",\"equity\":0,\"threshold\":2.4097285599837073,\"isDev\":false},{\"type\":\"thesis\",\"id\":\"00000000-0000-4000-8000-00000000000c\",\"tradeId\":\"00000000-0000-4000-8000-000000000008\",\"createdAt\":\"2026-09-09T06:05:52.160Z\",\"userId\":\"00000000-0000-4000-8000-000000000009\",\"displayName\":\"[redacted text]\",\"userHandle\":\"fixture-id-10\",\"profilePictureLink\":\"https://fixture.invalid/redacted\",\"verified\":false,\"twitter\":null,\"comment\":{\"id\":\"00000000-0000-4000-8000-00000000000c\",\"userId\":\"00000000-0000-4000-8000-000000000009\",\"tradeId\":\"00000000-0000-4000-8000-000000000008\",\"comment\":\"[redacted text]\",\"createdAt\":\"2026-09-09T06:05:52.160Z\",\"parentId\":null,\"numLikes\":0,\"tokenAddress\":\"0x0000000000000000000000000000000000000001\",\"networkId\":4663,\"shortCommentSegments\":[{\"text\":\"[redacted text]\",\"link\":null,\"provider\":null}],\"reactions\":{\"counts\":{\"likeCount\":0},\"reactions\":{\"like\":false}},\"olderThesis\":70,\"newerThesis\":1},\"numReplies\":0,\"authorTrade\":{\"humanTokenAmount\":5.486337898016431,\"usdValue\":4.5012975357084954,\"unrealizedPnlUsd\":0.5903025357084949,\"realizedPnlUsd\":0,\"percentageUnrealizedPnl\":15.093410646357125,\"percentageRealizedPnl\":0,\"closedAt\":null},\"tokenAddress\":\"0x0000000000000000000000000000000000000001\",\"networkId\":4663,\"ticker\":\"[redacted text]\",\"tokenImageUrl\":\"https://fixture.invalid/redacted\",\"equity\":0,\"threshold\":4.5012975357084954,\"isDev\":false}],\"hasNextPage\":true,\"count\":7431},\"statusCode\":200}"
+      }
+    }
+  ],
+  "expected": {
+    "ok": true,
+    "summary": {
+      "type": "object",
+      "rows": 5
+    }
+  }
+}

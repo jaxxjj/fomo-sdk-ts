@@ -1,0 +1,438 @@
+{
+  "source": "Fomo first-party website manifest-233aac45.js",
+  "startedAt": "2026-09-09T06:16:16.283Z",
+  "cases": [
+    {
+      "id": "market-trending",
+      "operation": "market.list",
+      "recorded": true,
+      "ok": true,
+      "summary": {
+        "type": "array",
+        "rows": 38
+      }
+    },
+    {
+      "id": "market-mostHeld",
+      "operation": "market.list",
+      "recorded": true,
+      "ok": true,
+      "summary": {
+        "type": "array",
+        "rows": 25
+      }
+    },
+    {
+      "id": "market-graduated",
+      "operation": "market.list",
+      "recorded": true,
+      "ok": true,
+      "summary": {
+        "type": "array",
+        "rows": 29
+      }
+    },
+    {
+      "id": "market-crypto",
+      "operation": "market.list",
+      "recorded": true,
+      "ok": true,
+      "summary": {
+        "type": "array",
+        "rows": 27
+      }
+    },
+    {
+      "id": "market-verified",
+      "operation": "market.list",
+      "recorded": true,
+      "ok": true,
+      "summary": {
+        "type": "array",
+        "rows": 220
+      }
+    },
+    {
+      "id": "search-phrase",
+      "operation": "market.search",
+      "recorded": true,
+      "ok": true,
+      "summary": {
+        "type": "array",
+        "rows": 2
+      }
+    },
+    {
+      "id": "search-address",
+      "operation": "market.search",
+      "recorded": true,
+      "ok": true,
+      "summary": {
+        "type": "array",
+        "rows": 0
+      }
+    },
+    {
+      "id": "metrics-batch",
+      "operation": "tokens.metrics",
+      "recorded": true,
+      "ok": true,
+      "summary": {
+        "type": "array",
+        "rows": 1
+      }
+    },
+    {
+      "id": "details",
+      "operation": "tokens.details",
+      "recorded": true,
+      "ok": true,
+      "summary": {
+        "type": "object"
+      }
+    },
+    {
+      "id": "warnings",
+      "operation": "tokens.warnings",
+      "recorded": true,
+      "ok": true,
+      "summary": {
+        "type": "object"
+      }
+    },
+    {
+      "id": "bars",
+      "operation": "tokens.bars",
+      "recorded": true,
+      "ok": true,
+      "summary": {
+        "type": "object"
+      }
+    },
+    {
+      "id": "recent-bars",
+      "operation": "tokens.recentBars",
+      "recorded": true,
+      "ok": true,
+      "summary": {
+        "type": "object"
+      }
+    },
+    {
+      "id": "theses",
+      "operation": "tokens.theses",
+      "recorded": true,
+      "ok": true,
+      "summary": {
+        "type": "object",
+        "rows": 5
+      }
+    },
+    {
+      "id": "developer-holders",
+      "operation": "tokens.developerHolders",
+      "recorded": true,
+      "ok": true,
+      "summary": {
+        "type": "object"
+      }
+    },
+    {
+      "id": "friend-holders",
+      "operation": "tokens.friendHolders",
+      "recorded": true,
+      "ok": true,
+      "summary": {
+        "type": "object"
+      }
+    },
+    {
+      "id": "user-by-id",
+      "operation": "users.getById",
+      "recorded": true,
+      "ok": true,
+      "summary": {
+        "type": "object"
+      }
+    },
+    {
+      "id": "users-search",
+      "operation": "users.search",
+      "recorded": true,
+      "ok": true,
+      "summary": {
+        "type": "array",
+        "rows": 10
+      }
+    },
+    {
+      "id": "following-ids",
+      "operation": "users.followingIds",
+      "recorded": true,
+      "ok": true,
+      "summary": {
+        "type": "array",
+        "rows": 1
+      }
+    },
+    {
+      "id": "followers",
+      "operation": "users.followers",
+      "recorded": true,
+      "ok": true,
+      "summary": {
+        "type": "array",
+        "rows": 0
+      }
+    },
+    {
+      "id": "following",
+      "operation": "users.following",
+      "recorded": true,
+      "ok": true,
+      "summary": {
+        "type": "array",
+        "rows": 1
+      }
+    },
+    {
+      "id": "mutuals",
+      "operation": "users.mutuals",
+      "recorded": true,
+      "ok": true,
+      "summary": {
+        "type": "array",
+        "rows": 0
+      }
+    },
+    {
+      "id": "recommended",
+      "operation": "users.recommended",
+      "recorded": true,
+      "ok": true,
+      "summary": {
+        "type": "object"
+      }
+    },
+    {
+      "id": "following-leaderboard",
+      "operation": "leaderboards.following",
+      "recorded": true,
+      "ok": true,
+      "summary": {
+        "type": "array",
+        "rows": 1
+      }
+    },
+    {
+      "id": "balances",
+      "operation": "portfolio.balances",
+      "recorded": true,
+      "ok": true,
+      "summary": {
+        "type": "object"
+      }
+    },
+    {
+      "id": "portfolio-history",
+      "operation": "portfolio.history",
+      "recorded": true,
+      "ok": true,
+      "summary": {
+        "type": "array",
+        "rows": 1
+      }
+    },
+    {
+      "id": "portfolio-history-all",
+      "operation": "portfolio.historyAll",
+      "recorded": true,
+      "ok": true,
+      "summary": {
+        "type": "array",
+        "rows": 25
+      }
+    },
+    {
+      "id": "trades",
+      "operation": "trades.list",
+      "recorded": true,
+      "ok": true,
+      "summary": {
+        "type": "object"
+      }
+    },
+    {
+      "id": "watchlist",
+      "operation": "watchlist.list",
+      "recorded": true,
+      "ok": true,
+      "summary": {
+        "type": "array",
+        "rows": 0
+      }
+    },
+    {
+      "id": "feed",
+      "operation": "feed.list",
+      "recorded": true,
+      "ok": true,
+      "summary": {
+        "type": "object"
+      }
+    },
+    {
+      "id": "clan-leaderboard",
+      "operation": "clans.leaderboard",
+      "recorded": true,
+      "ok": true,
+      "summary": {
+        "type": "array",
+        "rows": 150
+      }
+    },
+    {
+      "id": "clan-search",
+      "operation": "clans.search",
+      "recorded": true,
+      "ok": true,
+      "summary": {
+        "type": "array",
+        "rows": 1
+      }
+    },
+    {
+      "id": "clan-get",
+      "operation": "clans.get",
+      "recorded": true,
+      "ok": true,
+      "summary": {
+        "type": "object"
+      }
+    },
+    {
+      "id": "clan-feed",
+      "operation": "clans.feed",
+      "recorded": true,
+      "ok": true,
+      "summary": {
+        "type": "object"
+      }
+    },
+    {
+      "id": "clan-holdings",
+      "operation": "clans.holdings",
+      "recorded": true,
+      "ok": true,
+      "summary": {
+        "type": "object"
+      }
+    },
+    {
+      "id": "clan-holding-breakdown",
+      "operation": "clans.holdingBreakdown",
+      "recorded": true,
+      "ok": true,
+      "summary": {
+        "type": "array",
+        "rows": 1
+      }
+    },
+    {
+      "id": "clan-theses",
+      "operation": "clans.theses",
+      "recorded": true,
+      "ok": true,
+      "summary": {
+        "type": "object",
+        "rows": 5
+      }
+    },
+    {
+      "id": "filtered-activity",
+      "operation": "activity.list",
+      "recorded": true,
+      "ok": true,
+      "summary": {
+        "type": "array",
+        "rows": 5
+      }
+    },
+    {
+      "id": "filtered-token-feed",
+      "operation": "tokens.feed",
+      "recorded": true,
+      "ok": true,
+      "summary": {
+        "type": "array",
+        "rows": 5
+      }
+    },
+    {
+      "id": "filtered-swaps",
+      "operation": "swaps.list",
+      "recorded": true,
+      "ok": true,
+      "summary": {
+        "type": "array",
+        "rows": 0
+      }
+    },
+    {
+      "id": "allowlist",
+      "operation": "market.allowlist",
+      "recorded": true,
+      "ok": true,
+      "summary": {
+        "type": "object"
+      }
+    },
+    {
+      "id": "configuration",
+      "operation": "app.configuration",
+      "recorded": true,
+      "ok": true,
+      "summary": {
+        "type": "object"
+      }
+    },
+    {
+      "id": "users-batch",
+      "operation": "users.getMany",
+      "recorded": true,
+      "ok": true,
+      "summary": {
+        "type": "array",
+        "rows": 1
+      }
+    },
+    {
+      "id": "portfolio-snapshot",
+      "operation": "portfolio.snapshot",
+      "recorded": true,
+      "ok": true,
+      "summary": {
+        "type": "object"
+      }
+    },
+    {
+      "id": "trade",
+      "operation": "trades.get",
+      "recorded": true,
+      "ok": true,
+      "summary": {
+        "type": "object",
+        "rows": 13
+      }
+    },
+    {
+      "id": "trade-comments",
+      "operation": "trades.comments",
+      "recorded": true,
+      "ok": true,
+      "summary": {
+        "type": "object"
+      }
+    }
+  ]
+}

@@ -38,6 +38,7 @@ import {createPrivyRefresher} from ${JSON.stringify(manifest.name + "/experiment
 import {FomoStreamClient} from ${JSON.stringify(manifest.name + "/experimental/stream")};
 const client=new FomoClient({session:new StaticSession({accessToken:"synthetic"})});
 if(typeof client.swaps.pages!=="function"||typeof client.tokens.feed!=="function")throw new Error("missing export");
+if(typeof client.tokens.metrics!=="function"||typeof client.market.list!=="function"||typeof client.clans.holdings!=="function")throw new Error("missing read expansion");
 if(client.swap!==undefined)throw new Error("unexpected execution API");
 void RefreshableSession; void FomoError; void createPrivyRefresher; void FomoStreamClient;
 console.log("consumer import passed");
@@ -67,6 +68,21 @@ const ambiguous=new FomoClient({connection:client.connection,session:new StaticS
 void ambiguous;
 async function example(){
   const result=await client.tokens.feed({token});
+  const metrics=await client.tokens.metrics({tokens:[token]});
+  const exactPrice:DecimalString|null|undefined=metrics.data[0]?.priceUSD;
+  const details=await client.tokens.details({token});
+  const detailCount:number|null|undefined=details.data.holders;
+  // @ts-expect-error count fields are not financial decimal strings.
+  const invalidCount:string=details.data.holders;
+  const portfolio=await client.portfolio.balances({userId:"actor"});
+  const pnl:DecimalString|null|undefined=portfolio.data.otherPnl;
+  const comments=await client.trades.comments({tradeId:"trade"});
+  const likes:number|null|undefined=comments.data.comments[0]?.numLikes;
+  // @ts-expect-error read queries cannot execute financial writes.
+  await client.connection.readQuery("swap",{});
+  // @ts-expect-error search modes are mutually exclusive.
+  await client.market.search({phrase:"x",tokenAddress:"y"});
+  void exactPrice; void detailCount; void invalidCount; void pnl; void likes;
   const amount:DecimalString|null|undefined=result.data[0]?.usdAmount;
   // @ts-expect-error normalized financial values are not IEEE754 numbers.
   const incorrect:number=result.data[0]?.usdAmount;

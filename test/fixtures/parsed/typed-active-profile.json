@@ -1,0 +1,65 @@
+{
+  "sourceSha256": "ab46a897833fd29cab61c190b6708c25b0236215108e9b98640303aa76bf897f",
+  "parsed": {
+    "data": {
+      "id": "00000000-0000-4000-8000-000000000002",
+      "address": "11111111111111111111111111111114",
+      "evmAddress": "0x0000000000000000000000000000000000000004",
+      "createdAt": "2026-05-18T12:45:58.832Z",
+      "displayName": "[redacted text]",
+      "userHandle": "fixture-id-1",
+      "profilePictureLink": "https://fixture.invalid/redacted",
+      "description": "[redacted text]",
+      "following": 36,
+      "followers": 620428,
+      "activated": false,
+      "verified": false,
+      "isReferred": true,
+      "isRestricted": false,
+      "swapCount": 525,
+      "numTrades": 3823,
+      "totalVolume": "3565769.589095",
+      "private": false,
+      "thumbhash": "[redacted text]",
+      "coverPhotoLink": null,
+      "coverPhotoThumbhash": null,
+      "twitter": null,
+      "clan": {
+        "id": "00000000-0000-4000-8000-000000000005",
+        "name": "[redacted text]",
+        "iconLink": "https://fixture.invalid/redacted",
+        "iconThumbhash": "[redacted text]",
+        "role": "[redacted text]"
+      },
+      "followsCurrentUser": false,
+      "numFriendsFollowing": 1,
+      "friendsFollowing": [
+        {
+          "id": "00000000-0000-4000-8000-000000000006",
+          "address": "11111111111111111111111111111118",
+          "evmAddress": "0x0000000000000000000000000000000000000008",
+          "createdAt": "2026-08-30T10:59:02.419Z",
+          "displayName": "[redacted text]",
+          "userHandle": "fixture-id-9",
+          "profilePictureLink": "https://fixture.invalid/redacted",
+          "description": "",
+          "following": 72,
+          "followers": 534,
+          "activated": false,
+          "verified": false,
+          "isReferred": true,
+          "isRestricted": false,
+          "swapCount": 233,
+          "numTrades": 98,
+          "totalVolume": "24578.567689",
+          "private": false,
+          "thumbhash": "[redacted text]",
+          "coverPhotoLink": "https://fixture.invalid/redacted",
+          "coverPhotoThumbhash": "[redacted text]",
+          "twitter": null
+        }
+      ],
+      "averageHoldTimeSeconds": "463816"
+    }
+  }
+}

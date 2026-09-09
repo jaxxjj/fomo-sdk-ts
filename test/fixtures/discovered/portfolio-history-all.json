@@ -1,0 +1,44 @@
+{
+  "format": "sdk-http-cassette/v1",
+  "service": "fomo",
+  "provenance": {
+    "kind": "live",
+    "source": "SDK native read-only website capability qualification",
+    "operation": "portfolio.historyAll"
+  },
+  "capturedAt": "2026-09-09T06:17:00.821Z",
+  "inputs": {
+    "params": {
+      "userId": "00000000-0000-4000-8000-000000000001"
+    }
+  },
+  "exchanges": [
+    {
+      "request": {
+        "method": "GET",
+        "origin": "https://fomo.fixture.invalid",
+        "path": "/v2/userTokens/aggregatedSnapshot/interval",
+        "query": [["userId", "00000000-0000-4000-8000-000000000001"]],
+        "headers": {
+          "authentication": "<present>",
+          "content-type": "application/json"
+        },
+        "body": ""
+      },
+      "response": {
+        "status": 200,
+        "headers": {
+          "content-type": "application/json; charset=utf-8"
+        },
+        "body": "{\"success\":true,\"message\":\"[redacted text]\",\"responseObject\":[{\"snapshotId\":1788912000,\"pnl\":0,\"equity\":0},{\"snapshotId\":1788652800,\"pnl\":0,\"equity\":0},{\"snapshotId\":1788393600,\"pnl\":0,\"equity\":0},{\"snapshotId\":1788134400,\"pnl\":0,\"equity\":0},{\"snapshotId\":1787875200,\"pnl\":0,\"equity\":0},{\"snapshotId\":1787616000,\"pnl\":0,\"equity\":0},{\"snapshotId\":1787356800,\"pnl\":0,\"equity\":0},{\"snapshotId\":1787097600,\"pnl\":0,\"equity\":0},{\"snapshotId\":1786838400,\"pnl\":0,\"equity\":0},{\"snapshotId\":1786579200,\"pnl\":0,\"equity\":0},{\"snapshotId\":1786320000,\"pnl\":0,\"equity\":0},{\"snapshotId\":1786060800,\"pnl\":0,\"equity\":0},{\"snapshotId\":1785801600,\"pnl\":0,\"equity\":0},{\"snapshotId\":1785542400,\"pnl\":0,\"equity\":0},{\"snapshotId\":1785283200,\"pnl\":0,\"equity\":0},{\"snapshotId\":1785024000,\"pnl\":0,\"equity\":0},{\"snapshotId\":1784764800,\"pnl\":0,\"equity\":0},{\"snapshotId\":1784505600,\"pnl\":0,\"equity\":0},{\"snapshotId\":1784246400,\"pnl\":0,\"equity\":0},{\"snapshotId\":1783987200,\"pnl\":0,\"equity\":0},{\"snapshotId\":1783728000,\"pnl\":0,\"equity\":0},{\"snapshotId\":1783468800,\"pnl\":0,\"equity\":0},{\"snapshotId\":1783209600,\"pnl\":0,\"equity\":0},{\"snapshotId\":1782950400,\"pnl\":0,\"equity\":0},{\"snapshotId\":1782864000,\"pnl\":0,\"equity\":0}],\"statusCode\":200}"
+      }
+    }
+  ],
+  "expected": {
+    "ok": true,
+    "summary": {
+      "type": "array",
+      "rows": 25
+    }
+  }
+}

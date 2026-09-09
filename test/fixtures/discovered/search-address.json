@@ -1,0 +1,44 @@
+{
+  "format": "sdk-http-cassette/v1",
+  "service": "fomo",
+  "provenance": {
+    "kind": "live",
+    "source": "SDK native read-only website capability qualification",
+    "operation": "market.search"
+  },
+  "capturedAt": "2026-09-09T06:20:03.488Z",
+  "inputs": {
+    "params": {
+      "tokenAddress": "0x0000000000000000000000000000000000000001"
+    }
+  },
+  "exchanges": [
+    {
+      "request": {
+        "method": "POST",
+        "origin": "https://fomo.fixture.invalid",
+        "path": "/proxy/filterTokensSearch",
+        "query": [],
+        "headers": {
+          "authentication": "<present>",
+          "content-type": "application/json"
+        },
+        "body": "{\"token\":\"0x0000000000000000000000000000000000000001\"}"
+      },
+      "response": {
+        "status": 200,
+        "headers": {
+          "content-type": "application/json; charset=utf-8"
+        },
+        "body": "{\"success\":true,\"message\":\"[redacted text]\",\"responseObject\":[],\"statusCode\":200}"
+      }
+    }
+  ],
+  "expected": {
+    "ok": true,
+    "summary": {
+      "type": "array",
+      "rows": 0
+    }
+  }
+}

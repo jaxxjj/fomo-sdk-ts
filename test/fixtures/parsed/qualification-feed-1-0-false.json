@@ -1,0 +1,684 @@
+{
+  "sourceSha256": "322e3ace0a20cc3530dea554962cec4b4ad31479474ceb8cffa9c60fd9d0e53b",
+  "parsed": {
+    "data": [
+      {
+        "type": "swap_buy",
+        "id": "00000000-0000-4000-8000-000000000002",
+        "tradeId": "00000000-0000-4000-8000-000000000003",
+        "createdAt": "2026-09-08T10:10:38.338Z",
+        "userId": "00000000-0000-4000-8000-000000000004",
+        "displayName": "[redacted text]",
+        "userHandle": "fixture-id-5",
+        "profilePictureLink": "https://fixture.invalid/redacted",
+        "verified": false,
+        "twitter": null,
+        "usdAmount": "395.19896900000003",
+        "marketCap": "1735272.1596302602",
+        "fdv": "1735272.1596302602",
+        "price": "173.527215963026",
+        "isDev": false,
+        "kind": "buy"
+      },
+      {
+        "type": "swap_buy",
+        "id": "00000000-0000-4000-8000-000000000006",
+        "tradeId": "00000000-0000-4000-8000-000000000007",
+        "createdAt": "2026-09-07T18:09:32.840Z",
+        "userId": "00000000-0000-4000-8000-000000000008",
+        "displayName": "[redacted text]",
+        "userHandle": "fixture-id-9",
+        "profilePictureLink": "https://fixture.invalid/redacted",
+        "verified": false,
+        "twitter": null,
+        "usdAmount": "537.9960090000001",
+        "marketCap": "1730335.8534556474",
+        "fdv": "1730335.8534556474",
+        "price": "173.03358534556475",
+        "isDev": false,
+        "kind": "buy"
+      },
+      {
+        "type": "thesis",
+        "id": "00000000-0000-4000-8000-00000000000a",
+        "tradeId": "00000000-0000-4000-8000-00000000000b",
+        "createdAt": "2026-09-07T14:28:02.903Z",
+        "userId": "00000000-0000-4000-8000-00000000000c",
+        "displayName": "[redacted text]",
+        "userHandle": "fixture-id-13",
+        "profilePictureLink": "https://fixture.invalid/redacted",
+        "verified": false,
+        "twitter": null,
+        "comment": {
+          "id": "00000000-0000-4000-8000-00000000000a",
+          "userId": "00000000-0000-4000-8000-00000000000c",
+          "tradeId": "00000000-0000-4000-8000-00000000000b",
+          "comment": "[redacted text]",
+          "createdAt": "2026-09-07T14:28:02.903Z",
+          "parentId": null,
+          "numLikes": 1,
+          "tokenAddress": "0x0000000000000000000000000000000000000001",
+          "networkId": 1,
+          "shortCommentSegments": [
+            {
+              "text": "[redacted text]",
+              "link": null,
+              "provider": null
+            }
+          ],
+          "reactions": {
+            "counts": {
+              "likeCount": 1
+            },
+            "reactions": {
+              "like": false
+            }
+          },
+          "olderThesis": 4,
+          "newerThesis": 0
+        },
+        "numReplies": 0,
+        "authorTrade": {
+          "humanTokenAmount": "0.02332457614659769",
+          "usdValue": "4.490813965609565",
+          "unrealizedPnlUsd": "-3.5843380343904343",
+          "realizedPnlUsd": "0",
+          "percentageUnrealizedPnl": "-44.387251588458454",
+          "percentageRealizedPnl": "0",
+          "closedAt": null
+        },
+        "tokenAddress": "0x0000000000000000000000000000000000000001",
+        "networkId": 1,
+        "ticker": "[redacted text]",
+        "tokenImageUrl": "https://fixture.invalid/redacted",
+        "equity": "0",
+        "threshold": "4.490813965609565",
+        "isDev": false,
+        "kind": "thesis"
+      },
+      {
+        "type": "thesis",
+        "id": "00000000-0000-4000-8000-00000000000e",
+        "tradeId": "00000000-0000-4000-8000-00000000000b",
+        "createdAt": "2026-09-07T11:14:02.242Z",
+        "userId": "00000000-0000-4000-8000-00000000000c",
+        "displayName": "[redacted text]",
+        "userHandle": "fixture-id-13",
+        "profilePictureLink": "https://fixture.invalid/redacted",
+        "verified": false,
+        "twitter": null,
+        "comment": {
+          "id": "00000000-0000-4000-8000-00000000000e",
+          "userId": "00000000-0000-4000-8000-00000000000c",
+          "tradeId": "00000000-0000-4000-8000-00000000000b",
+          "comment": "[redacted text]",
+          "createdAt": "2026-09-07T11:14:02.242Z",
+          "parentId": null,
+          "numLikes": 1,
+          "tokenAddress": "0x0000000000000000000000000000000000000001",
+          "networkId": 1,
+          "shortCommentSegments": [
+            {
+              "text": "[redacted text]",
+              "link": null,
+              "provider": null
+            }
+          ],
+          "reactions": {
+            "counts": {
+              "likeCount": 1
+            },
+            "reactions": {
+              "like": false
+            }
+          },
+          "olderThesis": 3,
+          "newerThesis": 1
+        },
+        "numReplies": 0,
+        "authorTrade": {
+          "humanTokenAmount": "0.02332457614659769",
+          "usdValue": "4.490813965609565",
+          "unrealizedPnlUsd": "-3.5843380343904343",
+          "realizedPnlUsd": "0",
+          "percentageUnrealizedPnl": "-44.387251588458454",
+          "percentageRealizedPnl": "0",
+          "closedAt": null
+        },
+        "tokenAddress": "0x0000000000000000000000000000000000000001",
+        "networkId": 1,
+        "ticker": "[redacted text]",
+        "tokenImageUrl": "https://fixture.invalid/redacted",
+        "equity": "0",
+        "threshold": "4.490813965609565",
+        "isDev": false,
+        "kind": "thesis"
+      },
+      {
+        "type": "swap_sell",
+        "id": "00000000-0000-4000-8000-00000000000f",
+        "tradeId": "00000000-0000-4000-8000-000000000010",
+        "createdAt": "2026-09-07T07:59:36.565Z",
+        "userId": "00000000-0000-4000-8000-000000000011",
+        "displayName": "[redacted text]",
+        "userHandle": "fixture-id-18",
+        "profilePictureLink": "https://fixture.invalid/redacted",
+        "verified": false,
+        "twitter": null,
+        "usdAmount": "82.958546",
+        "marketCap": "1876534.1008012712",
+        "fdv": "1876534.1008012712",
+        "price": "187.65341008012712",
+        "isDev": false,
+        "kind": "sell"
+      },
+      {
+        "type": "thesis",
+        "id": "00000000-0000-4000-8000-000000000013",
+        "tradeId": "00000000-0000-4000-8000-00000000000b",
+        "createdAt": "2026-09-07T07:08:08.862Z",
+        "userId": "00000000-0000-4000-8000-00000000000c",
+        "displayName": "[redacted text]",
+        "userHandle": "fixture-id-13",
+        "profilePictureLink": "https://fixture.invalid/redacted",
+        "verified": false,
+        "twitter": null,
+        "comment": {
+          "id": "00000000-0000-4000-8000-000000000013",
+          "userId": "00000000-0000-4000-8000-00000000000c",
+          "tradeId": "00000000-0000-4000-8000-00000000000b",
+          "comment": "[redacted text]",
+          "createdAt": "2026-09-07T07:08:08.862Z",
+          "parentId": null,
+          "numLikes": 1,
+          "tokenAddress": "0x0000000000000000000000000000000000000001",
+          "networkId": 1,
+          "shortCommentSegments": [
+            {
+              "text": "[redacted text]",
+              "link": null,
+              "provider": null
+            }
+          ],
+          "reactions": {
+            "counts": {
+              "likeCount": 1
+            },
+            "reactions": {
+              "like": false
+            }
+          },
+          "olderThesis": 2,
+          "newerThesis": 2
+        },
+        "numReplies": 0,
+        "authorTrade": {
+          "humanTokenAmount": "0.02332457614659769",
+          "usdValue": "4.490813965609565",
+          "unrealizedPnlUsd": "-3.5843380343904343",
+          "realizedPnlUsd": "0",
+          "percentageUnrealizedPnl": "-44.387251588458454",
+          "percentageRealizedPnl": "0",
+          "closedAt": null
+        },
+        "tokenAddress": "0x0000000000000000000000000000000000000001",
+        "networkId": 1,
+        "ticker": "[redacted text]",
+        "tokenImageUrl": "https://fixture.invalid/redacted",
+        "equity": "0",
+        "threshold": "4.490813965609565",
+        "isDev": false,
+        "kind": "thesis"
+      },
+      {
+        "type": "swap_buy",
+        "id": "00000000-0000-4000-8000-000000000014",
+        "tradeId": "00000000-0000-4000-8000-000000000015",
+        "createdAt": "2026-09-07T03:23:53.943Z",
+        "userId": "00000000-0000-4000-8000-000000000016",
+        "displayName": "[redacted text]",
+        "userHandle": "fixture-id-23",
+        "profilePictureLink": null,
+        "verified": false,
+        "twitter": null,
+        "usdAmount": "39.939824",
+        "marketCap": "1891206.4629905485",
+        "fdv": "1891206.4629905485",
+        "price": "189.12064629905484",
+        "isDev": false,
+        "kind": "buy"
+      },
+      {
+        "type": "swap_sell",
+        "id": "00000000-0000-4000-8000-000000000018",
+        "tradeId": "00000000-0000-4000-8000-000000000019",
+        "createdAt": "2026-09-07T03:18:28.614Z",
+        "userId": "00000000-0000-4000-8000-00000000001a",
+        "displayName": "[redacted text]",
+        "userHandle": "fixture-id-27",
+        "profilePictureLink": null,
+        "verified": false,
+        "twitter": null,
+        "usdAmount": "270.484235",
+        "marketCap": "1828938.2170117265",
+        "fdv": "1828938.2170117265",
+        "price": "182.89382170117264",
+        "isDev": false,
+        "kind": "sell"
+      },
+      {
+        "type": "swap_buy",
+        "id": "00000000-0000-4000-8000-00000000001c",
+        "tradeId": "00000000-0000-4000-8000-000000000015",
+        "createdAt": "2026-09-06T23:28:54.064Z",
+        "userId": "00000000-0000-4000-8000-000000000016",
+        "displayName": "[redacted text]",
+        "userHandle": "fixture-id-23",
+        "profilePictureLink": null,
+        "verified": false,
+        "twitter": null,
+        "usdAmount": "40.010251",
+        "marketCap": "1810971.8814552368",
+        "fdv": "1810971.8814552368",
+        "price": "181.0971881455237",
+        "isDev": false,
+        "kind": "buy"
+      },
+      {
+        "type": "thesis",
+        "id": "00000000-0000-4000-8000-00000000001d",
+        "tradeId": "00000000-0000-4000-8000-00000000000b",
+        "createdAt": "2026-09-06T18:45:31.790Z",
+        "userId": "00000000-0000-4000-8000-00000000000c",
+        "displayName": "[redacted text]",
+        "userHandle": "fixture-id-13",
+        "profilePictureLink": "https://fixture.invalid/redacted",
+        "verified": false,
+        "twitter": null,
+        "comment": {
+          "id": "00000000-0000-4000-8000-00000000001d",
+          "userId": "00000000-0000-4000-8000-00000000000c",
+          "tradeId": "00000000-0000-4000-8000-00000000000b",
+          "comment": "[redacted text]",
+          "createdAt": "2026-09-06T18:45:31.790Z",
+          "parentId": null,
+          "numLikes": 1,
+          "tokenAddress": "0x0000000000000000000000000000000000000001",
+          "networkId": 1,
+          "shortCommentSegments": [
+            {
+              "text": "[redacted text]",
+              "link": null,
+              "provider": null
+            }
+          ],
+          "reactions": {
+            "counts": {
+              "likeCount": 1
+            },
+            "reactions": {
+              "like": false
+            }
+          },
+          "olderThesis": 1,
+          "newerThesis": 3
+        },
+        "numReplies": 0,
+        "authorTrade": {
+          "humanTokenAmount": "0.02332457614659769",
+          "usdValue": "4.490813965609565",
+          "unrealizedPnlUsd": "-3.5843380343904343",
+          "realizedPnlUsd": "0",
+          "percentageUnrealizedPnl": "-44.387251588458454",
+          "percentageRealizedPnl": "0",
+          "closedAt": null
+        },
+        "tokenAddress": "0x0000000000000000000000000000000000000001",
+        "networkId": 1,
+        "ticker": "[redacted text]",
+        "tokenImageUrl": "https://fixture.invalid/redacted",
+        "equity": "0",
+        "threshold": "4.490813965609565",
+        "isDev": false,
+        "kind": "thesis"
+      },
+      {
+        "type": "thesis",
+        "id": "00000000-0000-4000-8000-00000000001e",
+        "tradeId": "00000000-0000-4000-8000-00000000000b",
+        "createdAt": "2026-09-06T18:45:14.612Z",
+        "userId": "00000000-0000-4000-8000-00000000000c",
+        "displayName": "[redacted text]",
+        "userHandle": "fixture-id-13",
+        "profilePictureLink": "https://fixture.invalid/redacted",
+        "verified": false,
+        "twitter": null,
+        "comment": {
+          "id": "00000000-0000-4000-8000-00000000001e",
+          "userId": "00000000-0000-4000-8000-00000000000c",
+          "tradeId": "00000000-0000-4000-8000-00000000000b",
+          "comment": "[redacted text]",
+          "createdAt": "2026-09-06T18:45:14.612Z",
+          "parentId": null,
+          "numLikes": 1,
+          "tokenAddress": "0x0000000000000000000000000000000000000001",
+          "networkId": 1,
+          "shortCommentSegments": [
+            {
+              "text": "[redacted text]",
+              "link": null,
+              "provider": null
+            }
+          ],
+          "reactions": {
+            "counts": {
+              "likeCount": 1
+            },
+            "reactions": {
+              "like": false
+            }
+          },
+          "olderThesis": 0,
+          "newerThesis": 4
+        },
+        "numReplies": 0,
+        "authorTrade": {
+          "humanTokenAmount": "0.02332457614659769",
+          "usdValue": "4.490813965609565",
+          "unrealizedPnlUsd": "-3.5843380343904343",
+          "realizedPnlUsd": "0",
+          "percentageUnrealizedPnl": "-44.387251588458454",
+          "percentageRealizedPnl": "0",
+          "closedAt": null
+        },
+        "tokenAddress": "0x0000000000000000000000000000000000000001",
+        "networkId": 1,
+        "ticker": "[redacted text]",
+        "tokenImageUrl": "https://fixture.invalid/redacted",
+        "equity": "0",
+        "threshold": "4.490813965609565",
+        "isDev": false,
+        "kind": "thesis"
+      },
+      {
+        "type": "swap_buy",
+        "id": "00000000-0000-4000-8000-00000000001f",
+        "tradeId": "00000000-0000-4000-8000-000000000007",
+        "createdAt": "2026-09-06T15:39:07.759Z",
+        "userId": "00000000-0000-4000-8000-000000000008",
+        "displayName": "[redacted text]",
+        "userHandle": "fixture-id-9",
+        "profilePictureLink": "https://fixture.invalid/redacted",
+        "verified": false,
+        "twitter": null,
+        "usdAmount": "137.107808",
+        "marketCap": "1959307.2086599125",
+        "fdv": "1959307.2086599125",
+        "price": "195.93072086599125",
+        "isDev": false,
+        "kind": "buy"
+      },
+      {
+        "type": "swap_sell",
+        "id": "00000000-0000-4000-8000-000000000020",
+        "tradeId": "00000000-0000-4000-8000-000000000021",
+        "createdAt": "2026-09-06T11:47:44.424Z",
+        "userId": "00000000-0000-4000-8000-000000000022",
+        "displayName": "[redacted text]",
+        "userHandle": "fixture-id-35",
+        "profilePictureLink": null,
+        "verified": false,
+        "twitter": null,
+        "usdAmount": "931.745063",
+        "marketCap": "1807381.1690687549",
+        "fdv": "1807381.1690687549",
+        "price": "180.7381169068755",
+        "isDev": false,
+        "kind": "sell"
+      },
+      {
+        "type": "swap_sell",
+        "id": "00000000-0000-4000-8000-000000000024",
+        "tradeId": "00000000-0000-4000-8000-000000000021",
+        "createdAt": "2026-09-06T11:17:21.282Z",
+        "userId": "00000000-0000-4000-8000-000000000022",
+        "displayName": "[redacted text]",
+        "userHandle": "fixture-id-35",
+        "profilePictureLink": null,
+        "verified": false,
+        "twitter": null,
+        "usdAmount": "941.427225",
+        "marketCap": "1824461.4029975114",
+        "fdv": "1824461.4029975114",
+        "price": "182.44614029975114",
+        "isDev": false,
+        "kind": "sell"
+      },
+      {
+        "type": "swap_sell",
+        "id": "00000000-0000-4000-8000-000000000025",
+        "tradeId": "00000000-0000-4000-8000-000000000026",
+        "createdAt": "2026-09-06T05:22:41.424Z",
+        "userId": "00000000-0000-4000-8000-000000000027",
+        "displayName": "[redacted text]",
+        "userHandle": "fixture-id-40",
+        "profilePictureLink": "https://fixture.invalid/redacted",
+        "verified": false,
+        "twitter": null,
+        "usdAmount": "21.714788",
+        "marketCap": "1956809.8272175663",
+        "fdv": "1956809.8272175663",
+        "price": "195.68098272175664",
+        "isDev": false,
+        "kind": "sell"
+      },
+      {
+        "type": "swap_buy",
+        "id": "00000000-0000-4000-8000-000000000029",
+        "tradeId": "00000000-0000-4000-8000-000000000007",
+        "createdAt": "2026-09-05T18:34:47.732Z",
+        "userId": "00000000-0000-4000-8000-000000000008",
+        "displayName": "[redacted text]",
+        "userHandle": "fixture-id-9",
+        "profilePictureLink": "https://fixture.invalid/redacted",
+        "verified": false,
+        "twitter": null,
+        "usdAmount": "1082.679138",
+        "marketCap": "2072358.981193497",
+        "fdv": "2072358.981193497",
+        "price": "207.2358981193497",
+        "isDev": false,
+        "kind": "buy"
+      },
+      {
+        "type": "swap_sell",
+        "id": "00000000-0000-4000-8000-00000000002a",
+        "tradeId": "00000000-0000-4000-8000-00000000002b",
+        "createdAt": "2026-09-05T15:20:13.521Z",
+        "userId": "00000000-0000-4000-8000-00000000002c",
+        "displayName": "[redacted text]",
+        "userHandle": "fixture-id-45",
+        "profilePictureLink": "https://fixture.invalid/redacted",
+        "verified": false,
+        "twitter": null,
+        "usdAmount": "25.373854",
+        "marketCap": "1972922.0150823193",
+        "fdv": "1972922.0150823193",
+        "price": "197.29220150823193",
+        "isDev": false,
+        "kind": "sell"
+      },
+      {
+        "type": "swap_buy",
+        "id": "00000000-0000-4000-8000-00000000002e",
+        "tradeId": "00000000-0000-4000-8000-00000000002b",
+        "createdAt": "2026-09-05T14:55:17.005Z",
+        "userId": "00000000-0000-4000-8000-00000000002c",
+        "displayName": "[redacted text]",
+        "userHandle": "fixture-id-45",
+        "profilePictureLink": "https://fixture.invalid/redacted",
+        "verified": false,
+        "twitter": null,
+        "usdAmount": "26.15729",
+        "marketCap": "2129836.157821337",
+        "fdv": "2129836.157821337",
+        "price": "212.98361578213374",
+        "isDev": false,
+        "kind": "buy"
+      },
+      {
+        "type": "swap_buy",
+        "id": "00000000-0000-4000-8000-00000000002f",
+        "tradeId": "00000000-0000-4000-8000-000000000021",
+        "createdAt": "2026-09-04T05:53:55.745Z",
+        "userId": "00000000-0000-4000-8000-000000000022",
+        "displayName": "[redacted text]",
+        "userHandle": "fixture-id-35",
+        "profilePictureLink": null,
+        "verified": false,
+        "twitter": null,
+        "usdAmount": "1004.275179",
+        "marketCap": "2541753.1965310453",
+        "fdv": "2541753.1965310453",
+        "price": "254.1753196531045",
+        "isDev": false,
+        "kind": "buy"
+      },
+      {
+        "type": "swap_buy",
+        "id": "00000000-0000-4000-8000-000000000030",
+        "tradeId": "00000000-0000-4000-8000-000000000021",
+        "createdAt": "2026-09-04T05:53:34.150Z",
+        "userId": "00000000-0000-4000-8000-000000000022",
+        "displayName": "[redacted text]",
+        "userHandle": "fixture-id-35",
+        "profilePictureLink": null,
+        "verified": false,
+        "twitter": null,
+        "usdAmount": "501.105642",
+        "marketCap": "2508185.982846184",
+        "fdv": "2508185.982846184",
+        "price": "250.81859828461842",
+        "isDev": false,
+        "kind": "buy"
+      },
+      {
+        "type": "swap_buy",
+        "id": "00000000-0000-4000-8000-000000000031",
+        "tradeId": "00000000-0000-4000-8000-000000000021",
+        "createdAt": "2026-09-04T05:52:38.714Z",
+        "userId": "00000000-0000-4000-8000-000000000022",
+        "displayName": "[redacted text]",
+        "userHandle": "fixture-id-35",
+        "profilePictureLink": null,
+        "verified": false,
+        "twitter": null,
+        "usdAmount": "501.262009",
+        "marketCap": "2478422.613435704",
+        "fdv": "2478422.613435704",
+        "price": "247.84226134357039",
+        "isDev": false,
+        "kind": "buy"
+      },
+      {
+        "type": "swap_buy",
+        "id": "00000000-0000-4000-8000-000000000032",
+        "tradeId": "00000000-0000-4000-8000-000000000021",
+        "createdAt": "2026-09-04T05:52:30.011Z",
+        "userId": "00000000-0000-4000-8000-000000000022",
+        "displayName": "[redacted text]",
+        "userHandle": "fixture-id-35",
+        "profilePictureLink": null,
+        "verified": false,
+        "twitter": null,
+        "usdAmount": "501.20217099999996",
+        "marketCap": "2451789.596991852",
+        "fdv": "2451789.596991852",
+        "price": "245.17895969918519",
+        "isDev": false,
+        "kind": "buy"
+      },
+      {
+        "type": "thesis",
+        "id": "00000000-0000-4000-8000-000000000033",
+        "tradeId": "00000000-0000-4000-8000-000000000034",
+        "createdAt": "2026-09-04T05:51:29.819Z",
+        "userId": "00000000-0000-4000-8000-000000000035",
+        "displayName": "[redacted text]",
+        "userHandle": "fixture-id-54",
+        "profilePictureLink": "https://fixture.invalid/redacted",
+        "verified": false,
+        "twitter": null,
+        "comment": {
+          "id": "00000000-0000-4000-8000-000000000033",
+          "userId": "00000000-0000-4000-8000-000000000035",
+          "tradeId": "00000000-0000-4000-8000-000000000034",
+          "comment": "[redacted text]",
+          "createdAt": "2026-09-04T05:51:29.819Z",
+          "parentId": null,
+          "numLikes": 1,
+          "tokenAddress": "0x0000000000000000000000000000000000000001",
+          "networkId": 1,
+          "shortCommentSegments": [
+            {
+              "text": "[redacted text]",
+              "link": null,
+              "provider": null
+            }
+          ],
+          "reactions": {
+            "counts": {
+              "likeCount": 1
+            },
+            "reactions": {
+              "like": false
+            }
+          },
+          "olderThesis": 0,
+          "newerThesis": 0
+        },
+        "numReplies": 0,
+        "authorTrade": {
+          "humanTokenAmount": "10.543829499849831",
+          "usdValue": "2030.0637607015483",
+          "unrealizedPnlUsd": "-455.81020329845154",
+          "realizedPnlUsd": "0",
+          "percentageUnrealizedPnl": "-18.33601421067265",
+          "percentageRealizedPnl": "0",
+          "closedAt": null
+        },
+        "tokenAddress": "0x0000000000000000000000000000000000000001",
+        "networkId": 1,
+        "ticker": "[redacted text]",
+        "tokenImageUrl": "https://fixture.invalid/redacted",
+        "equity": "0",
+        "threshold": "2030.0637607015483",
+        "isDev": false,
+        "kind": "thesis"
+      },
+      {
+        "type": "swap_buy",
+        "id": "00000000-0000-4000-8000-000000000037",
+        "tradeId": "00000000-0000-4000-8000-000000000034",
+        "createdAt": "2026-09-04T05:38:09.148Z",
+        "userId": "00000000-0000-4000-8000-000000000035",
+        "displayName": "[redacted text]",
+        "userHandle": "fixture-id-54",
+        "profilePictureLink": "https://fixture.invalid/redacted",
+        "verified": false,
+        "twitter": null,
+        "usdAmount": "2510.516464",
+        "marketCap": "2382571.2470367416",
+        "fdv": "2382571.2470367416",
+        "price": "238.25712470367418",
+        "isDev": false,
+        "kind": "buy"
+      }
+    ],
+    "pageInfo": {
+      "hasNextPage": true,
+      "nextCursor": "00000000-0000-4000-8000-000000000037",
+      "sourceCount": 24
+    }
+  }
+}

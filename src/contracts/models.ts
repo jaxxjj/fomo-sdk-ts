@@ -2,21 +2,11 @@ import * as v from "./validation.js";
 import type { ApiResult } from "../connection.js";
 import { FomoError } from "../errors.js";
 export type { DecimalString } from "./validation.js";
+export { parseUser, type User } from "./users.js";
+export { parseHolderGroup, type HolderGroup } from "./holders.js";
+export type { ThesisComment } from "./comments.js";
+import { parseComment, type ThesisComment } from "./comments.js";
 
-/** Unknown extension fields are retained; their numeric literals remain decimal strings. */
-export interface User extends v.SourceObject {
-  id: string;
-  userHandle: string;
-  address?: string | null;
-  evmAddress?: string | null;
-  followers?: number | null;
-  following?: number | null;
-  totalVolume?: v.DecimalString | null;
-  equity?: v.DecimalString | null;
-  pnl24h?: v.DecimalString | null;
-  pnl7d?: v.DecimalString | null;
-  pnl30d?: v.DecimalString | null;
-}
 export interface Swap extends v.SourceObject {
   id: string;
   createdAt: string;
@@ -34,9 +24,6 @@ export interface TokenRef {
   networkId: number;
   address: string;
 }
-export interface ThesisComment extends v.SourceObject {
-  comment: string;
-}
 export interface Activity extends v.SourceObject {
   id: string;
   type: string;
@@ -51,13 +38,32 @@ export interface Activity extends v.SourceObject {
   price?: v.DecimalString | null;
   marketCap?: v.DecimalString | null;
   comment?: ThesisComment | null;
+  authorTrade?: AuthorTrade | null;
+  equity?: v.DecimalString | null;
+  threshold?: v.DecimalString | null;
+  numReplies?: number | null;
+  verified?: boolean | null;
+  isDev?: boolean | null;
 }
-export interface HolderGroup extends v.SourceObject {
-  networkId: number;
-  tokenAddress: string;
-  /** Full holder-row contracts have not yet been qualified. */
-  topHolders: v.SourceObject[];
-  totalHolders: number;
+const AUTHOR_AMOUNTS = [
+  "humanTokenAmount",
+  "usdValue",
+  "unrealizedPnlUsd",
+  "realizedPnlUsd",
+  "percentageUnrealizedPnl",
+  "percentageRealizedPnl",
+] as const;
+export type AuthorTrade = v.SourceObject &
+  Partial<Record<(typeof AUTHOR_AMOUNTS)[number], v.DecimalString | null>> & {
+    closedAt?: string | null;
+  };
+function parseAuthorTrade(value: unknown): AuthorTrade {
+  const raw = v.object(value, "author_trade");
+  return {
+    ...raw,
+    ...v.fields(raw, AUTHOR_AMOUNTS, v.decimal),
+    ...v.fields(raw, ["closedAt"], v.optionalTimestamp),
+  };
 }
 export interface PageInfo {
   hasNextPage: boolean;
@@ -69,23 +75,6 @@ export interface Page<T> extends ApiResult<T[]> {
   pageInfo: PageInfo;
 }
 
-export function parseUser(value: unknown): User {
-  const raw = v.object(value, "user");
-  return {
-    ...raw,
-    id: v.string(raw.id, "user_id"),
-    userHandle: v.string(raw.userHandle, "user_handle"),
-    address: v.optionalString(raw.address, "address"),
-    evmAddress: v.optionalString(raw.evmAddress, "evm_address"),
-    followers: v.optionalCount(raw.followers, "followers"),
-    following: v.optionalCount(raw.following, "following"),
-    totalVolume: v.decimal(raw.totalVolume, "total_volume"),
-    equity: v.decimal(raw.equity, "equity"),
-    pnl24h: v.decimal(raw.pnl24h, "pnl_24h"),
-    pnl7d: v.decimal(raw.pnl7d, "pnl_7d"),
-    pnl30d: v.decimal(raw.pnl30d, "pnl_30d"),
-  };
-}
 export function parseSwap(value: unknown): Swap {
   const raw = v.object(value, "swap");
   return {
@@ -119,7 +108,7 @@ export function parseActivity(value: unknown): Activity {
   else {
     const entry = v.object(raw.comment, "thesis_comment");
     if (typeof entry.comment !== "string") return v.malformed("thesis_text");
-    comment = { ...entry, comment: entry.comment };
+    comment = parseComment(entry);
   }
   return {
     ...raw,
@@ -134,21 +123,15 @@ export function parseActivity(value: unknown): Activity {
     usdAmount: v.decimal(raw.usdAmount, "usd_amount"),
     price: v.decimal(raw.price, "price"),
     marketCap: v.decimal(raw.marketCap, "market_cap"),
+    ...v.fields(raw, ["equity", "threshold"], v.decimal),
+    ...v.fields(raw, ["numReplies"], v.optionalCount),
+    ...v.fields(raw, ["verified", "isDev"], v.optionalBoolean),
+    ...v.fields(raw, ["authorTrade"], (x) => v.optional(x, parseAuthorTrade)),
     comment,
   };
 }
-export function parseHolderGroup(value: unknown): HolderGroup {
-  const raw = v.object(value, "holder_group");
-  return {
-    ...raw,
-    networkId: v.count(raw.networkId, "network_id"),
-    tokenAddress: v.string(raw.tokenAddress, "token_address"),
-    totalHolders: v.count(raw.totalHolders, "total_holders"),
-    topHolders: v.array(raw.topHolders, "top_holders").map((x) => v.object(x, "holder")),
-  };
-}
 export function tokenParams(token: TokenRef): { networkId: number; tokenAddress: string } {
-  if (!Number.isSafeInteger(token.networkId) || token.networkId < 1) {
+  if (!token || !Number.isSafeInteger(token.networkId) || token.networkId < 1) {
     throw new FomoError("configuration", { reason: "network_id" });
   }
   return { networkId: token.networkId, tokenAddress: v.identifier(token.address, "token_address") };

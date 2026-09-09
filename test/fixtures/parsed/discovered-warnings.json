@@ -1,0 +1,18 @@
+{
+  "sourceSha256": "592fd39e7b38253fd69972b2ad07302faae4798c41952c1b382eb44b6a3cb352",
+  "parsed": {
+    "data": {
+      "disableBuying": true,
+      "disableSelling": false,
+      "warnings": [
+        {
+          "type": "TOKEN_UNSUPPORTED",
+          "severity": "[redacted text]",
+          "priority": 0,
+          "name": "[redacted text]",
+          "description": "[redacted text]"
+        }
+      ]
+    }
+  }
+}

@@ -6,6 +6,7 @@ import { FomoError } from "../errors.js";
 export interface SwapListParams {
   userId: string;
   cursor?: string;
+  tokenAddress?: string;
 }
 export interface PageOptions extends RequestOptions {
   maxPages?: number;
@@ -20,6 +21,10 @@ export class SwapsResource {
       `/v2/users/${encodeURIComponent(id)}/swaps`,
       {
         lastSwapIdV2: params.cursor === undefined ? undefined : identifier(params.cursor, "cursor"),
+        tokenAddress:
+          params.tokenAddress === undefined
+            ? undefined
+            : identifier(params.tokenAddress, "token_address"),
       },
       options,
     );

@@ -1,0 +1,49 @@
+{
+  "format": "sdk-http-cassette/v1",
+  "service": "fomo",
+  "provenance": {
+    "kind": "live",
+    "source": "SDK native read-only website capability qualification",
+    "operation": "clans.feed"
+  },
+  "capturedAt": "2026-09-09T06:17:12.797Z",
+  "inputs": {
+    "params": {
+      "clanId": "00000000-0000-4000-8000-000000000001",
+      "feedTypes": ["thesis_created", "large_buy"],
+      "limit": 5
+    }
+  },
+  "exchanges": [
+    {
+      "request": {
+        "method": "GET",
+        "origin": "https://fomo.fixture.invalid",
+        "path": "/v2/clans/00000000-0000-4000-8000-000000000001/feed",
+        "query": [
+          ["feedTypes", "thesis_created"],
+          ["feedTypes", "large_buy"],
+          ["limit", "5"]
+        ],
+        "headers": {
+          "authentication": "<present>",
+          "content-type": "application/json"
+        },
+        "body": ""
+      },
+      "response": {
+        "status": 200,
+        "headers": {
+          "content-type": "application/json; charset=utf-8"
+        },
+        "body": "{\"success\":true,\"message\":\"[redacted text]\",\"responseObject\":{\"feed\":[{\"id\":\"00000000-0000-4000-8000-000000000002\",\"userId\":\"00000000-0000-4000-8000-000000000003\",\"tradeId\":\"00000000-0000-4000-8000-000000000004\",\"swapId\":null,\"transferId\":null,\"tokenAddress\":\"11111111111111111111111111111116\",\"networkId\":1399811149,\"createdAt\":\"2026-09-09T05:10:10.556Z\",\"body\":{\"fdv\":292319650.8857548,\"tag\":\"[redacted text]\",\"price\":0.292337085279,\"ticker\":\"[redacted text]\",\"userId\":\"00000000-0000-4000-8000-000000000003\",\"comment\":\"[redacted text]\",\"commentId\":\"00000000-0000-4000-8000-000000000006\",\"marketCap\":292319650.8857548,\"networkId\":1399811149,\"userHandle\":\"fixture-id-7\",\"displayName\":\"[redacted text]\",\"tokenAddress\":\"11111111111111111111111111111116\",\"userImageUrl\":\"https://fixture.invalid/redacted\",\"tokenImageUrl\":\"https://fixture.invalid/redacted\",\"realizedPnlUsd\":15655.76952158192,\"humanTokenAmount\":15874799.954379,\"unrealizedPnlUsd\":3795349.698373422,\"positionNotionalUsd\":4640792.748050359,\"percentageRealizedPnl\":46.47104988181218,\"percentageUnrealizedPnl\":448.918433929253,\"shortCommentSegments\":[{\"text\":\"[redacted text]\",\"link\":null,\"provider\":null}]},\"verified\":false,\"likes\":0,\"views\":0,\"type\":\"thesis_created\",\"pinned\":false,\"tradeComment\":{\"id\":\"00000000-0000-4000-8000-000000000006\",\"userId\":\"00000000-0000-4000-8000-000000000003\",\"tradeId\":\"00000000-0000-4000-8000-000000000004\",\"comment\":\"[redacted text]\",\"createdAt\":\"2026-09-09T05:10:10.130Z\",\"parentId\":null,\"numLikes\":259,\"tokenAddress\":\"11111111111111111111111111111116\",\"networkId\":1399811149,\"reactions\":{\"counts\":{\"likeCount\":259},\"reactions\":{\"like\":false}},\"olderThesis\":53,\"newerThesis\":2},\"numReplies\":0,\"reacted\":false},{\"id\":\"00000000-0000-4000-8000-000000000008\",\"userId\":\"00000000-0000-4000-8000-000000000009\",\"tradeId\":\"00000000-0000-4000-8000-00000000000a\",\"swapId\":null,\"transferId\":null,\"tokenAddress\":\"1111111111111111111111111111111C\",\"networkId\":1399811149,\"createdAt\":\"2026-09-09T05:08:30.387Z\",\"body\":{\"fdv\":4816996.540408206,\"tag\":null,\"price\":0.00445672744423,\"ticker\":\"[redacted text]\",\"userId\":\"00000000-0000-4000-8000-000000000009\",\"avgCost\":0.004817013350628972,\"numSwaps\":1,\"marketCap\":\"4816996.540408206\",\"isFirstBuy\":true,\"percentPnl\":0,\"userHandle\":\"fixture-id-12\",\"displayName\":\"[redacted text]\",\"userImageUrl\":\"https://fixture.invalid/redacted\",\"inHumanAmount\":2994,\"tokenImageUrl\":\"https://fixture.invalid/redacted\",\"currentSizeUsd\":2985.018,\"inTokenAddress\":\"1111111111111111111111111111111E\",\"outHumanAmount\":619682.318217,\"realizedPnlUsd\":0,\"outTokenAddress\":\"1111111111111111111111111111111C\",\"humanTokenAmount\":619682.318217},\"verified\":false,\"likes\":0,\"views\":0,\"type\":\"large_buy\",\"pinned\":false,\"tradeComment\":null,\"reacted\":false},{\"id\":\"00000000-0000-4000-8000-00000000000e\",\"userId\":\"00000000-0000-4000-8000-00000000000f\",\"tradeId\":\"00000000-0000-4000-8000-000000000010\",\"swapId\":null,\"transferId\":null,\"tokenAddress\":\"1111111111111111111111111111111J\",\"networkId\":1399811149,\"createdAt\":\"2026-09-09T03:08:36.661Z\",\"body\":{\"fdv\":9557808.040377261,\"tag\":\"[redacted text]\",\"price\":0.08721920469,\"ticker\":\"[redacted text]\",\"userId\":\"00000000-0000-4000-8000-00000000000f\",\"avgCost\":0.08772315671606384,\"numSwaps\":4,\"marketCap\":\"9557808.040377261\",\"isFirstBuy\":false,\"percentPnl\":0,\"userHandle\":\"fixture-id-18\",\"displayName\":\"[redacted text]\",\"userImageUrl\":\"https://fixture.invalid/redacted\",\"inHumanAmount\":5000.000000000001,\"tokenImageUrl\":\"https://fixture.invalid/redacted\",\"currentSizeUsd\":32623.270959991034,\"inTokenAddress\":\"1111111111111111111111111111111E\",\"outHumanAmount\":52369.726760071004,\"realizedPnlUsd\":0,\"outTokenAddress\":\"1111111111111111111111111111111J\",\"humanTokenAmount\":341848.17182381},\"verified\":false,\"likes\":0,\"views\":0,\"type\":\"large_buy\",\"pinned\":false,\"reacted\":false},{\"id\":\"00000000-0000-4000-8000-000000000013\",\"userId\":\"00000000-0000-4000-8000-00000000000f\",\"tradeId\":\"00000000-0000-4000-8000-000000000010\",\"swapId\":null,\"transferId\":null,\"tokenAddress\":\"1111111111111111111111111111111J\",\"networkId\":1399811149,\"createdAt\":\"2026-09-09T03:08:16.247Z\",\"body\":{\"fdv\":9183491.414648907,\"tag\":\"[redacted text]\",\"price\":0.091695515479,\"ticker\":\"[redacted text]\",\"userId\":\"00000000-0000-4000-8000-00000000000f\",\"comment\":\"[redacted text]\",\"commentId\":\"00000000-0000-4000-8000-000000000014\",\"marketCap\":9183491.414648907,\"networkId\":1399811149,\"userHandle\":\"fixture-id-18\",\"displayName\":\"[redacted text]\",\"tokenAddress\":\"1111111111111111111111111111111J\",\"userImageUrl\":\"https://fixture.invalid/redacted\",\"tokenImageUrl\":\"https://fixture.invalid/redacted\",\"realizedPnlUsd\":0,\"humanTokenAmount\":289478.44506373897,\"unrealizedPnlUsd\":1553.6247401789267,\"positionNotionalUsd\":26543.875240178928,\"percentageRealizedPnl\":0,\"percentageUnrealizedPnl\":6.2169234365174795,\"shortCommentSegments\":[{\"text\":\"[redacted text]\",\"link\":null,\"provider\":null}]},\"verified\":false,\"likes\":0,\"views\":0,\"type\":\"thesis_created\",\"pinned\":false,\"tradeComment\":{\"id\":\"00000000-0000-4000-8000-000000000014\",\"userId\":\"00000000-0000-4000-8000-00000000000f\",\"tradeId\":\"00000000-0000-4000-8000-000000000010\",\"comment\":\"[redacted text]\",\"createdAt\":\"2026-09-09T03:08:16.106Z\",\"parentId\":null,\"numLikes\":19,\"tokenAddress\":\"1111111111111111111111111111111J\",\"networkId\":1399811149,\"reactions\":{\"counts\":{\"likeCount\":19},\"reactions\":{\"like\":false}},\"olderThesis\":0,\"newerThesis\":0},\"numReplies\":0,\"reacted\":false},{\"id\":\"00000000-0000-4000-8000-000000000015\",\"userId\":\"00000000-0000-4000-8000-00000000000f\",\"tradeId\":\"00000000-0000-4000-8000-000000000010\",\"swapId\":null,\"transferId\":null,\"tokenAddress\":\"1111111111111111111111111111111J\",\"networkId\":1399811149,\"createdAt\":\"2026-09-09T03:07:42.001Z\",\"body\":{\"fdv\":8707225.528466212,\"tag\":\"[redacted text]\",\"price\":0.0824051109826,\"ticker\":\"[redacted text]\",\"userId\":\"00000000-0000-4000-8000-00000000000f\",\"avgCost\":0.0863285364632158,\"numSwaps\":3,\"marketCap\":\"8707225.528466212\",\"isFirstBuy\":false,\"percentPnl\":0,\"userHandle\":\"fixture-id-18\",\"displayName\":\"[redacted text]\",\"userImageUrl\":\"https://fixture.invalid/redacted\",\"inHumanAmount\":9998.000500000004,\"tokenImageUrl\":\"https://fixture.invalid/redacted\",\"currentSizeUsd\":25167.280904410167,\"inTokenAddress\":\"1111111111111111111111111111111E\",\"outHumanAmount\":114969.98636299997,\"realizedPnlUsd\":0,\"outTokenAddress\":\"1111111111111111111111111111111J\",\"humanTokenAmount\":289478.44506373897},\"verified\":false,\"likes\":0,\"views\":0,\"type\":\"large_buy\",\"pinned\":false,\"reacted\":false}]},\"statusCode\":200}"
+      }
+    }
+  ],
+  "expected": {
+    "ok": true,
+    "summary": {
+      "type": "object"
+    }
+  }
+}

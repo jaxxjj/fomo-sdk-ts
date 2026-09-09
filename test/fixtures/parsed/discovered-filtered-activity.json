@@ -1,0 +1,262 @@
+{
+  "sourceSha256": "1654a2b02d007d69517715b7ff8ebf1f19b84e14b68f9cf0810ae0bef8597ec3",
+  "parsed": {
+    "data": [
+      {
+        "id": "00000000-0000-4000-8000-000000000001",
+        "userId": null,
+        "tradeId": null,
+        "swapId": null,
+        "transferId": null,
+        "tokenAddress": "11111111111111111111111111111113",
+        "networkId": 1399811149,
+        "createdAt": "2026-08-23T17:29:33.503Z",
+        "body": {
+          "fdv": "34743798.16453897",
+          "price": "0.036027213902",
+          "ticker": "[redacted text]",
+          "minutes": "15",
+          "marketCap": "34743798.16453897",
+          "numTrades": "1145",
+          "topTraders": [
+            {
+              "id": "00000000-0000-4000-8000-000000000003",
+              "userHandle": "fixture-id-4",
+              "displayName": "[redacted text]",
+              "userImageUrl": "https://fixture.invalid/redacted"
+            },
+            {
+              "id": "00000000-0000-4000-8000-000000000005",
+              "userHandle": "fixture-id-6",
+              "displayName": "69",
+              "userImageUrl": "https://fixture.invalid/redacted"
+            },
+            {
+              "id": "00000000-0000-4000-8000-000000000007",
+              "userHandle": "fixture-id-8",
+              "displayName": "[redacted text]",
+              "userImageUrl": "https://fixture.invalid/redacted"
+            }
+          ],
+          "totalVolume": "501219.63864399993",
+          "areTopTraders": false,
+          "tokenImageUrl": "https://fixture.invalid/redacted",
+          "uniqueTraders": "40",
+          "priceChangePercent": "-24.232162079936305"
+        },
+        "verified": false,
+        "likes": "0",
+        "views": "0",
+        "type": "multi_user_sell",
+        "pinned": false,
+        "twitter": null,
+        "kind": "unknown"
+      },
+      {
+        "id": "00000000-0000-4000-8000-000000000009",
+        "userId": null,
+        "tradeId": null,
+        "swapId": null,
+        "transferId": null,
+        "tokenAddress": "11111111111111111111111111111113",
+        "networkId": 1399811149,
+        "createdAt": "2026-08-23T03:00:30.263Z",
+        "body": {
+          "fdv": "48901393.81920936",
+          "price": "0.0507077829225",
+          "ticker": "[redacted text]",
+          "minutes": "15",
+          "marketCap": "48901393.81920936",
+          "numTrades": "4081",
+          "topTraders": [
+            {
+              "id": "00000000-0000-4000-8000-00000000000a",
+              "userHandle": "fixture-id-11",
+              "displayName": "[redacted text]",
+              "userImageUrl": "https://fixture.invalid/redacted"
+            },
+            {
+              "id": "00000000-0000-4000-8000-00000000000c",
+              "userHandle": "fixture-id-13",
+              "displayName": "[redacted text]",
+              "userImageUrl": "https://fixture.invalid/redacted"
+            },
+            {
+              "id": "00000000-0000-4000-8000-00000000000e",
+              "userHandle": "fixture-id-15",
+              "displayName": "[redacted text]",
+              "userImageUrl": "https://fixture.invalid/redacted"
+            }
+          ],
+          "totalVolume": "511771.61701799993",
+          "areTopTraders": false,
+          "tokenImageUrl": "https://fixture.invalid/redacted",
+          "uniqueTraders": "80",
+          "priceChangePercent": "-42.16824134816562"
+        },
+        "verified": false,
+        "likes": "0",
+        "views": "0",
+        "type": "multi_user_buy",
+        "pinned": false,
+        "twitter": null,
+        "kind": "unknown"
+      },
+      {
+        "id": "00000000-0000-4000-8000-000000000010",
+        "userId": null,
+        "tradeId": null,
+        "swapId": null,
+        "transferId": null,
+        "tokenAddress": "11111111111111111111111111111113",
+        "networkId": 1399811149,
+        "createdAt": "2026-08-23T02:53:48.037Z",
+        "body": {
+          "fdv": "55179750.09249188",
+          "price": "0.0572180580323",
+          "ticker": "[redacted text]",
+          "minutes": "15",
+          "marketCap": "55179750.09249188",
+          "numTrades": "2313",
+          "topTraders": [
+            {
+              "id": "00000000-0000-4000-8000-000000000011",
+              "userHandle": "fixture-id-18",
+              "displayName": "[redacted text]",
+              "userImageUrl": null
+            },
+            {
+              "id": "00000000-0000-4000-8000-000000000013",
+              "userHandle": "fixture-id-20",
+              "displayName": "[redacted text]",
+              "userImageUrl": null
+            },
+            {
+              "id": "00000000-0000-4000-8000-000000000015",
+              "userHandle": "fixture-id-22",
+              "displayName": "[redacted text]",
+              "userImageUrl": "https://fixture.invalid/redacted"
+            }
+          ],
+          "totalVolume": "406345.91528000013",
+          "areTopTraders": false,
+          "tokenImageUrl": "https://fixture.invalid/redacted",
+          "uniqueTraders": "80",
+          "priceChangePercent": "-37.341137886801846"
+        },
+        "verified": false,
+        "likes": "0",
+        "views": "0",
+        "type": "multi_user_sell",
+        "pinned": false,
+        "twitter": null,
+        "kind": "unknown"
+      },
+      {
+        "id": "00000000-0000-4000-8000-000000000017",
+        "userId": null,
+        "tradeId": null,
+        "swapId": null,
+        "transferId": null,
+        "tokenAddress": "11111111111111111111111111111113",
+        "networkId": 1399811149,
+        "createdAt": "2026-08-23T02:53:22.125Z",
+        "body": {
+          "fdv": "56823727.41744069",
+          "price": "0.0589227629254",
+          "ticker": "[redacted text]",
+          "minutes": "15",
+          "marketCap": "56823727.41744069",
+          "numTrades": "2322",
+          "topTraders": [
+            {
+              "id": "00000000-0000-4000-8000-00000000000e",
+              "userHandle": "fixture-id-15",
+              "displayName": "[redacted text]",
+              "userImageUrl": "https://fixture.invalid/redacted"
+            },
+            {
+              "id": "00000000-0000-4000-8000-00000000000c",
+              "userHandle": "fixture-id-13",
+              "displayName": "[redacted text]",
+              "userImageUrl": "https://fixture.invalid/redacted"
+            },
+            {
+              "id": "00000000-0000-4000-8000-000000000018",
+              "userHandle": "fixture-id-25",
+              "displayName": "[redacted text]",
+              "userImageUrl": "https://fixture.invalid/redacted"
+            }
+          ],
+          "totalVolume": "267936.21990200004",
+          "areTopTraders": false,
+          "tokenImageUrl": "https://fixture.invalid/redacted",
+          "uniqueTraders": "40",
+          "priceChangePercent": "-34.79486536916674"
+        },
+        "verified": false,
+        "likes": "0",
+        "views": "0",
+        "type": "multi_user_buy",
+        "pinned": false,
+        "twitter": null,
+        "kind": "unknown"
+      },
+      {
+        "id": "00000000-0000-4000-8000-00000000001a",
+        "userId": null,
+        "tradeId": null,
+        "swapId": null,
+        "transferId": null,
+        "tokenAddress": "11111111111111111111111111111113",
+        "networkId": 1399811149,
+        "createdAt": "2026-08-23T02:50:44.670Z",
+        "body": {
+          "fdv": "71659934.57932863",
+          "price": "0.0743070109683",
+          "ticker": "[redacted text]",
+          "minutes": "15",
+          "marketCap": "71659934.57932863",
+          "numTrades": "1557",
+          "topTraders": [
+            {
+              "id": "00000000-0000-4000-8000-000000000011",
+              "userHandle": "fixture-id-18",
+              "displayName": "[redacted text]",
+              "userImageUrl": null
+            },
+            {
+              "id": "00000000-0000-4000-8000-000000000013",
+              "userHandle": "fixture-id-20",
+              "displayName": "[redacted text]",
+              "userImageUrl": null
+            },
+            {
+              "id": "00000000-0000-4000-8000-00000000001b",
+              "userHandle": "fixture-id-28",
+              "displayName": "[redacted text]",
+              "userImageUrl": null
+            }
+          ],
+          "totalVolume": "190932.43355200003",
+          "areTopTraders": false,
+          "tokenImageUrl": "https://fixture.invalid/redacted",
+          "uniqueTraders": "40",
+          "priceChangePercent": "-18.031989631248077"
+        },
+        "verified": false,
+        "likes": "0",
+        "views": "0",
+        "type": "multi_user_sell",
+        "pinned": false,
+        "twitter": null,
+        "kind": "unknown"
+      }
+    ],
+    "pageInfo": {
+      "hasNextPage": true,
+      "nextCursor": "00000000-0000-4000-8000-00000000001a",
+      "sourceCount": 5
+    }
+  }
+}

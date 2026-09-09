@@ -17,6 +17,28 @@ export function optionalString(value: unknown, field: string): string | null | u
   if (typeof value !== "string") return malformed(field);
   return value;
 }
+export function optionalBoolean(value: unknown, field: string): boolean | null | undefined {
+  return value == null ? value : boolean(value, field);
+}
+export function optionalTimestamp(value: unknown, field: string): string | null | undefined {
+  return value == null ? value : timestamp(value, field);
+}
+export function optional<T>(value: unknown, parse: (value: unknown) => T): T | null | undefined {
+  return value == null ? value : parse(value);
+}
+export function list<T>(value: unknown, field: string, parse: (value: unknown) => T): T[] {
+  return array(value, field).map(parse);
+}
+/** Preserve absent fields; only named, present fields are normalized. */
+export function fields<K extends string, T>(
+  raw: SourceObject,
+  keys: readonly K[],
+  parse: (value: unknown, field: string) => T,
+): Partial<Record<K, T>> {
+  const result: Partial<Record<K, T>> = {};
+  for (const key of keys) if (Object.hasOwn(raw, key)) result[key] = parse(raw[key], key);
+  return result;
+}
 export function decimal(value: unknown, field: string): DecimalString | null | undefined {
   if (value == null) return value;
   if (typeof value !== "string" || !/^-?(?:0|[1-9]\d*)(?:\.\d+)?(?:[eE][+-]?\d+)?$/.test(value))

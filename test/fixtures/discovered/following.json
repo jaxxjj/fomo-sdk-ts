@@ -1,0 +1,44 @@
+{
+  "format": "sdk-http-cassette/v1",
+  "service": "fomo",
+  "provenance": {
+    "kind": "live",
+    "source": "SDK native read-only website capability qualification",
+    "operation": "users.following"
+  },
+  "capturedAt": "2026-09-09T06:16:50.703Z",
+  "inputs": {
+    "params": {
+      "userId": "00000000-0000-4000-8000-000000000001"
+    }
+  },
+  "exchanges": [
+    {
+      "request": {
+        "method": "GET",
+        "origin": "https://fomo.fixture.invalid",
+        "path": "/v2/users/00000000-0000-4000-8000-000000000001/followingPaginate",
+        "query": [],
+        "headers": {
+          "authentication": "<present>",
+          "content-type": "application/json"
+        },
+        "body": ""
+      },
+      "response": {
+        "status": 200,
+        "headers": {
+          "content-type": "application/json; charset=utf-8"
+        },
+        "body": "{\"success\":true,\"message\":\"[redacted text]\",\"responseObject\":{\"users\":[{\"id\":\"00000000-0000-4000-8000-000000000002\",\"address\":\"11111111111111111111111111111114\",\"evmAddress\":\"0x0000000000000000000000000000000000000004\",\"createdAt\":\"2026-08-30T10:59:02.419Z\",\"displayName\":\"[redacted text]\",\"userHandle\":\"fixture-id-5\",\"profilePictureLink\":\"https://fixture.invalid/redacted\",\"description\":\"\",\"following\":72,\"followers\":534,\"activated\":false,\"verified\":false,\"isReferred\":true,\"isRestricted\":false,\"swapCount\":233,\"numTrades\":98,\"totalVolume\":24578.567689,\"private\":false,\"thumbhash\":\"[redacted text]\",\"coverPhotoLink\":\"https://fixture.invalid/redacted\",\"coverPhotoThumbhash\":\"[redacted text]\",\"twitter\":null,\"pnl24h\":-3578.438575383694}]},\"statusCode\":200}"
+      }
+    }
+  ],
+  "expected": {
+    "ok": true,
+    "summary": {
+      "type": "array",
+      "rows": 1
+    }
+  }
+}

@@ -3,6 +3,7 @@ import assert from "node:assert/strict";
 import { FomoClient, StaticSession } from "../dist/index.js";
 import { client, response, envelope } from "./helpers.mjs";
 import { matrix, methods, invoke, fixtureBody } from "./support/endpoint-matrix.mjs";
+import { discoveredCases } from "./support/discovered-cases.mjs";
 
 test("resource inventory covers every public resource method", () => {
   const c = new FomoClient({ session: new StaticSession({ accessToken: "synthetic" }) });
@@ -11,7 +12,12 @@ test("resource inventory covers every public resource method", () => {
       .filter((n) => n !== "constructor")
       .map((n) => `${resource}.${n}`),
   );
-  assert.deepEqual(actual.sort(), methods.slice().sort());
+  const expandedOldResources = discoveredCases
+    .map((row) => row.operation)
+    .filter((name) =>
+      ["users", "leaderboards", "swaps", "activity", "tokens"].includes(name.split(".")[0]),
+    );
+  assert.deepEqual(actual.sort(), [...new Set([...methods, ...expandedOldResources])].sort());
   assert.deepEqual([...new Set(matrix.map((row) => row.name))].sort(), methods.slice().sort());
 });
 for (const row of matrix)

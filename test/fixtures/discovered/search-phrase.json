@@ -1,0 +1,44 @@
+{
+  "format": "sdk-http-cassette/v1",
+  "service": "fomo",
+  "provenance": {
+    "kind": "live",
+    "source": "SDK native read-only website capability qualification",
+    "operation": "market.search"
+  },
+  "capturedAt": "2026-09-09T06:16:26.278Z",
+  "inputs": {
+    "params": {
+      "phrase": "PONS"
+    }
+  },
+  "exchanges": [
+    {
+      "request": {
+        "method": "POST",
+        "origin": "https://fomo.fixture.invalid",
+        "path": "/proxy/filterTokensSearch",
+        "query": [],
+        "headers": {
+          "authentication": "<present>",
+          "content-type": "application/json"
+        },
+        "body": "{\"phrase\":\"PONS\"}"
+      },
+      "response": {
+        "status": 200,
+        "headers": {
+          "content-type": "application/json; charset=utf-8"
+        },
+        "body": "{\"success\":true,\"message\":\"[redacted text]\",\"responseObject\":[{\"change24\":\"972.8977757474698\",\"createdAt\":1788928454,\"holders\":3165,\"liquidity\":\"142116.76909418395\",\"marketCap\":\"10975941.512972716\",\"priceUSD\":\"0.010978815202866489\",\"volume24\":\"157330.4226116517\",\"token\":{\"address\":\"11111111111111111111111111111112\",\"decimals\":6,\"networkId\":1399811149,\"name\":\"[redacted text]\",\"symbol\":\"[redacted text]\",\"info\":{\"circulatingSupply\":\"999738251.364954\",\"id\":\"fixture-id-2\",\"imageLargeUrl\":\"https://fixture.invalid/redacted\",\"imageSmallUrl\":\"https://fixture.invalid/redacted\",\"imageThumbUrl\":\"https://fixture.invalid/redacted\",\"name\":\"[redacted text]\",\"symbol\":\"[redacted text]\",\"totalSupply\":\"999738251.364954\"},\"socialLinks\":{\"discord\":null,\"telegram\":null,\"twitter\":\"https://fixture.invalid/redacted\",\"website\":\"https://fixture.invalid/redacted\"},\"launchpad\":{\"launchpadName\":\"[redacted text]\",\"launchpadIconUrl\":\"https://fixture.invalid/redacted\",\"graduationPercent\":0}}},{\"change24\":\"0.17643297400703545\",\"createdAt\":1788193658,\"holders\":2176,\"liquidity\":\"51007.01677306791\",\"marketCap\":\"1429622.147496522\",\"priceUSD\":\"0.8219815916473417\",\"volume24\":\"626622.2723581595\",\"token\":{\"address\":\"11111111111111111111111111111114\",\"decimals\":8,\"networkId\":1399811149,\"name\":\"[redacted text]\",\"symbol\":\"[redacted text]\",\"info\":{\"circulatingSupply\":\"1739238.64235378\",\"id\":\"fixture-id-4\",\"imageLargeUrl\":\"https://fixture.invalid/redacted\",\"imageSmallUrl\":\"https://fixture.invalid/redacted\",\"imageThumbUrl\":\"https://fixture.invalid/redacted\",\"name\":\"[redacted text]\",\"symbol\":\"[redacted text]\",\"totalSupply\":\"1739238.64235378\"},\"socialLinks\":{\"discord\":null,\"telegram\":null,\"twitter\":null,\"website\":null},\"launchpad\":{\"launchpadName\":null,\"launchpadIconUrl\":\"https://fixture.invalid/redacted\",\"graduationPercent\":0}}}],\"statusCode\":200}"
+      }
+    }
+  ],
+  "expected": {
+    "ok": true,
+    "summary": {
+      "type": "array",
+      "rows": 2
+    }
+  }
+}

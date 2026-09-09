@@ -74,17 +74,30 @@ service qualification. No authenticated requests or transactions are made by
 
 ## Boundaries
 
+September 9 website-discovery expansion is documented in
+[website-capabilities.md](docs/website-capabilities.md), with native SDK
+results in `docs/discovered-qualification.json`. That inventory is independently
+derived from first-party caller modules, not merely from existing SDK methods.
+
+Later header-controlled diagnosis showed cross-chain partial metric responses
+depended on missing X-Supported-Chains. The source build now defaults that scope
+and validates narrower caller restrictions. Typed model qualification and full
+parsed regression evidence are documented in `docs/typed-models.md`; earlier
+no-header captures remain historical rather than being overwritten.
+
 The expanded per-method/parameter/live evidence is tracked in
 [coverage.md](docs/coverage.md) and its JSON ledger. CI also runs finite failure,
 pagination and concurrency matrices. A boundary test exposed numeric Privy
 credential coercion; the auth parser now preserves wire types and rejects that
 case. This is a local bug fix, not new true-expiry/rotation evidence.
 
-- Only stable-path GET resources are in the initial surface.
+- The initial release exposed GET resources. The unreleased expansion also
+  supports explicitly allowlisted read-only POST queries; it is not arbitrary POST access.
 - Leaderboard window variants and activity cursor behavior include source-derived
   coverage beyond the exact limited preflight sample; do not call all variants
   fully live-qualified.
-- Token-feed continuation is intentionally absent.
+- The expansion includes observed token-feed lastId continuation; comprehensive
+  historical completeness across all feed variants remains unqualified.
 - Client-side input/resource caps are not official service limits.
 - Network IDs are provider-specific; profile-reported wallet fields are not
   cryptographic ownership proofs.

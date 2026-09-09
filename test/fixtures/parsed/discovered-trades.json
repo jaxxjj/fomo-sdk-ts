@@ -1,0 +1,11 @@
+{
+  "sourceSha256": "40b06a877b880acfcb188d19f877811d9eeb5ac06d77cc79c1d828c992fe84da",
+  "parsed": {
+    "data": {
+      "activeTrades": [],
+      "closedTrades": [],
+      "hasNextPage": false,
+      "closedCount": 0
+    }
+  }
+}

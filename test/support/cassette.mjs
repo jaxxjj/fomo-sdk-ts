@@ -3,6 +3,7 @@ import { dirname } from "node:path";
 import { randomUUID } from "node:crypto";
 import { parse, stringify, isLosslessNumber } from "lossless-json";
 import assert from "node:assert/strict";
+import { allowDiscoveredRead } from "./fomo-discovery-policy.mjs";
 
 const UUID = /\b[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}\b/gi;
 const EVM = /\b0x[0-9a-f]{40}\b/gi;
@@ -182,6 +183,7 @@ export function providerPolicy(service) {
     service,
     origin,
     allowRecord(method, path) {
+      if (service === "fomo" && allowDiscoveredRead(method, path)) return true;
       if (service === "gmgn" && method === "POST")
         return [
           "/v1/user/wallet_profits",
@@ -251,6 +253,19 @@ export function providerPolicy(service) {
         return [k, k === "tokens" ? redactor.json(v, { inputs: true }) : redactor.input(v, k)];
       });
       const body = init.body == null ? "" : String(init.body);
+      let normalizedBody = recording && body ? redactor.json(body, { inputs: true }) : body;
+      if (recording && service === "fomo" && u.pathname === "/proxy/filterTokensSearch" && body) {
+        // On this read endpoint "token" is a public asset address, not an auth token.
+        const payload = parse(body);
+        normalizedBody = stringify(
+          Object.fromEntries(
+            Object.entries(payload).map(([key, value]) => [
+              key,
+              redactor.input(value, key === "token" ? "tokenAddress" : key),
+            ]),
+          ),
+        );
+      }
       return {
         method,
         origin: `https://${service}.fixture.invalid`,
@@ -269,7 +284,7 @@ export function providerPolicy(service) {
             : {}),
           ...(headers.has("x-signature") ? { "x-signature": "<present>" } : {}),
         },
-        body: recording && body ? redactor.json(body, { inputs: true }) : body,
+        body: normalizedBody,
       };
     },
   };

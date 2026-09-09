@@ -1,0 +1,59 @@
+{
+  "sourceSha256": "be225d6ed3fd41926d11f822133c7af8602e51ce2d16c753924510076b27d030",
+  "parsed": {
+    "data": {
+      "id": "00000000-0000-4000-8000-000000000002",
+      "address": "11111111111111111111111111111114",
+      "evmAddress": "0x0000000000000000000000000000000000000004",
+      "createdAt": "2025-10-03T01:49:40.755Z",
+      "displayName": "[redacted text]",
+      "userHandle": "fixture-id-1",
+      "profilePictureLink": "https://fixture.invalid/redacted",
+      "description": "[redacted text]",
+      "following": 0,
+      "followers": 88973,
+      "activated": false,
+      "verified": false,
+      "isReferred": false,
+      "isRestricted": false,
+      "swapCount": 15512,
+      "numTrades": 2381,
+      "totalVolume": "10350610.573646",
+      "private": false,
+      "thumbhash": "[redacted text]",
+      "coverPhotoLink": "https://fixture.invalid/redacted",
+      "coverPhotoThumbhash": "[redacted text]",
+      "twitter": null,
+      "clan": null,
+      "followsCurrentUser": false,
+      "numFriendsFollowing": 1,
+      "friendsFollowing": [
+        {
+          "id": "00000000-0000-4000-8000-000000000005",
+          "address": "11111111111111111111111111111117",
+          "evmAddress": "0x0000000000000000000000000000000000000007",
+          "createdAt": "2026-08-30T10:59:02.419Z",
+          "displayName": "[redacted text]",
+          "userHandle": "fixture-id-8",
+          "profilePictureLink": "https://fixture.invalid/redacted",
+          "description": "",
+          "following": 72,
+          "followers": 523,
+          "activated": false,
+          "verified": false,
+          "isReferred": true,
+          "isRestricted": false,
+          "swapCount": 229,
+          "numTrades": 98,
+          "totalVolume": "24538.747689",
+          "private": false,
+          "thumbhash": "[redacted text]",
+          "coverPhotoLink": "https://fixture.invalid/redacted",
+          "coverPhotoThumbhash": "[redacted text]",
+          "twitter": null
+        }
+      ],
+      "averageHoldTimeSeconds": "76553"
+    }
+  }
+}

@@ -1,0 +1,34 @@
+{
+  "sourceSha256": "4ac48c8c0541f50d8bc5ce8df25f474760b76be2998dec5444bb85282c4aa670",
+  "parsed": {
+    "data": {
+      "buyCount5m": 66,
+      "buyCount1": 693,
+      "buyCount4": 2499,
+      "buyCount24": 14919,
+      "buyVolume5m": "71950",
+      "buyVolume1": "782174",
+      "buyVolume4": "2511205",
+      "buyVolume24": "18415275",
+      "sellCount5m": 16,
+      "sellCount1": 362,
+      "sellCount4": 1322,
+      "sellCount24": 14733,
+      "sellVolume5m": "12427",
+      "sellVolume1": "506242",
+      "sellVolume4": "1740244",
+      "sellVolume24": "17255150",
+      "uniqueBuys5m": 36,
+      "uniqueBuys1": 183,
+      "uniqueBuys4": 501,
+      "uniqueBuys24": 2234,
+      "uniqueSells5m": 16,
+      "uniqueSells1": 184,
+      "uniqueSells4": 543,
+      "uniqueSells24": 2265,
+      "holders": 88234,
+      "top10HoldersPercent": "39.56881467583012",
+      "isLowFees": false
+    }
+  }
+}

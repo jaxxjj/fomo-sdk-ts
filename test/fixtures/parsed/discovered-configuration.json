@@ -1,0 +1,178 @@
+{
+  "sourceSha256": "03bf74d2294799498b60a3e8d1453e6a982f67555fc70a2c956287655db25f39",
+  "parsed": {
+    "data": {
+      "crossmint": {
+        "minimumAmount": "5",
+        "minimumAmountByChain": {
+          "1": "10"
+        },
+        "dailyMaximum": "2500",
+        "maximumAmount": "2500",
+        "defaultBuyAmount": "100"
+      },
+      "simulateBeforeSend": false,
+      "transferMessageMaxLength": 200,
+      "sendPromo": {
+        "id": "fixture-id-1",
+        "animationType": "[redacted text]",
+        "notePlaceholder": "[redacted text]",
+        "confirmAnimationImageUrl": "https://fixture.invalid/redacted",
+        "images": [
+          {
+            "url": "https://fixture.invalid/redacted"
+          },
+          {
+            "url": "https://fixture.invalid/redacted"
+          },
+          {
+            "url": "https://fixture.invalid/redacted"
+          },
+          {
+            "url": "https://fixture.invalid/redacted"
+          },
+          {
+            "url": "https://fixture.invalid/redacted"
+          }
+        ]
+      },
+      "primarySolanaRpc": "[redacted text]",
+      "helpCenter": {
+        "items": [
+          {
+            "question": "[redacted text]",
+            "answer": [
+              {
+                "type": "text",
+                "text": "[redacted text]"
+              }
+            ]
+          },
+          {
+            "question": "[redacted text]",
+            "answer": [
+              {
+                "type": "text",
+                "text": "[redacted text]"
+              }
+            ]
+          },
+          {
+            "question": "[redacted text]",
+            "answer": [
+              {
+                "type": "text",
+                "text": "[redacted text]"
+              }
+            ]
+          },
+          {
+            "question": "[redacted text]",
+            "answer": [
+              {
+                "type": "text",
+                "text": "[redacted text]"
+              },
+              {
+                "type": "link",
+                "text": "[redacted text]",
+                "url": "https://fixture.invalid/redacted"
+              },
+              {
+                "type": "text",
+                "text": "[redacted text]"
+              },
+              {
+                "type": "link",
+                "text": "[redacted text]",
+                "url": "https://fixture.invalid/redacted"
+              },
+              {
+                "type": "text",
+                "text": "[redacted text]"
+              }
+            ]
+          },
+          {
+            "question": "[redacted text]",
+            "answer": [
+              {
+                "type": "text",
+                "text": "[redacted text]"
+              }
+            ]
+          },
+          {
+            "question": "[redacted text]",
+            "answer": [
+              {
+                "type": "text",
+                "text": "[redacted text]"
+              }
+            ]
+          }
+        ]
+      },
+      "awaitRelayConfirmationOnSells": false,
+      "isUk": false,
+      "archaxApprovalDate": "[redacted text]",
+      "datadog": {
+        "enabled": true,
+        "sessionSampleRate": "100",
+        "resourceTraceSampleRate": "100"
+      },
+      "performanceTelemetry": {
+        "startupEnabled": false,
+        "resourceUsageEnabled": false,
+        "hermesMemoryEnabled": false,
+        "frameRateEnabled": false,
+        "networkEnabled": false,
+        "screenTimeEnabled": false,
+        "navigationEnabled": false
+      },
+      "socialLinks": {
+        "instagram": "https://fixture.invalid/redacted",
+        "discord": "https://fixture.invalid/redacted",
+        "youtube": "https://fixture.invalid/redacted",
+        "tiktok": "https://fixture.invalid/redacted"
+      },
+      "minPurchaseAmountByChain": {
+        "1": {
+          "buy": "25",
+          "sell": "5"
+        },
+        "default": {
+          "buy": "2",
+          "sell": "2"
+        }
+      },
+      "minUsdcTransferByChain": {
+        "1": {
+          "in": "5",
+          "out": "15"
+        },
+        "1337": {
+          "in": "5",
+          "out": "2"
+        },
+        "default": {
+          "in": "0.5",
+          "out": "0.5"
+        }
+      },
+      "evmGasLimitBufferMultiplier": 15,
+      "evmGasLimitBufferDivisor": 10,
+      "features": {
+        "perpsTrading": true,
+        "perpsTradingAvailable": true,
+        "perpsTradingAcknowledged": false,
+        "tosAcknowledged": false,
+        "crossmintAvailable": true,
+        "coinbaseApplePayCountryEligible": false,
+        "crossmintOnrampAvailable": true,
+        "cashAppDepositsAvailable": true
+      },
+      "perpsFeeTierDbps": null
+    }
+  }
+}

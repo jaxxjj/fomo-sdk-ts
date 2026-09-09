@@ -29,6 +29,7 @@ for (const row of report.cases.filter((entry) => entry.recorded))
     });
     assert.equal(cassette.data.provenance.operation, row.operation);
     const client = new FomoClient({
+      supportedChains: null, // Preserve capture-time request scope.
       session: new StaticSession({ accessToken: "offline-placeholder" }),
       maxRetries: 0,
       transport: cassette.transport(),

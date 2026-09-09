@@ -1,0 +1,44 @@
+{
+  "format": "sdk-http-cassette/v1",
+  "service": "fomo",
+  "provenance": {
+    "kind": "live",
+    "source": "SDK native read-only website capability qualification",
+    "operation": "users.search"
+  },
+  "capturedAt": "2026-09-09T06:16:45.509Z",
+  "inputs": {
+    "params": {
+      "searchTerm": "unipcs"
+    }
+  },
+  "exchanges": [
+    {
+      "request": {
+        "method": "GET",
+        "origin": "https://fomo.fixture.invalid",
+        "path": "/v2/users/fuzzy-search",
+        "query": [["searchTerm", "unipcs"]],
+        "headers": {
+          "authentication": "<present>",
+          "content-type": "application/json"
+        },
+        "body": ""
+      },
+      "response": {
+        "status": 200,
+        "headers": {
+          "content-type": "application/json; charset=utf-8"
+        },
+        "body": "{\"success\":true,\"message\":\"[redacted text]\",\"responseObject\":{\"users\":[{\"id\":\"00000000-0000-4000-8000-000000000001\",\"address\":\"11111111111111111111111111111113\",\"evmAddress\":\"0x0000000000000000000000000000000000000003\",\"createdAt\":\"2026-05-18T12:45:58.832Z\",\"displayName\":\"[redacted text]\",\"userHandle\":\"fixture-id-4\",\"profilePictureLink\":\"https://fixture.invalid/redacted\",\"description\":\"[redacted text]\",\"following\":36,\"followers\":619568,\"activated\":false,\"verified\":false,\"isReferred\":true,\"isRestricted\":false,\"swapCount\":525,\"numTrades\":3813,\"totalVolume\":3565769.589095,\"private\":false,\"thumbhash\":\"[redacted text]\",\"coverPhotoLink\":null,\"coverPhotoThumbhash\":null,\"twitter\":null,\"pnl24h\":1884673.6370295882},{\"id\":\"00000000-0000-4000-8000-000000000005\",\"address\":\"11111111111111111111111111111117\",\"evmAddress\":\"0x0000000000000000000000000000000000000007\",\"createdAt\":\"2025-11-08T11:45:38.414Z\",\"displayName\":\"[redacted text]\",\"userHandle\":\"fixture-id-8\",\"profilePictureLink\":null,\"description\":null,\"following\":27,\"followers\":415,\"activated\":false,\"verified\":false,\"isReferred\":true,\"isRestricted\":false,\"swapCount\":577,\"numTrades\":208,\"totalVolume\":1899155.733527,\"private\":false,\"thumbhash\":null,\"coverPhotoLink\":null,\"coverPhotoThumbhash\":null,\"twitter\":null,\"pnl24h\":3.290840426183422},{\"id\":\"00000000-0000-4000-8000-000000000009\",\"address\":\"1111111111111111111111111111111B\",\"evmAddress\":\"0x000000000000000000000000000000000000000b\",\"createdAt\":\"2026-09-05T15:04:14.161Z\",\"displayName\":\"[redacted text]\",\"userHandle\":\"fixture-id-12\",\"profilePictureLink\":\"https://fixture.invalid/redacted\",\"description\":\"[redacted text]\",\"following\":1,\"followers\":93,\"activated\":false,\"verified\":false,\"isReferred\":true,\"isRestricted\":false,\"swapCount\":85,\"numTrades\":146,\"totalVolume\":709.747115,\"private\":false,\"thumbhash\":\"[redacted text]\",\"coverPhotoLink\":null,\"coverPhotoThumbhash\":null,\"twitter\":null,\"pnl24h\":-5432.409655435036},{\"id\":\"00000000-0000-4000-8000-00000000000d\",\"address\":\"1111111111111111111111111111111F\",\"evmAddress\":\"0x000000000000000000000000000000000000000f\",\"createdAt\":\"2026-08-31T18:19:09.113Z\",\"displayName\":\"[redacted text]\",\"userHandle\":\"fixture-id-16\",\"profilePictureLink\":\"https://fixture.invalid/redacted\",\"description\":\"[redacted text]\",\"following\":3,\"followers\":51,\"activated\":false,\"verified\":false,\"isReferred\":true,\"isRestricted\":false,\"swapCount\":0,\"numTrades\":0,\"totalVolume\":0,\"private\":false,\"thumbhash\":\"[redacted text]\",\"coverPhotoLink\":null,\"coverPhotoThumbhash\":null,\"twitter\":null,\"pnl24h\":null},{\"id\":\"00000000-0000-4000-8000-000000000011\",\"address\":\"1111111111111111111111111111111K\",\"evmAddress\":\"0x0000000000000000000000000000000000000013\",\"createdAt\":\"2026-09-05T13:12:12.606Z\",\"displayName\":\"[redacted text]\",\"userHandle\":\"fixture-id-20\",\"profilePictureLink\":\"https://fixture.invalid/redacted\",\"description\":\"[redacted text]\",\"following\":0,\"followers\":46,\"activated\":false,\"verified\":false,\"isReferred\":false,\"isRestricted\":false,\"swapCount\":85,\"numTrades\":129,\"totalVolume\":720.507757,\"private\":false,\"thumbhash\":\"[redacted text]\",\"coverPhotoLink\":null,\"coverPhotoThumbhash\":null,\"twitter\":null,\"pnl24h\":0},{\"id\":\"00000000-0000-4000-8000-000000000015\",\"address\":\"1111111111111111111111111111111P\",\"evmAddress\":\"0x0000000000000000000000000000000000000017\",\"createdAt\":\"2026-08-30T14:22:26.716Z\",\"displayName\":\"[redacted text]\",\"userHandle\":\"fixture-id-24\",\"profilePictureLink\":\"https://fixture.invalid/redacted\",\"description\":\"[redacted text]\",\"following\":1,\"followers\":42,\"activated\":false,\"verified\":false,\"isReferred\":true,\"isRestricted\":false,\"swapCount\":35,\"numTrades\":160,\"totalVolume\":204.19373099999999,\"private\":false,\"thumbhash\":\"[redacted text]\",\"coverPhotoLink\":null,\"coverPhotoThumbhash\":null,\"twitter\":null,\"pnl24h\":0},{\"id\":\"00000000-0000-4000-8000-000000000019\",\"address\":\"1111111111111111111111111111111T\",\"evmAddress\":\"0x000000000000000000000000000000000000001b\",\"createdAt\":\"2026-08-30T00:57:24.599Z\",\"displayName\":\"[redacted text]\",\"userHandle\":\"fixture-id-28\",\"profilePictureLink\":\"https://fixture.invalid/redacted\",\"description\":\"[redacted text]\",\"following\":1,\"followers\":38,\"activated\":false,\"verified\":false,\"isReferred\":true,\"isRestricted\":false,\"swapCount\":25,\"numTrades\":58,\"totalVolume\":103.218216,\"private\":false,\"thumbhash\":\"[redacted text]\",\"coverPhotoLink\":null,\"coverPhotoThumbhash\":null,\"twitter\":null,\"pnl24h\":0},{\"id\":\"00000000-0000-4000-8000-00000000001d\",\"address\":\"1111111111111111111111111111111X\",\"evmAddress\":\"0x000000000000000000000000000000000000001f\",\"createdAt\":\"2026-06-12T20:57:57.856Z\",\"displayName\":\"[redacted text]\",\"userHandle\":\"fixture-id-32\",\"profilePictureLink\":\"https://fixture.invalid/redacted\",\"description\":null,\"following\":104,\"followers\":18,\"activated\":false,\"verified\":false,\"isReferred\":true,\"isRestricted\":false,\"swapCount\":0,\"numTrades\":0,\"totalVolume\":0,\"private\":false,\"thumbhash\":\"[redacted text]\",\"coverPhotoLink\":null,\"coverPhotoThumbhash\":null,\"twitter\":null,\"pnl24h\":null},{\"id\":\"00000000-0000-4000-8000-000000000021\",\"address\":\"1111111111111111111111111111111b\",\"evmAddress\":\"0x0000000000000000000000000000000000000023\",\"createdAt\":\"2026-08-30T12:30:36.327Z\",\"displayName\":\"[redacted text]\",\"userHandle\":\"fixture-id-36\",\"profilePictureLink\":\"https://fixture.invalid/redacted\",\"description\":\"[redacted text]\",\"following\":1,\"followers\":16,\"activated\":false,\"verified\":false,\"isReferred\":true,\"isRestricted\":false,\"swapCount\":9,\"numTrades\":54,\"totalVolume\":36.555232,\"private\":false,\"thumbhash\":\"[redacted text]\",\"coverPhotoLink\":null,\"coverPhotoThumbhash\":null,\"twitter\":null,\"pnl24h\":0},{\"id\":\"00000000-0000-4000-8000-000000000025\",\"address\":\"1111111111111111111111111111111f\",\"evmAddress\":\"0x0000000000000000000000000000000000000027\",\"createdAt\":\"2026-04-18T08:58:09.909Z\",\"displayName\":\"[redacted text]\",\"userHandle\":\"fixture-id-40\",\"profilePictureLink\":null,\"description\":\"[redacted text]\",\"following\":0,\"followers\":16,\"activated\":true,\"verified\":false,\"isReferred\":false,\"isRestricted\":false,\"swapCount\":0,\"numTrades\":0,\"totalVolume\":0,\"private\":false,\"thumbhash\":null,\"coverPhotoLink\":null,\"coverPhotoThumbhash\":null,\"twitter\":null,\"pnl24h\":null}]},\"statusCode\":200}"
+      }
+    }
+  ],
+  "expected": {
+    "ok": true,
+    "summary": {
+      "type": "array",
+      "rows": 10
+    }
+  }
+}

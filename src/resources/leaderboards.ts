@@ -22,4 +22,13 @@ export class LeaderboardsResource {
       data: array(object(result.data).leaderboard, "leaderboard").map(parseUser),
     };
   }
+  async following(options: RequestOptions = {}): Promise<ApiResult<User[]>> {
+    const result = await this.connection.request(
+      "leaderboards.following",
+      "/v2/leaderboard/following",
+      {},
+      options,
+    );
+    return { ...result, data: array(object(result.data).users, "users").map(parseUser) };
+  }
 }

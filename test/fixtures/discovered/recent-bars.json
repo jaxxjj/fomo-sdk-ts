@@ -1,0 +1,50 @@
+{
+  "format": "sdk-http-cassette/v1",
+  "service": "fomo",
+  "provenance": {
+    "kind": "live",
+    "source": "SDK native read-only website capability qualification",
+    "operation": "tokens.recentBars"
+  },
+  "capturedAt": "2026-09-09T06:16:36.967Z",
+  "inputs": {
+    "params": {
+      "token": {
+        "address": "0x0000000000000000000000000000000000000001",
+        "networkId": 4663
+      },
+      "resolution": "1",
+      "from": 1788933976,
+      "to": 1788934576,
+      "countBack": 5
+    }
+  },
+  "exchanges": [
+    {
+      "request": {
+        "method": "POST",
+        "origin": "https://fomo.fixture.invalid",
+        "path": "/proxy/getBarsNew",
+        "query": [],
+        "headers": {
+          "authentication": "<present>",
+          "content-type": "application/json"
+        },
+        "body": "{\"symbol\":\"0x0000000000000000000000000000000000000001:4663\",\"resolution\":\"1\",\"from\":1788933976,\"to\":1788934576,\"countBack\":5}"
+      },
+      "response": {
+        "status": 200,
+        "headers": {
+          "content-type": "application/json; charset=utf-8"
+        },
+        "body": "{\"success\":true,\"message\":\"[redacted text]\",\"responseObject\":{\"c\":[0.8171631243420349,0.8179070001202691,0.8194223923360471,0.8248247733076297,0.8211671063281951],\"h\":[0.8171631243420349,0.8179070001202691,0.8194961102513395,0.8256855321002066,0.8248247733076297],\"l\":[0.8161896466226559,0.8171631243420349,0.8179070001202691,0.8194223923360471,0.820408118362981],\"o\":[0.8161896466226559,0.8171631243420349,0.8179070001202691,0.8194223923360471,0.8248247733076297],\"s\":\"[redacted text]\",\"t\":[1788934200,1788934260,1788934320,1788934500,1788934560],\"v\":[9988.751133339192,688.2915368897228,12960.190035442565,17393.1871731098,42409.98126433941]},\"statusCode\":200}"
+      }
+    }
+  ],
+  "expected": {
+    "ok": true,
+    "summary": {
+      "type": "object"
+    }
+  }
+}

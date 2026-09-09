@@ -1,0 +1,40 @@
+{
+  "format": "sdk-http-cassette/v1",
+  "service": "fomo",
+  "provenance": {
+    "kind": "live",
+    "source": "SDK native read-only website capability qualification",
+    "operation": "leaderboards.following"
+  },
+  "capturedAt": "2026-09-09T06:16:55.679Z",
+  "inputs": {},
+  "exchanges": [
+    {
+      "request": {
+        "method": "GET",
+        "origin": "https://fomo.fixture.invalid",
+        "path": "/v2/leaderboard/following",
+        "query": [],
+        "headers": {
+          "authentication": "<present>",
+          "content-type": "application/json"
+        },
+        "body": ""
+      },
+      "response": {
+        "status": 200,
+        "headers": {
+          "content-type": "application/json; charset=utf-8"
+        },
+        "body": "{\"success\":true,\"message\":\"[redacted text]\",\"responseObject\":{\"users\":[{\"id\":\"00000000-0000-4000-8000-000000000001\",\"address\":\"11111111111111111111111111111113\",\"evmAddress\":\"0x0000000000000000000000000000000000000003\",\"createdAt\":\"2026-08-30T10:59:02.419Z\",\"displayName\":\"[redacted text]\",\"userHandle\":\"fixture-id-4\",\"profilePictureLink\":\"https://fixture.invalid/redacted\",\"description\":\"\",\"following\":72,\"followers\":534,\"activated\":false,\"verified\":false,\"isReferred\":true,\"isRestricted\":false,\"swapCount\":233,\"numTrades\":98,\"totalVolume\":24578.567689,\"private\":false,\"thumbhash\":\"[redacted text]\",\"coverPhotoLink\":\"https://fixture.invalid/redacted\",\"coverPhotoThumbhash\":\"[redacted text]\",\"twitter\":null,\"totalPnL\":-4769.603633909302,\"pnl24h\":-3578.438575383694,\"pnl7d\":-4704.940236763913,\"pnl30d\":-4769.603633909302,\"topHoldings\":[{\"imageUrl\":\"https://fixture.invalid/redacted\",\"tokenAddress\":\"11111111111111111111111111111116\",\"networkId\":1399811149,\"humanAmount\":-4.5474735e-13,\"price\":0.00110859409725,\"value\":0,\"pnl\":-10.379967,\"costBasis\":19.600043},{\"imageUrl\":\"https://fixture.invalid/redacted\",\"tokenAddress\":\"11111111111111111111111111111117\",\"networkId\":1399811149,\"humanAmount\":0.00732552,\"price\":318.665921839,\"value\":2.3343935837500314,\"pnl\":-0.03327259029407185,\"costBasis\":2.3676661740441034}],\"totalHoldings\":1}]},\"statusCode\":200}"
+      }
+    }
+  ],
+  "expected": {
+    "ok": true,
+    "summary": {
+      "type": "array",
+      "rows": 1
+    }
+  }
+}

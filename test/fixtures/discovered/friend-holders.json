@@ -1,0 +1,53 @@
+{
+  "format": "sdk-http-cassette/v1",
+  "service": "fomo",
+  "provenance": {
+    "kind": "live",
+    "source": "SDK native read-only website capability qualification",
+    "operation": "tokens.friendHolders"
+  },
+  "capturedAt": "2026-09-09T06:16:42.205Z",
+  "inputs": {
+    "params": {
+      "tokens": [
+        {
+          "address": "0x0000000000000000000000000000000000000001",
+          "networkId": 4663
+        },
+        {
+          "address": "11111111111111111111111111111113",
+          "networkId": 1399811149
+        }
+      ],
+      "limit": 2
+    }
+  },
+  "exchanges": [
+    {
+      "request": {
+        "method": "POST",
+        "origin": "https://fomo.fixture.invalid",
+        "path": "/hodlers/friends",
+        "query": [],
+        "headers": {
+          "authentication": "<present>",
+          "content-type": "application/json"
+        },
+        "body": "{\"tokens\":[{\"address\":\"0x0000000000000000000000000000000000000001\",\"networkId\":4663},{\"address\":\"11111111111111111111111111111113\",\"networkId\":1399811149}],\"limit\":2}"
+      },
+      "response": {
+        "status": 200,
+        "headers": {
+          "content-type": "application/json; charset=utf-8"
+        },
+        "body": "{\"success\":true,\"message\":\"[redacted text]\",\"responseObject\":{\"tokens\":[{\"tokenAddress\":\"0x0000000000000000000000000000000000000001\",\"networkId\":4663,\"topHolders\":[],\"totalHolders\":0},{\"tokenAddress\":\"11111111111111111111111111111113\",\"networkId\":1399811149,\"topHolders\":[],\"totalHolders\":0}]},\"statusCode\":200}"
+      }
+    }
+  ],
+  "expected": {
+    "ok": true,
+    "summary": {
+      "type": "object"
+    }
+  }
+}

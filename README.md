@@ -28,6 +28,32 @@ npm install /path/to/fomo-sdk-ts/artifacts/jaxonchenjc-fomo-sdk-0.1.0.tgz
 
 ## Read data
 
+The unreleased source tree adds market HTTP queries and other website reads.
+See [website capability inventory](docs/website-capabilities.md) for the exact
+surface and qualification limits; published `0.1.0` does not contain these additions.
+
+```ts
+// With the expanded source build:
+const metrics = await fomo.tokens.metrics({
+  tokens: [{ address: "TOKEN_ADDRESS", networkId: 56 }],
+});
+const trending = await fomo.market.list({ kind: "trending" });
+const details = await fomo.tokens.details({
+  token: { address: "TOKEN_ADDRESS", networkId: 56 },
+});
+```
+
+Metric batches may omit requested tokens: match `data[].token` identities,
+not request positions. Unknown numeric extension fields remain decimal text.
+The expanded source now sends `DEFAULT_SUPPORTED_CHAINS` by default; an explicit
+narrower scope is respected and incompatible token requests reject before I/O.
+Known counts and nested responses have named field-level models; see
+[typed contracts](docs/typed-models.md). Explicit `supportedChains: null` is
+available only for reproducing legacy no-header behavior.
+Custom `HttpTransport` implementations must forward POST bodies when using
+the new read-query resources. POST is restricted to reviewed read routes;
+watchlist changes, reactions, transfers and trades are not implemented.
+
 Activity may have `userId: null`: the provider has not associated that event
 with a Fomo user. The event is retained, and consumers must handle the nullable
 actor. Actual token rotation and automatic WS gap recovery are not qualified;

@@ -1,0 +1,43 @@
+{
+  "format": "sdk-http-cassette/v1",
+  "service": "fomo",
+  "provenance": {
+    "kind": "live",
+    "source": "SDK native read-only website capability qualification",
+    "operation": "users.getById"
+  },
+  "capturedAt": "2026-09-09T06:16:43.856Z",
+  "inputs": {
+    "params": {
+      "userId": "00000000-0000-4000-8000-000000000001"
+    }
+  },
+  "exchanges": [
+    {
+      "request": {
+        "method": "GET",
+        "origin": "https://fomo.fixture.invalid",
+        "path": "/v2/users/00000000-0000-4000-8000-000000000001",
+        "query": [],
+        "headers": {
+          "authentication": "<present>",
+          "content-type": "application/json"
+        },
+        "body": ""
+      },
+      "response": {
+        "status": 200,
+        "headers": {
+          "content-type": "application/json; charset=utf-8"
+        },
+        "body": "{\"success\":true,\"message\":\"[redacted text]\",\"responseObject\":{\"id\":\"00000000-0000-4000-8000-000000000001\",\"address\":\"11111111111111111111111111111113\",\"evmAddress\":\"0x0000000000000000000000000000000000000003\",\"createdAt\":\"2026-06-30T06:51:07.640Z\",\"displayName\":\"[redacted text]\",\"userHandle\":\"fixture-id-4\",\"profilePictureLink\":null,\"description\":null,\"following\":1,\"followers\":0,\"activated\":false,\"verified\":false,\"isReferred\":true,\"isRestricted\":false,\"swapCount\":0,\"numTrades\":0,\"totalVolume\":0,\"private\":false,\"thumbhash\":null,\"coverPhotoLink\":null,\"coverPhotoThumbhash\":null,\"twitter\":null,\"clan\":null,\"followsCurrentUser\":false,\"numFriendsFollowing\":0,\"friendsFollowing\":[],\"averageHoldTimeSeconds\":null},\"statusCode\":200}"
+      }
+    }
+  ],
+  "expected": {
+    "ok": true,
+    "summary": {
+      "type": "object"
+    }
+  }
+}

@@ -1,6 +1,7 @@
 export interface HttpRequest {
   url: string;
-  method: "GET";
+  method: "GET" | "POST";
+  body?: string;
   headers: Readonly<Record<string, string>>;
   signal: AbortSignal;
 }
@@ -19,6 +20,7 @@ export function createFetchTransport(fetcher: typeof fetch = fetch): HttpTranspo
     send: (request) =>
       fetcher(request.url, {
         method: request.method,
+        body: request.body,
         headers: { ...request.headers },
         signal: request.signal,
         redirect: "error",
@@ -37,6 +39,7 @@ export function createImpitTransport(): HttpTransport {
       const client = await instance;
       return client.fetch(request.url, {
         method: request.method,
+        body: request.body,
         headers: { ...request.headers },
         signal: request.signal,
         redirect: "error",

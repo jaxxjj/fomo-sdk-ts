@@ -18,19 +18,61 @@ Capture series started: 2026-09-08T13:18:34.302Z.
 
 Historical live ledger: **42 passed / 1 failed / 7 not run**.
 The captured `activity-25` failure is resolved in current offline replay.
+Website-discovered expansion: **45 native SDK scenarios,
+45 accepted responses**.
+See [website-capabilities.md](website-capabilities.md) for source-discovered,
+wrapped, deferred and excluded capabilities. The table below combines both
+capture series; it is not an exhaustive provider API coverage percentage.
 
-| Method/capability   | Offline wire cases | Live pass | Live fail | Not run |
-| ------------------- | -----------------: | --------: | --------: | ------: |
-| `activity.list`     |                  8 |         2 |         1 |       1 |
-| `leaderboards.list` |                 20 |         8 |         0 |       0 |
-| `session.refresh`   |                  0 |         0 |         0 |       1 |
-| `stream.activity`   |                  0 |         0 |         0 |       1 |
-| `swaps.list`        |                  6 |         5 |         0 |       0 |
-| `swaps.pages`       |                  6 |         3 |         0 |       0 |
-| `tokens.feed`       |                 72 |        14 |         0 |       2 |
-| `tokens.holders`    |                  6 |         7 |         0 |       2 |
-| `users.getByHandle` |                  4 |         2 |         0 |       0 |
-| `users.getCurrent`  |                  1 |         1 |         0 |       0 |
+| Method/capability         | Offline wire cases | Live pass | Live fail | Not run |
+| ------------------------- | -----------------: | --------: | --------: | ------: |
+| `activity.list`           |                  9 |         3 |         1 |       1 |
+| `app.configuration`       |                  1 |         1 |         0 |       0 |
+| `clans.feed`              |                  1 |         1 |         0 |       0 |
+| `clans.get`               |                  1 |         1 |         0 |       0 |
+| `clans.holdingBreakdown`  |                  1 |         1 |         0 |       0 |
+| `clans.holdings`          |                  1 |         1 |         0 |       0 |
+| `clans.leaderboard`       |                  1 |         1 |         0 |       0 |
+| `clans.search`            |                  1 |         1 |         0 |       0 |
+| `clans.theses`            |                  1 |         1 |         0 |       0 |
+| `feed.list`               |                  1 |         1 |         0 |       0 |
+| `leaderboards.following`  |                  1 |         1 |         0 |       0 |
+| `leaderboards.list`       |                 20 |         8 |         0 |       0 |
+| `market.allowlist`        |                  1 |         1 |         0 |       0 |
+| `market.list`             |                  5 |         5 |         0 |       0 |
+| `market.search`           |                  2 |         2 |         0 |       0 |
+| `portfolio.balances`      |                  1 |         1 |         0 |       0 |
+| `portfolio.history`       |                  1 |         1 |         0 |       0 |
+| `portfolio.historyAll`    |                  1 |         1 |         0 |       0 |
+| `portfolio.snapshot`      |                  1 |         1 |         0 |       0 |
+| `session.refresh`         |                  0 |         0 |         0 |       1 |
+| `stream.activity`         |                  0 |         0 |         0 |       1 |
+| `swaps.list`              |                  7 |         6 |         0 |       0 |
+| `swaps.pages`             |                  6 |         3 |         0 |       0 |
+| `tokens.bars`             |                  1 |         1 |         0 |       0 |
+| `tokens.details`          |                  1 |         1 |         0 |       0 |
+| `tokens.developerHolders` |                  1 |         1 |         0 |       0 |
+| `tokens.feed`             |                 73 |        15 |         0 |       2 |
+| `tokens.friendHolders`    |                  1 |         1 |         0 |       0 |
+| `tokens.holders`          |                  6 |         7 |         0 |       2 |
+| `tokens.metrics`          |                  1 |         1 |         0 |       0 |
+| `tokens.recentBars`       |                  1 |         1 |         0 |       0 |
+| `tokens.theses`           |                  1 |         1 |         0 |       0 |
+| `tokens.warnings`         |                  1 |         1 |         0 |       0 |
+| `trades.comments`         |                  1 |         1 |         0 |       0 |
+| `trades.get`              |                  1 |         1 |         0 |       0 |
+| `trades.list`             |                  1 |         1 |         0 |       0 |
+| `users.followers`         |                  1 |         1 |         0 |       0 |
+| `users.following`         |                  1 |         1 |         0 |       0 |
+| `users.followingIds`      |                  1 |         1 |         0 |       0 |
+| `users.getByHandle`       |                  4 |         2 |         0 |       0 |
+| `users.getById`           |                  1 |         1 |         0 |       0 |
+| `users.getCurrent`        |                  1 |         1 |         0 |       0 |
+| `users.getMany`           |                  1 |         1 |         0 |       0 |
+| `users.mutuals`           |                  1 |         1 |         0 |       0 |
+| `users.recommended`       |                  1 |         1 |         0 |       0 |
+| `users.search`            |                  1 |         1 |         0 |       0 |
+| `watchlist.list`          |                  1 |         1 |         0 |       0 |
 
 ## Remaining gates
 

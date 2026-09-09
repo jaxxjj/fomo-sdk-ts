@@ -1,0 +1,290 @@
+{
+  "sourceSha256": "62f9ecd81121e4e3f950ec846c7fd11a5c57b3f786a3c54c7dfbd7b93fe34ae0",
+  "parsed": {
+    "data": {
+      "comments": [
+        {
+          "id": "00000000-0000-4000-8000-000000000002",
+          "userId": "00000000-0000-4000-8000-000000000003",
+          "tradeId": "00000000-0000-4000-8000-000000000001",
+          "comment": "[redacted text]",
+          "createdAt": "2026-09-09T06:17:08.521Z",
+          "parentId": null,
+          "numLikes": 0,
+          "tokenAddress": "0x0000000000000000000000000000000000000004",
+          "networkId": 4663,
+          "commentSegments": [
+            {
+              "text": "[redacted text]",
+              "link": null,
+              "provider": null
+            }
+          ],
+          "reactions": {
+            "counts": {
+              "likeCount": 0
+            },
+            "reactions": {
+              "like": false
+            }
+          },
+          "olderThesis": 9,
+          "newerThesis": 0
+        },
+        {
+          "id": "00000000-0000-4000-8000-000000000005",
+          "userId": "00000000-0000-4000-8000-000000000003",
+          "tradeId": "00000000-0000-4000-8000-000000000001",
+          "comment": "[redacted text]",
+          "createdAt": "2026-09-04T16:35:14.206Z",
+          "parentId": null,
+          "numLikes": 4,
+          "tokenAddress": "0x0000000000000000000000000000000000000004",
+          "networkId": 4663,
+          "commentSegments": [
+            {
+              "text": "[redacted text]",
+              "link": null,
+              "provider": null
+            }
+          ],
+          "reactions": {
+            "counts": {
+              "likeCount": 4
+            },
+            "reactions": {
+              "like": false
+            }
+          },
+          "olderThesis": 8,
+          "newerThesis": 1
+        },
+        {
+          "id": "00000000-0000-4000-8000-000000000006",
+          "userId": "00000000-0000-4000-8000-000000000003",
+          "tradeId": "00000000-0000-4000-8000-000000000001",
+          "comment": "[redacted text]",
+          "createdAt": "2026-09-02T05:41:19.581Z",
+          "parentId": null,
+          "numLikes": 1,
+          "tokenAddress": "0x0000000000000000000000000000000000000004",
+          "networkId": 4663,
+          "commentSegments": [
+            {
+              "text": "[redacted text]",
+              "link": null,
+              "provider": null
+            }
+          ],
+          "reactions": {
+            "counts": {
+              "likeCount": 1
+            },
+            "reactions": {
+              "like": false
+            }
+          },
+          "olderThesis": 7,
+          "newerThesis": 2
+        },
+        {
+          "id": "00000000-0000-4000-8000-000000000007",
+          "userId": "00000000-0000-4000-8000-000000000003",
+          "tradeId": "00000000-0000-4000-8000-000000000001",
+          "comment": "[redacted text]",
+          "createdAt": "2026-08-31T17:26:39.866Z",
+          "parentId": null,
+          "numLikes": 1,
+          "tokenAddress": "0x0000000000000000000000000000000000000004",
+          "networkId": 4663,
+          "commentSegments": [
+            {
+              "text": "[redacted text]",
+              "link": null,
+              "provider": null
+            }
+          ],
+          "reactions": {
+            "counts": {
+              "likeCount": 1
+            },
+            "reactions": {
+              "like": false
+            }
+          },
+          "olderThesis": 6,
+          "newerThesis": 3
+        },
+        {
+          "id": "00000000-0000-4000-8000-000000000008",
+          "userId": "00000000-0000-4000-8000-000000000003",
+          "tradeId": "00000000-0000-4000-8000-000000000001",
+          "comment": "[redacted text]",
+          "createdAt": "2026-08-30T16:11:35.305Z",
+          "parentId": null,
+          "numLikes": 1,
+          "tokenAddress": "0x0000000000000000000000000000000000000004",
+          "networkId": 4663,
+          "commentSegments": [
+            {
+              "text": "[redacted text]",
+              "link": null,
+              "provider": null
+            }
+          ],
+          "reactions": {
+            "counts": {
+              "likeCount": 1
+            },
+            "reactions": {
+              "like": false
+            }
+          },
+          "olderThesis": 5,
+          "newerThesis": 4
+        },
+        {
+          "id": "00000000-0000-4000-8000-000000000009",
+          "userId": "00000000-0000-4000-8000-000000000003",
+          "tradeId": "00000000-0000-4000-8000-000000000001",
+          "comment": "[redacted text]",
+          "createdAt": "2026-07-24T09:40:28.935Z",
+          "parentId": null,
+          "numLikes": 1,
+          "tokenAddress": "0x0000000000000000000000000000000000000004",
+          "networkId": 4663,
+          "commentSegments": [
+            {
+              "text": "[redacted text]",
+              "link": null,
+              "provider": null
+            }
+          ],
+          "reactions": {
+            "counts": {
+              "likeCount": 1
+            },
+            "reactions": {
+              "like": false
+            }
+          },
+          "olderThesis": 4,
+          "newerThesis": 5
+        },
+        {
+          "id": "00000000-0000-4000-8000-00000000000a",
+          "userId": "00000000-0000-4000-8000-000000000003",
+          "tradeId": "00000000-0000-4000-8000-000000000001",
+          "comment": "[redacted text]",
+          "createdAt": "2026-07-18T06:35:15.520Z",
+          "parentId": null,
+          "numLikes": 0,
+          "tokenAddress": "0x0000000000000000000000000000000000000004",
+          "networkId": 4663,
+          "commentSegments": [
+            {
+              "text": "[redacted text]",
+              "link": null,
+              "provider": null
+            }
+          ],
+          "reactions": {
+            "counts": {
+              "likeCount": 0
+            },
+            "reactions": {
+              "like": false
+            }
+          },
+          "olderThesis": 3,
+          "newerThesis": 6
+        },
+        {
+          "id": "00000000-0000-4000-8000-00000000000b",
+          "userId": "00000000-0000-4000-8000-000000000003",
+          "tradeId": "00000000-0000-4000-8000-000000000001",
+          "comment": "[redacted text]",
+          "createdAt": "2026-07-18T06:28:37.871Z",
+          "parentId": null,
+          "numLikes": 0,
+          "tokenAddress": "0x0000000000000000000000000000000000000004",
+          "networkId": 4663,
+          "commentSegments": [
+            {
+              "text": "[redacted text]",
+              "link": null,
+              "provider": null
+            }
+          ],
+          "reactions": {
+            "counts": {
+              "likeCount": 0
+            },
+            "reactions": {
+              "like": false
+            }
+          },
+          "olderThesis": 2,
+          "newerThesis": 7
+        },
+        {
+          "id": "00000000-0000-4000-8000-00000000000c",
+          "userId": "00000000-0000-4000-8000-000000000003",
+          "tradeId": "00000000-0000-4000-8000-000000000001",
+          "comment": "[redacted text]",
+          "createdAt": "2026-07-16T18:26:30.764Z",
+          "parentId": null,
+          "numLikes": 0,
+          "tokenAddress": "0x0000000000000000000000000000000000000004",
+          "networkId": 4663,
+          "commentSegments": [
+            {
+              "text": "[redacted text]",
+              "link": null,
+              "provider": null
+            }
+          ],
+          "reactions": {
+            "counts": {
+              "likeCount": 0
+            },
+            "reactions": {
+              "like": false
+            }
+          },
+          "olderThesis": 1,
+          "newerThesis": 8
+        },
+        {
+          "id": "00000000-0000-4000-8000-00000000000d",
+          "userId": "00000000-0000-4000-8000-000000000003",
+          "tradeId": "00000000-0000-4000-8000-000000000001",
+          "comment": "[redacted text]",
+          "createdAt": "2026-07-15T19:56:26.004Z",
+          "parentId": null,
+          "numLikes": 0,
+          "tokenAddress": "0x0000000000000000000000000000000000000004",
+          "networkId": 4663,
+          "commentSegments": [
+            {
+              "text": "[redacted text]",
+              "link": null,
+              "provider": null
+            }
+          ],
+          "reactions": {
+            "counts": {
+              "likeCount": 0
+            },
+            "reactions": {
+              "like": false
+            }
+          },
+          "olderThesis": 0,
+          "newerThesis": 9
+        }
+      ],
+      "hasNextPage": false
+    }
+  }
+}
